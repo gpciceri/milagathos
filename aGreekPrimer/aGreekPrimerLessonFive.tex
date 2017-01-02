@@ -1,0 +1,308 @@
+% ᾶῖῶῆῦ  
+% ἀἰὐἐὀὠἠ 
+% ὰὲὶὸὺὼὴ 
+% ἁἱὑὁὡἡῥ
+% άέίόύήώΆΉ
+% ἂἒὒἲὂὢἢὒἚἊ
+% ἃἳὓὃἣὣἓἋἛ
+% ἄἔἴὄὔὤἤἌἬ
+% ἅἕἵὅὕὥἥἍἭ
+% ἆὦἶἦὖἯἏὯἇὧἷἧὗἯἏὯ 
+
+% ᾳῃῳ
+% ᾱῑῡ
+% ᾀᾐᾠ
+% ᾰῐῠ
+% ᾂᾒᾢ
+% ϊ ϋ
+% ᾄᾔᾤ
+% ΰ ΐ
+% ᾆᾖᾦ
+% ᾲῂῲ
+% ᾴῄῴ
+% ᾷῇῷ
+
+
+\documentclass[nols]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{fontspec}
+\usepackage{ifxetex}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+
+
+% \defaultfontfeatures{Mapping=tex-text}
+% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
+% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
+% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+
+\usepackage{lipsum}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{stackengine}
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{graphics/}} % set of paths to search for images
+\usepackage{amsmath}  % extended mathematics
+\usepackage{booktabs} % book-quality tables
+\usepackage{units}    % non-stacked fractions and better unit spacing
+\usepackage{multicol} % multiple column layout facilities
+\usepackage{lipsum}   % filler text
+\usepackage{fancyvrb} % extended verbatim environments
+  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Standardize command font styles and environments
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+
+% concetti morfosintattici
+\usepackage{xspace} 
+\newcommand{\noun}{\textsc{sostantivo}\xspace}
+\newcommand{\nouns}{\textsc{sostantivi}\xspace}
+\newcommand{\adject}{\textsc{aggettivo}\xspace}
+\newcommand{\adjects}{\textsc{aggettivi}\xspace}
+\newcommand{\gnumber}{\textsc{numero}\xspace}
+\newcommand{\gnumbers}{\textsc{numeri}\xspace}
+\newcommand{\gender}{\textsc{genere}\xspace}
+\newcommand{\genders}{\textsc{generi}\xspace}
+\newcommand{\gcase}{\textsc{caso}\xspace}
+\newcommand{\gcases}{\textsc{casi}\xspace}
+\newcommand{\tense}{\textsc{tempo}\xspace}
+\newcommand{\mood}{\textsc{modo}\xspace}
+\newcommand{\gverb}{\textsc{verbo}\xspace}
+\newcommand{\gverbs}{\textsc{verbi}\xspace}
+\newcommand{\adjective}{\textsc{aggettivo}\xspace}
+\newcommand{\nom}{\textsc{nom}\xspace}
+\newcommand{\gen}{\textsc{gen}\xspace}
+\newcommand{\dat}{\textsc{dat}\xspace}
+\newcommand{\acc}{\textsc{acc}\xspace}
+\newcommand{\voc}{\textsc{voc}\xspace}
+\newcommand{\gexit}{\textsc{uscita}\xspace}
+\newcommand{\gexits}{\textsc{uscite}\xspace}
+\newcommand{\declinazione}{\textsc{declinazione}\xspace}
+\newcommand{\masc}{\textsc{maschile}\xspace}
+\newcommand{\femm}{\textsc{femminile}\xspace}
+\newcommand{\neut}{\textsc{neutro}\xspace}
+
+\newcommand{\indic}{\textsc{indicativo}\xspace}
+\newcommand{\imper}{\textsc{imperativo}\xspace}
+\newcommand{\gcong}{\textsc{congiuntivo}\xspace}
+\newcommand{\ott}{\textsc{ottativo}\xspace}
+\newcommand{\partic}{\textsc{participio}\xspace}
+\newcommand{\infin}{\textsc{infinito}\xspace}
+
+\newcommand{\pres}{\textsc{presente}\xspace}
+\newcommand{\imperf}{\textsc{imperfetto}\xspace}
+\newcommand{\aor}{\textsc{aoristo}\xspace}
+\newcommand{\fut}{\textsc{futuro}\xspace}
+
+\newcommand{\sing}{\textsc{singolare}\xspace}
+\newcommand{\plur}{\textsc{plurale}\xspace}
+\newcommand{\dual}{\textsc{duale}\xspace}
+
+
+% italianitudini
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabella}
+\renewcommand{\contentsname}{Indice}
+
+% fix per un qualche problema
+\ifxetex
+  \newcommand{\textls}[2][5]{%
+    \begingroup\addfontfeatures{LetterSpace=#1}#2\endgroup
+  }
+  \renewcommand{\allcapsspacing}[1]{\textls[15]{#1}}
+  \renewcommand{\smallcapsspacing}[1]{\textls[10]{#1}}
+  \renewcommand{\allcaps}[1]{\textls[15]{\MakeTextUppercase{#1}}}
+  \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
+  \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
+\fi
+
+\title{A Greek Primer. Introduzione al Greco Antico \newline Lezione V - L'imperfetto indicativo attivo. L'aumento.}
+
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
+}
+
+\date{31 Dicembre 2016} % without \date command, current date is supplied
+
+
+\begin{document}
+
+\maketitle% this prints the handout title, author, and date
+
+\begin{marginfigure}[-2.5cm]
+\includegraphics{smallthumb-lesson_I.jpeg}
+\setfloatalignment{b}
+\end{marginfigure}
+
+
+\begin{abstract}
+\noindent
+Queste lezioni si articolano in \textsc{elementi grammaticali}, 
+espressi sommariamente, seguiti da \textsc{vocabolari} per il lessico di base 
+e da \textsc{frasi da tradurre} dal greco e in greco. 
+\
+L'approccio è quello del testo-laboratorio di morfosintassi: 
+si presenta punto per punto - riprendendone la numerazione - 
+l'esposizione di Gleason\cite{gleason1903}.\\
+\bigskip
+\noindent
+Lezione V: l'imperfetto indicativo attivo, l'aumento sillabico e l'aumento temporale, le desinenze personali dei tempi secondari, vocabolario, esercizi.
+\end{abstract}
+
+%\printclassoptions
+
+\newthought{73.} Nei tempi secondari\sidenote{imperfetto, aoristo, piuccheperfetto} dell'indicativo il verbo riceve, al suo inizio, un \textit{aumento}, che denota l'azione passata. 
+L'aumento può essere di due tipi.
+
+\newthought{74. Aumento sillabico} L'imperfetto e l'aoristo indicativo dei verbi che inziano per consonante 
+presentano come prefisso una sillaba \textbf{ε}, come in \textbf{ἔ-λυον} (imperfetto indicativo di \textbf{λύω}), \textit{io scioglievo}. 
+Questo fenomeno viene detto \textit{aumento sillabico}.
+
+\newthought{74. Aumento temporale} L'imperfetto e l'aoristo indicativo dei verbi che inziano per vocale o per dittongo 
+allungano la prima vocale, come in \textbf{ἦ-γον} (imperfetto indicativo di \textbf{ἄγω}), \textit{io conducevo}. 
+\begin{multicols}{2}
+    \noindent \hangindent=1em \textbf{α, ε} diventano \textbf{η}.  \\
+	\noindent \hangindent=1em \textbf{ι, ο, υ} diventano \textbf{ῑ, ω, ῡ}.  \\
+	\noindent \hangindent=1em \textbf{αι , ᾳ} diventano \textbf{ῃ}.  \\
+	\noindent \hangindent=1em \textbf{οι} diventa \textbf{ῳ}.  \\
+\end{multicols}
+Questo fenomeno viene detto \textit{aumento temporale}.
+
+\newthought{76. L'Imperfetto Indicativo Attivo}
+
+\begin{fullwidth}
+\begin{table}[!htbp]
+  \centering
+  \begin{tabular}{l l l l l}
+    %\toprule
+	\multicolumn{5}{c}{\textsc{coniugazione dell'imperfetto indicativo attivo}} \\
+	\multicolumn{3}{c}{\textbf{λύω}} & \textbf{ἄγω} & \textbf{γράφω} \\
+    %\midrule
+	& \multicolumn{4}{c}{\textsc{singolare}} \\
+    \textsc{1.} & \textbf{ἔλυ-ον}   & \textit{io scioglievo}    & \textbf{ἦγον}   & \textbf{ἔγραφον} \\
+    \textsc{2.} & \textbf{ἔλυ-ες}   & \textit{tu scioglievi}    & \textbf{ἦγες} & \textbf{ἔγραφες} \\
+    \textsc{3.} & \textbf{ἔλυ-ε}    & \textit{egli scioglieva} & \textbf{ἦγε}  & \textbf{ἔγραφε}  \\
+	 & \multicolumn{4}{c}{\textsc{plurale}} \\
+	\textsc{1.} & \textbf{ἔλυ-ομεν} & \textit{noi scioglievamo} & \textbf{ἦγομεν} & \textbf{ἔγραφομεν}   \\
+    \textsc{2.} & \textbf{ἔλυ-ετε}  & \textit{voi scioglievate} & \textbf{ἦγετε}  & \textbf{ἔγραφετε}  \\
+    \textsc{3.} & \textbf{ἔλυ-ον}   & \textit{essi sciolgevano} & \textbf{ἦγουσι} & \textbf{ἔγραφον}  \\
+    %\bottomrule
+  \end{tabular}
+  \caption{λύω, ἄγω, γράφω: imperfetto indicativo attivo}
+  \label{tab:normaltab}
+  %\zsavepos{pos:normaltab}
+\end{table}
+\end{fullwidth}
+
+\newthought{Osservazioni}
+\begin{itemize}
+\item[\textsc{1.}] L'imperfetto è formato a partire dal tema del presente \textbf{λυ(ο-/ε-)}.  
+\item[\textsc{2.}] Confronta le terminazioni dell'imperfetto con quelle del presente (45) e impara le \textit{desinenze personali dei tempi secondari}.
+\begin{table}[!htbp]
+  \centering
+  \begin{tabular}{l c l}
+    \textsc{singolare} & \hspace{10 mm} & \textsc{plurale} \\
+    \textbf{ν} & \hspace{10 mm} & \textbf{μεν} \\
+    \textbf{ς} & \hspace{10 mm} & \textbf{τε} \\
+    \textemdash & \hspace{10 mm} & \textbf{ν}  \\
+	
+  \end{tabular}
+  \caption{desinenze personali dei tempi secondari}
+  \label{tab:normaltab}
+  %\zsavepos{pos:normaltab}
+\end{table}
+\item[\textsc{3.}] Osserva l'effetto sull'accento dell'aumento temporale \textbf{ἦγον} (da \textbf{ἄγω}).
+\item[\textsc{4. Esercizio}] Scrivi l'imperfetto indicativo di \textbf{ἁρπάζω, παίω, πέμπω}.
+\end{itemize}
+
+
+\newthought{77. Vocabolario}
+
+\begin{multicols}{2}
+    \noindent \hangindent=1em \textbf{ἄγγελος,} \textit{messaggero}.  \\
+    \noindent \hangindent=1em \textbf{ἀδελφός,} \textit{fratello}\marginnote{Il vocativo ha accento irregolare, \textbf{ἄδελφε}}.  \\
+    \noindent \hangindent=1em \textbf{θεός,} \textit{dio}.  \\
+    \noindent \hangindent=1em \textbf{παιδίον,} \textit{bambino}.  \\
+    \noindent \hangindent=1em \textbf{πλοῖον,} \textit{barca}.  \\
+    \noindent \hangindent=1em \textbf{δίκαιος, δίκαιον,} agg. \textit{giusto, corretto}.  \\
+    \noindent \hangindent=1em \textbf{πέντε,} agg.indecl. \textit{cinque}.  \\
+    \noindent \hangindent=1em \textbf{τίς; τί;} pronome \textit{chi? cosa?}   \\
+    \noindent \hangindent=1em \textbf{ἐπί,} prep. con gen. \textit{in}; con dat. \textit{su, da};  con acc. \textit{a, contro}.\\
+\end{multicols}
+
+\newthought{78. Traduci:}
+\textsc{1.}~οἱ τῶν θεῶν λόγοι ἦσαν σοφοί. \quad 
+\textsc{2.}~τοῖς θεοῖς ἔθυον οἱ δίκαιοι ἄνθρωποι ἐν τῷ χωρίῳ. \quad
+\textsc{3.}~τίς γὰρ ἦγε τὰ παιδία ἐπὶ τὸν ποταμόν; \quad
+\textsc{4.}~καὶ πέντε δοῦλοι ἔφευγον εἰς τὸ πεδίον. \quad
+\textsc{5.}~ὁ δὲ υἱὸς τοῦ ἀγγέλου ἔμενεν ἐν τῷ πλοιῷ. \quad
+\textsc{6.}~ἐπὶ γὰρ τῷ ποταμῷ ἔχει πλοῖον καλόν, δῶρον τοῦ (suo) ἀδελφοῦ. \quad
+\textsc{7.}~τίς δὲ ἔπεμπε τοὺς ἵππους; τί ἄχει ὀ ἄγγελος; \quad
+\textsc{8.}~τὸ παιδίον ἔλειπε τὸ ἱμάτιον ἐν τῷ ἰερῷ. \quad
+\textsc{9.}~ἐβάλλομεν, ἐπαίετε, κελεύσεις, ἥρπαζον. \quad
+
+
+\newthought{79. Scrivi in greco:} 
+\textsc{1.}~Egli non sacrificherà al saggio dio.  \quad
+\textsc{2.}~Infatti scrisse giuste parole. \quad
+\textsc{3.}~Nella pianura vi erano cinque fiumi.
+
+\newthought{80.} 
+\stackunder{\textbf{Διάλογος.}}{\scriptsize{Dialogo.}} \textemdash 
+\stackunder{\textbf{Θωμᾶς}}{\scriptsize{Tommaso}} \textbf{καὶ ὁ} 
+\stackunder{\textbf{Μαθητής}}{\scriptsize{Scolaro}}
+
+\begin{itemize}
+\item[Θ.] \stackunder{Ἀλλὰ}{\scriptsize{Ma}} 
+         \stackunder{νῦν}{\scriptsize{ora,}}, 
+		 \stackunder{ὦ}{\scriptsize{o}} ἄδελφε, τί 
+         \stackunder{τήμερον}{\scriptsize{oggi}} 
+		 \stackunder{ἔμαθες}{\scriptsize{hai imparato}} ἐν τῷ 
+		 \stackunder{διδασκαλείῷ;}{\scriptsize{scuola?}}
+\item[Μ.] \stackunder{Πολλὰ δὴ ἔμαθον,}{\scriptsize{Molte cose,}}
+		 \stackunder{Θωμασίδιον,}{\scriptsize{Tommasino,}}
+		 \stackunder{μάλιστα}{\scriptsize{specialmente}} δὲ τὰ
+		 \stackunder{Ἑλληνικὰ}{\scriptsize{greci}}
+		 \stackunder{ὀνόματα.}{\scriptsize{nomi.}}
+\item[Θ.] Τὰ δὲ Ἑλληνικὰ \stackunder{χαλεπά}{\scriptsize{difficile}}
+		 \stackunder{ἐστιν;}{\scriptsize{è?}}
+\item[Μ.]\stackunder{Οὐ δῆτα·}{\scriptsize{No, davvero:}}\quad
+		 \stackunder{ἐποί}{\scriptsize{a me}}\quad
+		 \stackunder{γε}{\scriptsize{almeno}}\quad
+		 \stackunder{δοκεῖ}{\scriptsize{sembra}}\quad
+		 \stackunder{ῥᾴονα}{\scriptsize{più facile}}
+		 \stackunder{ἢ}{\scriptsize{del}} ἡ Λατίνη.
+\item[Θ.] \stackunder{Καλὸν τοὺτο·}{\scriptsize{Benissimo!}} τὴν γὰρ Λατίνην  
+		 \stackunder{μισῶ.}{\scriptsize{detesto}} νὺν δὲ 
+		 \stackunder{ἴωμεν}{\scriptsize{andiamo}}
+		 \stackunder{παιξόμενοι.}{\scriptsize{a giocare.}}
+\item[Μ.] Οὐ δῆτα· τὰ γὰρ 
+		 \stackunder{ἐπίθετα}{\scriptsize{aggettivi}} \quad
+		 \stackunder{οὔπω}{\scriptsize{non ancora}} \quad
+		 \stackunder{μεμάθηκα.}{\scriptsize{ho imparato}}
+\item[Θ.] \stackunder{Βαβαί.}{\scriptsize{Oh cielo!}}
+
+\end{itemize}
+
+\begin{figure}[!b]
+  \includegraphics{thumb-lesson_V.jpeg}
+  \caption{Museo Nazionale di Archeologia di Atene}
+  \label{fig:textfig}
+  %\zsavepos{pos:textfig}
+  \setfloatalignment{b}
+\end{figure}
+
+\nobibliography{greekBiblio}
+\bibliographystyle{alpha}
+
+
+\end{document}
