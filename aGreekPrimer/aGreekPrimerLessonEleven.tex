@@ -1,0 +1,312 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                            %%
+%% aGreekPrimer, Italian translation 2016.12 - 2017           %%
+%%                                                            %%
+%% From:  Clarence W. Gleason, A Greek Primer                 %%
+%%        (1903, New York, American Book Company)             %%
+%%                                                            %%
+%%        https://archive.org/details/greekprimer00glea       %%
+%%                                                            %%
+%% Translated by g.p.ciceri <gp.ciceri@gmail.com>             %%
+%% ---------------------------------------------------------- %%
+%% This translation is Licensed under                         %%
+%% Creative Commons Attribution-ShareAlike 4.0 International  %%
+%% https://creativecommons.org/licenses/by-sa/4.0/            %%
+%%                                                            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ᾶῖῶῆῦ  
+% ἀἰὐἐὀὠἠ 
+% ὰὲὶὸὺὼὴ 
+% ἁἱὑὁὡἡῥ
+% άέίόύήώΆΉ
+% ἂἒὒἲὂὢἢὒἚἊ
+% ἃἳὓὃἣὣἓἋἛ
+% ἄἔἴὄὔὤἤἌἬ
+% ἅἕἵὅὕὥἥἍἭ
+% ἆὦἶἦὖἯἏὯἇὧἷἧὗἯἏὯ 
+
+% ᾳῃῳ
+% ᾱῑῡ
+% ᾀᾐᾠ
+% ᾰῐῠ
+% ᾂᾒᾢ
+% ϊ ϋ
+% ᾄᾔᾤ
+% ΰ ΐ
+% ᾆᾖᾦ
+% ᾲῂῲ
+% ᾴῄῴ
+% ᾷῇῷ
+% ᾳῃῳ
+% ᾱῑῡ
+% ᾰῐῠ
+
+% āēīōū
+% ăĕĭŏŭ
+
+
+\documentclass[nols]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{fontspec}
+\usepackage{ifxetex}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+
+
+% \defaultfontfeatures{Mapping=tex-text}
+% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
+% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
+% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+
+\usepackage{lipsum}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{stackengine}
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{graphics/}} % set of paths to search for images
+\usepackage{amsmath}  % extended mathematics
+\usepackage{booktabs} % book-quality tables
+\usepackage{units}    % non-stacked fractions and better unit spacing
+\usepackage{multicol} % multiple column layout facilities
+\usepackage{lipsum}   % filler text
+\usepackage{fancyvrb} % extended verbatim environments
+  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Standardize command font styles and environments
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+
+% concetti morfosintattici
+\usepackage{xspace} 
+\newcommand{\noun}{\textsc{sostantivo}\xspace}
+\newcommand{\nouns}{\textsc{sostantivi}\xspace}
+\newcommand{\adject}{\textsc{aggettivo}\xspace}
+\newcommand{\adjects}{\textsc{aggettivi}\xspace}
+\newcommand{\gnumber}{\textsc{numero}\xspace}
+\newcommand{\gnumbers}{\textsc{numeri}\xspace}
+\newcommand{\gender}{\textsc{genere}\xspace}
+\newcommand{\genders}{\textsc{generi}\xspace}
+\newcommand{\gcase}{\textsc{caso}\xspace}
+\newcommand{\gcases}{\textsc{casi}\xspace}
+\newcommand{\tense}{\textsc{tempo}\xspace}
+\newcommand{\mood}{\textsc{modo}\xspace}
+\newcommand{\gverb}{\textsc{verbo}\xspace}
+\newcommand{\gverbs}{\textsc{verbi}\xspace}
+\newcommand{\adjective}{\textsc{aggettivo}\xspace}
+\newcommand{\nom}{\textsc{nom}\xspace}
+\newcommand{\gen}{\textsc{gen}\xspace}
+\newcommand{\dat}{\textsc{dat}\xspace}
+\newcommand{\acc}{\textsc{acc}\xspace}
+\newcommand{\voc}{\textsc{voc}\xspace}
+\newcommand{\gexit}{\textsc{uscita}\xspace}
+\newcommand{\gexits}{\textsc{uscite}\xspace}
+\newcommand{\declinazione}{\textsc{declinazione}\xspace}
+\newcommand{\masc}{\textsc{maschile}\xspace}
+\newcommand{\femm}{\textsc{femminile}\xspace}
+\newcommand{\neut}{\textsc{neutro}\xspace}
+
+\newcommand{\indic}{\textsc{indicativo}\xspace}
+\newcommand{\imper}{\textsc{imperativo}\xspace}
+\newcommand{\gcong}{\textsc{congiuntivo}\xspace}
+\newcommand{\ott}{\textsc{ottativo}\xspace}
+\newcommand{\partic}{\textsc{participio}\xspace}
+\newcommand{\infin}{\textsc{infinito}\xspace}
+
+\newcommand{\pres}{\textsc{presente}\xspace}
+\newcommand{\imperf}{\textsc{imperfetto}\xspace}
+\newcommand{\aor}{\textsc{aoristo}\xspace}
+\newcommand{\fut}{\textsc{futuro}\xspace}
+
+\newcommand{\sing}{\textsc{singolare}\xspace}
+\newcommand{\plur}{\textsc{plurale}\xspace}
+\newcommand{\dual}{\textsc{duale}\xspace}
+
+
+% italianitudini
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabella}
+\renewcommand{\contentsname}{Indice}
+
+% fix per un qualche problema
+\ifxetex
+  \newcommand{\textls}[2][5]{%
+    \begingroup\addfontfeatures{LetterSpace=#1}#2\endgroup
+  }
+  \renewcommand{\allcapsspacing}[1]{\textls[15]{#1}}
+  \renewcommand{\smallcapsspacing}[1]{\textls[10]{#1}}
+  \renewcommand{\allcaps}[1]{\textls[15]{\MakeTextUppercase{#1}}}
+  \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
+  \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
+\fi
+
+\title{A Greek Primer. Introduzione al Greco Antico \newline Lezione XI - Ripasso dell'indicativo attivo.}
+
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
+}
+
+\date{7 Gennajo 2017} % without \date command, current date is supplied
+
+
+\begin{document}
+
+\maketitle% this prints the handout title, author, and date
+
+\begin{marginfigure}[-3.0cm]
+\includegraphics{smallthumb-lesson_I.jpeg}
+\setfloatalignment{b}
+\end{marginfigure}
+
+
+\begin{abstract}
+\noindent
+Queste lezioni si articolano in \textsc{elementi grammaticali}, 
+espressi sommariamente, seguiti da \textsc{vocabolari} per il lessico di base 
+e da \textsc{frasi da tradurre} dal greco e in greco. 
+\
+L'approccio è quello del testo-laboratorio di morfosintassi: 
+si presenta punto per punto - riprendendone la numerazione - 
+l'esposizione di Gleason\cite{gleason1903}.\\
+\bigskip
+\noindent
+Lezione XI: Ripasso dell'indicativo attivo, temi dei tempi verbali, perfetto secondo, vocabolario, esercizi.
+\end{abstract}
+
+%\printclassoptions
+
+\newthought{133. Presente e Imperfetto.} Il \textit{tema del presente} e dell'imperfetto sono uguali e si desumono dalla prima persona singolare del presente indicativo attivo. La sua vocale finale è \textbf{ο} prima di \textbf{μ} o \textbf{ν,} altrimenti è \textbf{ε.} 
+
+\newthought{134. Futuro.} Il \textit{tema del futuro attivo e medio} si forma aggiungendo \textbf{-σο (-σε)} al tema del verbo\sidenote{I verbi in liquida hanno futuro e aoristo senza \textbf{σ.} Vedi 487.}. 
+
+\newthought{135. Aoristo Primo.} Il \textit{tema dell'aoristo primo attivo e medio} si forma aggiungendo \textbf{-σα} al tema del verbo.
+
+\newthought{Osservazione}
+\begin{itemize}
+\item[\textsc{a.}] I temi verbali in linguale (\textbf{τ, δ, θ}) prima della \textbf{σ} la perdono, come in \textbf{πείθω,} \textit{persuadere,} fut. \textbf{πείσω;} \textbf{ἀθροίζω} (tema verbale \textbf{ἀθροιδ-}), \textit{raccogliere,} fut. \textbf{ἀθροισω.} 
+\end{itemize}
+
+\newthought{136. Aoristo Secondo.} Il \textit{tema dell'aoristo secondo} si forma aggiungendo \textbf{ο} o \textbf{ε (-ο/-ε)} al tema del verbo. All'indicativo, si coniuga come l'imperfetto, negli altri modi si coniuga come il presente. 
+
+\newthought{137. Perfetto Primo.} Nei temi verbali in vocale, in molti temi in liquida e in alcuni temi in linguale il \textit{tema del perfetto (primo)} si forma aggiungendo \textbf{-κα} al tema verbale raddoppiato.
+
+\hyphenation{θαυ-μά-ζω}
+
+\newthought{Osservazione}
+\begin{itemize}
+\item[\textsc{1.}] Anche qui i temi verbali in linguale (\textbf{τ, δ, θ,} specialmente quelli con il presente in \textbf{-ζω}) prima della \textbf{κα} la perdono, come in \textbf{θαυμάζω} (tema verbale \textbf{θαυμαδ-}), \textit{ammirare,} perfetto \textbf{τεθαύμακα.}
+\end{itemize}
+
+\newthought{138. Perfetto Secondo.} Per formare il perfetto molti verbi aggiungono \textbf{α} al tema verbale raddoppiato. La maggior parte dei temi in \textbf{π, β, κ, γ,} se preceduta da vocale breve, la cambiano nella muta cognata aspra; i temi in \textbf{φ, χ} rimangono invariati. Per convenienza, questo perfetto viene chiamato \textit{perfetto secondo}, a distinguerlo da quello in \textbf{-κα}. La coniugazione è la medesima.
+\newthought{Osservazione}
+\begin{itemize}
+\item[\textsc{a.}] I seguenti verbi, già incontrati in vocabolari precedenti, hanno perfetto secondo:
+\begin{multicols}{2}
+    \noindent \hangindent=1em \textbf{ἄγω,} pf. \textbf{ἦχα,}  \\
+	\noindent \hangindent=1em \textbf{γράφω,} pf. \textbf{γέγραφα,}  \\
+	\noindent \hangindent=1em \textbf{διώκω,} pf. \textbf{δεδίωχα,}  \\
+	
+	\noindent \hangindent=1em \textbf{πέμπω} pf. \textbf{πέπομφα,}  \\
+	\noindent \hangindent=1em \textbf{λείπω} pf. \textbf{λέλοιπα,}  \\
+	\noindent \hangindent=1em \textbf{φεύγω} pf. \textbf{πέφευγα.} 
+\end{multicols}
+\end{itemize}
+
+\newthought{139. Piuccheperfetto Primo.} Il piuccheperfetto cambia la \textbf{-κα} del perfetto in \textbf{-κε,} che al singolare diviene \textbf{-κη, -κης, -κει(ν).}\sidenote{forma contratta dallo ionico \textbf{-κεα}, usata al posto del dialetto attico \textbf{-κειν}}
+
+\newthought{140. Piuccheperfetto Secondo.} La vocale \textbf{α} del perfetto secondo diventa \textbf{ε} nel piuccheperfetto secondo; la coniugazione è la stessa del piuccheperfetto primo.
+
+\newthought{Esercizio}
+\begin{itemize}
+\item[\textsc{a.}] Coniuga il piuccheperfetto dei verbi in (138, a). 
+\end{itemize}
+
+\newthought{141. Vocabolario}
+
+\begin{multicols}{2}
+    \noindent \hangindent=1em \textbf{κεφαλέ, ἡ} \textit{testa}.  \\
+    \noindent \hangindent=1em \textbf{στρατηγός, ὁ} \textit{comandante, generale}.  \\
+    \noindent \hangindent=1em \textbf{πολέμιος, α, ον} agg. \textit{ostile}.  \\
+    \noindent \hangindent=1em \textbf{οἱ πολέμιοι} \textit{il nemico}.  \\
+    \noindent \hangindent=1em \textbf{πολλοί, πολλαί, πολλά} agg. \textit{molti}.  \\
+
+    \noindent \hangindent=1em \textbf{αφροίζω,} fut. \textbf{αφροίσω,} aor. \textbf{ἔφροισα,} 
+	pf. \textbf{ἔφροικα,} 
+	\textit{raccogliere.} \\ 
+	
+	\noindent \hangindent=1em \textbf{διδάσκω,} fut. \textbf{διδάξω,} aor. \textbf{ἐδίδαξα,} 
+	pf. \textbf{δεδίδακα,} 
+	\textit{insegnare.} \\ 
+	
+	\noindent \hangindent=1em \textbf{κλέπτω,} fut. \textbf{κλέψω,} aor. \textbf{ἔκλεψα,} 
+	pf. \textbf{κέκλοφα,} 
+	\textit{rubare.} \\ 
+	
+	\noindent \hangindent=1em \textbf{πείφω,} fut. \textbf{πείσω,} aor. \textbf{ἔπεισα,} 
+	pf. \textbf{πέπεικα,} 
+	\textit{persuadere.} \\ 
+	
+	\noindent \hangindent=1em \textbf{ρίπτω,} fut. \textbf{ρίφω,} aor. \textbf{ἔρριψα,} 
+	pf. \textbf{ἔρριφα,} 
+	\textit{lanciare.} \\ 
+	
+	\noindent \hangindent=1em \textbf{μετά,} prep. 
+	con \gen \textit{con}; 
+	con \acc \textit{dopo}. \\
+	
+	\noindent \hangindent=1em \textbf{ἀλλά,} cong. \textit{ma, ancora.} \\ 
+	
+\end{multicols}
+
+\newthought{142. Traduci:}
+\textsc{1.}~πείθουσιν, ἔπειθον, πείσουσιν. \quad
+\textsc{2.}~ἔπεισαν, πεπείκασιν, ἐπεπείκεσαν. \quad
+\textsc{3.}~ἠθροίσαμεν, διδάξει, ἦγε, κλέψετε. \quad
+\textsc{2.}~ἔρριφας, ἔλαβε, λέλοιπα, ἐδεδιδάχης. \quad
+\textsc{2.}~μένομεν, ἐβάλετε, ἦχεν, ἤχει. \\
+
+\hyphenation{ἐ-στρά-τευ-σεν}
+\hyphenation{κλέ-ψου-σι}
+
+\newthought{143.}
+\textsc{1.}~ἐδίδαξαν τὰ τέκνα γράφειν λόγους σοφούς. \quad
+\textsc{2.}~ἐν δὲ τῇ στενῇ ὁδῷ ἠθροίκασι πολλοὺς δούλους. \quad
+\textsc{3.}~ἀλλὰ ταῖς λόγχαις ἔπαιον τὰς κεφαλὰς τῶν ἀγγέλων. \quad
+\textsc{4.}~ηὗρε δὲ τὸν ἀδελφὸν ἐν τῷ καπηλείῷ· οἶνον δὲ οὐκ ἔπινεν. \quad
+\textsc{5.}~ἐπὶ δὲ ταῖς τοῦ ποταμοῦ πηγαῖς ἔλιπε τὸ ἱμάτιον. \quad
+\textsc{6.}~ἐκεκελεύκει γὰρ τὰ παιδία ῤίπτειν τοὺς λίθους εἰς τὴν θάλατταν. \quad
+\textsc{7.}~ὁ δὲ στρατηγὸς εὐθὺς ἐστράτευσεν ἐπὶ τοὺς πολεμίους. \quad
+\textsc{8.}~άλλ´ἐπεὶ ἥρπασαν\sidenote{traduci come fosse piuccheperfetto.} τὰς κώμας ἔφυγον πολλὰ πλέθρα διὰ τοῦ πεδίου. \quad
+\textsc{9.}~μένουσιν ἐν τῷ ἱερῷ καὶ κλέψουσι τὰ τῶν Μουσῶν δῶρα. \quad
+\textsc{10.}~μακρὰ ἦν ἡ μάχη, ἀλλὰ καλὴ ἡ νίκη. 
+
+\newthought{144. Scrivi in Greco:}
+\textsc{1.}~Ma ha mandatoil nemico alla cittadella.\quad
+\textsc{2.}~E raccolsero molti carri riempiti con bei doni. \quad
+\textsc{3.}~Perché avevano fatto una spedizione con il generale.
+
+
+\begin{figure*}[!b]
+  \includegraphics[width=0.7\linewidth]{thumb-lesson_XI.jpeg}´᾿
+  %\includegraphics{thumb-lesson_XI.jpeg}
+  \caption{Museo Nazionale di Archeologia di Atene}
+  \label{fig:textfig}
+  %\zsavepos{pos:textfig}
+  %\setfloatalignment{b}
+\end{figure*}
+
+ 
+
+\nobibliography{greekBiblio}
+\bibliographystyle{alpha}
+
+
+\end{document}

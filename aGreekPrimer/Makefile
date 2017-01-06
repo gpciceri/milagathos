@@ -7,6 +7,7 @@ main:      $(OBJECTS)
 
 %.pdf : %.tex
 	@echo  "costruisco:" $@
+	rm -f $@
 	xelatex -quiet $<
 	bibtex $(basename $<)
 	xelatex -quiet $<
