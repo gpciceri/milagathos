@@ -45,6 +45,8 @@
 % āēīōū
 % ăĕĭŏŭ
 
+% ᾳῃῳ
+% ᾷῇῷ
 
 \documentclass[nols]{tufte-handout}
 
@@ -52,7 +54,8 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
 
 % \defaultfontfeatures{Mapping=tex-text}
@@ -159,6 +162,9 @@
   \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
   \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
 \fi
+
+% too many float...
+\extrafloats{100}
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione XII - Declinazione in A. Nomi maschili).}
 
@@ -292,9 +298,9 @@ Osserva, in textsc{1.}, che la parola \textbf{μάχην} indica in quale circos
 στρατιώτας ἤθροισε καὶ κατέλαβε\sidenote{\textbf{ἤρπασε}} τὴν ἄκραν τῶν Ἀθηνῶν \textit{(Atene)}.
 ἀγαθὸς δὲ ἄνθρωπος ἦω καὶ σοφός, καὶ πολλοὺς ἐνιαυτοὺς \textit{(anni))}
 ἔμενεν ἐν τῇ ἀρχῇ.\sidenote{legge, governo.} μετὰ δὲ τὸν θάνατον\sidenote{\textit{morte.}} 
-αὐτοῦ \textit{(il suo)} οἱ υἱοὶ παρέλαβον \textit{(succeduto a)} τὴν ἀρχὴν.
-πρῶτον μὲν\sidenote{\textbf{πρῶτον μὲν,} \textit{all'inizio.}} καὶ οὗτοι\sidenote{\textbf{καὶ οὗτοι,} \textit{anche loro.}} ἀγαθοὶ ἦσαν· ὕστερον \textit{(più tardi)} δὲ
-ὀλίγῳ διὰ κακόν τι δύο ωεανίαι ἐπιβουλὴν \textit{(complotto)} ἐποίησαν\sidenote{\textit{fatto, formato.}}
+αὐτοῦ \textit{(il suo)} οἱ υἱοὶ παρέλαβον \textit{(succeduto a)} τὴν ἀρχὴν. πρῶτον μὲν\sidenote{\textbf{πρῶτον μὲν,} \textit{all'inizio.}} καὶ οὗτοι
+\sidenote{\textbf{καὶ οὗτοι,} \textit{anche loro.}} 
+ἀγαθοὶ ἦσαν· ὕστερον \textit{(più tardi)} δὲ ὀλίγῳ διὰ κακόν τι δύο ωεανίαι ἐπιβουλὴν \textit{(complotto)} ἐποίησαν\sidenote{\textit{fatto, formato.}}
 ἐπὶ τοὺς τυράννους \textit{(tiranni)}. τὸν μὲν Ἵππαρχον ἀπέκτειναν \textit{(messo a morte)},
 Ἱππίας δέ, ὁ ἀδελγός, εὐθὺς λαβὼν\sidenote{aoristo participio attivo.} 
 κατέκοψε\sidenote{\aor di \textbf{κατακόπτω,} \textit{uccidere.}} τοὺς νεανίας. ἐνταῦθα δ'ἐν ὀργῇ πολλὰ
