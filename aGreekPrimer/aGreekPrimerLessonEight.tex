@@ -52,14 +52,14 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
-\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
+\newfontfamily\GFSDidotBf[Path=./fonts/GFS_Didot/]{GFSDidotBold.ttf}
+\newfontfamily\GFSDidot[Path=./fonts/GFS_Didot/]{GFSDidot.ttf}
 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
-% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
-% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+\newcommand{\didobf}[1]{{\GFSDidotBf #1}}
+\newcommand{\dido}[1]{{\GFSDidot #1}}
 
 \usepackage{lipsum}
 \usepackage{url}
@@ -152,8 +152,7 @@
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione VIΙI - Declinazione in A. Nomi in ᾰ (alfa breve).}
 
-\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
-}
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities}
 
 \date{4 Gennajo 2017} % without \date command, current date is supplied
 
@@ -184,9 +183,9 @@ Lezione VIII: la declinazione in A), nomi femminili in ᾰ, vocabolario, eserciz
 
 %\printclassoptions
 
-\newthought{97.} Alcuni nomi femminili di questa declinazione terminano in \textbf{ᾰ}, 
-che viene allungata in \textbf{η} al genitivo e al dativo singolare\sidenote{in particolare dopo  \textbf{σ, λλ, ττ} o una doppia consonante.}, 
-a meno che la \textbf{ᾰ} non sia preceduta da \textbf{ε, ι} o \textbf{ρ}.
+\newthought{97.} Alcuni nomi femminili di questa declinazione terminano in \didobf{ᾰ}, 
+che viene allungata in \didobf{η} al genitivo e al dativo singolare\sidenote{in particolare dopo  \didobf{σ, λλ, ττ} o una doppia consonante.}, 
+a meno che la \didobf{ᾰ} non sia preceduta da \didobf{ε, ι} o \didobf{ρ}.
 
 \newthought{98. Modelli}
 
@@ -196,21 +195,21 @@ a meno che la \textbf{ᾰ} non sia preceduta da \textbf{ε, ι} o \textbf{ρ}.
   \begin{tabular}{l l l l l l}
     %\toprule
 	\multicolumn{6}{c}{\textsc{parole guida}} \\
-	& \textbf{Μοῦσα,} & \multicolumn{3}{c}{\textbf{ἡ μακρὰ γέφῡρα,}} & \textbf{ἅμαξα,} \\
+	& \didobf{Μοῦσα,} & \multicolumn{3}{c}{\didobf{ἡ μακρὰ γέφῡρα,}} & \didobf{ἅμαξα,} \\
 	& \textit{Musa,} \textsc{F.} & \multicolumn{3}{c}{\textit{il lungo ponte}} & \textit{Carro,} \textsc{F.}\\
    
 	\multicolumn{6}{c}{\textsc{singolare}} \\
-    \textsc{n.} & \textbf{Μοῦσα}  & \textbf{ἡ}   & \textbf{μακρὰ}  & \textbf{γέφῡρα}  & \textbf{ἅμαξα} \\
-    \textsc{g.} & \textbf{Μούσης} & \textbf{τῆς} & \textbf{μακρᾶς} & \textbf{γέφύρᾱς} & \textbf{ἁμάξης} \\
-    \textsc{d.} & \textbf{Μούσῃ}  & \textbf{τῇ}  & \textbf{μακρᾷ}  & \textbf{γέφύρᾳ}  & \textbf{ἁμάξῃ} \\
-	\textsc{a.} & \textbf{Μοῦσαν} & \textbf{τὴν} & \textbf{μακρὰν} & \textbf{γέφῡραν} & \textbf{ἅμαξαν} \\
-	\textsc{v.} & \textbf{Μοῦσα}  & \textemdash  & \textbf{μακρὰ}  & \textbf{γέφῡρα}  & \textbf{ἅμαξα} \\
+    \textsc{n.} & \didobf{Μοῦσα}  & \didobf{ἡ}   & \didobf{μακρὰ}  & \didobf{γέφῡρα}  & \didobf{ἅμαξα} \\
+    \textsc{g.} & \didobf{Μούσης} & \didobf{τῆς} & \didobf{μακρᾶς} & \didobf{γέφύρᾱς} & \didobf{ἁμάξης} \\
+    \textsc{d.} & \didobf{Μούσῃ}  & \didobf{τῇ}  & \didobf{μακρᾷ}  & \didobf{γέφύρᾳ}  & \didobf{ἁμάξῃ} \\
+	\textsc{a.} & \didobf{Μοῦσαν} & \didobf{τὴν} & \didobf{μακρὰν} & \didobf{γέφῡραν} & \didobf{ἅμαξαν} \\
+	\textsc{v.} & \didobf{Μοῦσα}  & \textemdash  & \didobf{μακρὰ}  & \didobf{γέφῡρα}  & \didobf{ἅμαξα} \\
 	
 	\multicolumn{6}{c}{\textsc{plurale}} \\
-	\textsc{n.v.} & \textbf{Μοῦσαι} & \textbf{αἱ}   & \textbf{μακραὶ}  & \textbf{γέφῡραι}   & \textbf{ἅμαξαι}\\
-    \textsc{g.} & \textbf{Μουσῶν}  & \textbf{τῶν}  & \textbf{μακρῶν}  & \textbf{γέφῡρῶν}  & \textbf{ἁμαξῶν} \\
-    \textsc{d.} & \textbf{Μούσαις} & \textbf{ταῖς} & \textbf{μακραῖς} & \textbf{γεφύραις} & \textbf{ἁμάξαις}  \\
-	\textsc{a.} & \textbf{Μούσᾱς} & \textbf{τὰς}  & \textbf{μακρὰς}  & \textbf{γεφύρᾱς}  & \textbf{ἁμάξᾱς} \\
+	\textsc{n.v.} & \didobf{Μοῦσαι} & \didobf{αἱ}   & \didobf{μακραὶ}  & \didobf{γέφῡραι}   & \didobf{ἅμαξαι}\\
+    \textsc{g.} & \didobf{Μουσῶν}  & \didobf{τῶν}  & \didobf{μακρῶν}  & \didobf{γέφῡρῶν}  & \didobf{ἁμαξῶν} \\
+    \textsc{d.} & \didobf{Μούσαις} & \didobf{ταῖς} & \didobf{μακραῖς} & \didobf{γεφύραις} & \didobf{ἁμάξαις}  \\
+	\textsc{a.} & \didobf{Μούσᾱς} & \didobf{τὰς}  & \didobf{μακρὰς}  & \didobf{γεφύρᾱς}  & \didobf{ἁμάξᾱς} \\
     %\bottomrule
   \end{tabular}
   \label{tab:normaltab}
@@ -220,7 +219,7 @@ a meno che la \textbf{ᾰ} non sia preceduta da \textbf{ε, ι} o \textbf{ρ}.
 
 \newthought{Esercizio}
 \begin{itemize}
-\item[\textsc{1.}] In \textbf{Μοῦσα, γέφῡρα, ἅμαξα,} osserva e spiega i cambiamenti degli accenti. 
+\item[\textsc{1.}] In \didobf{Μοῦσα, γέφῡρα, ἅμαξα}, osserva e spiega i cambiamenti degli accenti. 
 \end{itemize}
 
 \newpage
@@ -228,32 +227,30 @@ a meno che la \textbf{ᾰ} non sia preceduta da \textbf{ε, ι} o \textbf{ρ}.
 \newthought{99. Vocabolario}
 
 \begin{multicols}{2}
-    \noindent \hangindent=1em \textbf{ἅμαξα, ἡ} \textit{carro}.  \\
-    \noindent \hangindent=1em \textbf{βασίλεια, ἡ} \textit{regina}.  \\
-    \noindent \hangindent=1em \textbf{γέφῡρα, ἡ} \textit{ponte}.  \\
-    \noindent \hangindent=1em \textbf{θηρίον, τό} \textit{animale selvaggio}.  \\
-    \noindent \hangindent=1em \textbf{θύρᾱ, ἡ} \textit{porta}.  \\
-    \noindent \hangindent=1em \textbf{λόγχη, ἡ} \textit{lancia}.  \\
-    \noindent \hangindent=1em \textbf{μάχαιρα, ἡ} \textit{spada}.  \\
-    \noindent \hangindent=1em \textbf{Μοῦσα, ἡ} \textit{Musa}.  \\
+    \noindent \hangindent=1em \didobf{ἅμαξα, ἡ} \textit{carro}.  \\
+    \noindent \hangindent=1em \didobf{βασίλεια, ἡ} \textit{regina}.  \\
+    \noindent \hangindent=1em \didobf{γέφῡρα, ἡ} \textit{ponte}.  \\
+    \noindent \hangindent=1em \didobf{θηρίον, τό} \textit{animale selvaggio}.  \\
+    \noindent \hangindent=1em \didobf{θύρᾱ, ἡ} \textit{porta}.  \\
+    \noindent \hangindent=1em \didobf{λόγχη, ἡ} \textit{lancia}.  \\
+    \noindent \hangindent=1em \didobf{μάχαιρα, ἡ} \textit{spada}.  \\
+    \noindent \hangindent=1em \didobf{Μοῦσα, ἡ} \textit{Musa}.  \\
 	
-    \noindent \hangindent=1em \textbf{ὁδός, ἡ} \textit{via, strada, marcia}.  \\
-    \noindent \hangindent=1em \textbf{πηγή, ἡ} \textit{primavera,} pl. \textit{fonte}.  \\
+    \noindent \hangindent=1em \didobf{ὁδός, ἡ} \textit{via, strada, marcia}.  \\
+    \noindent \hangindent=1em \didobf{πηγή, ἡ} \textit{primavera,} pl. \textit{fonte}.  \\
 	
-	\noindent \hangindent=1em \textbf{διώκω,} fut. \textbf{διώξω,} 
-	aor. \textbf{ἐδιώξα,} \textit{inseguire}. \\ 
-	\noindent \hangindent=1em \textbf{θηρεύω,} fut. \textbf{θηρεύσω,} 
-	aor. \textbf{ἐθήρευσα,} \textit{cacciare}. \\ 
+	\noindent \hangindent=1em \didobf{διώκω}, fut. \didobf{διώξω}, aor. \didobf{ἐδιώξα}, \textit{inseguire}. \\ 
+	\noindent \hangindent=1em \didobf{θηρεύω}, fut. \didobf{θηρεύσω}, aor. \didobf{ἐθήρευσα}, \textit{cacciare}. \\ 
 	
-    \noindent \hangindent=1em \textbf{ταχέως,} avv.,\textit{velocemente}.  \\
-	\noindent \hangindent=1em \textbf{διά,} prep. con \gen \textit{attraverso}; con \acc \textit{a quale scopo}.  \\
+    \noindent \hangindent=1em \didobf{ταχέως}, avv.,\textit{velocemente}.  \\
+	\noindent \hangindent=1em \didobf{διά}, prep. con \gen \textit{attraverso}; con \acc \textit{a quale scopo}.  \\
 	
 \end{multicols}
 
 \newthought{Osservazione}
 \begin{itemize}
 \item[\textsc{1.}] Per indicare il genere del nome, si usa normalmente scriverlo con l'articolo.
-In questo modo \textbf{ὁδός, ἡ} mostra che \textbf{ὁδός} è femminile. 
+In questo modo \didobf{ὁδός, ἡ} mostra che \didobf{ὁδός} è femminile. 
 \end{itemize}
 
 \newthought{100. Traduci:}

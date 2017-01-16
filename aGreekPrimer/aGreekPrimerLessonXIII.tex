@@ -55,14 +55,15 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
-\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
+\newfontfamily\GFSDidotBf[Path=./fonts/GFS_Didot/]{GFSDidotBold.ttf}
+\newfontfamily\GFSDidot[Path=./fonts/GFS_Didot/]{GFSDidot.ttf}
 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
-% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
-% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+\newcommand{\didobf}[1]{{\GFSDidotBf #1}}
+\newcommand{\dido}[1]{{\GFSDidot #1}}
+
 
 \usepackage{lipsum}
 \usepackage{url}
@@ -169,8 +170,7 @@
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione XIII - Il periodo ipotetico).}
 
-\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
-}
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities}
 
 \date{10 Gennajo 2017} % without \date command, current date is supplied
 
@@ -179,7 +179,7 @@
 
 \maketitle% this prints the handout title, author, and date
 
-\begin{marginfigure}[-3.0cm]
+\begin{marginfigure}[-2.0cm]
 \includegraphics{smallthumb-lesson_XIII.jpeg}
 \setfloatalignment{b}
 \end{marginfigure}
@@ -207,44 +207,44 @@ Lezione XIII: introduzione al periodo ipotetico, vocabolario, esercizi, lettura.
 Una supposizione particolare si riferisce a un'azione \textit{definita,} che accada in un tempo \textit{definito.}
 Una supposizione generale si riferisce indefinitamente a \textit{ogni azione}, che capiti \textit{in ogni tempo.}
 
-\newthought{155.} Come avverbio di negazione, nella protasi si usa solitamente \textbf{μή,} nell'apodosi si usa invece \textbf{οὐ.} 
+\newthought{155} Come avverbio di negazione, nella protasi si usa solitamente \didobf{μή}, nell'apodosi si usa invece \didobf{οὐ}. 
+
 
 \newthought{156. Periodo Ipotetico Modello} da imparare a memoria:
 \begin{itemize}
-\item[\textsc{a.}] \textbf{εἰ γὰρ ἑκών τοῦτο πράττω, μισθὸν ἕχω,} \textit{perché se faccio questa cosa volentieri, ho una ricompensa.}
-\item[\textsc{b.}] \textbf{εἰ τοῦτο ἔπραξε, καλῶς ἔχει,} \textit{se ha fatto questo, è bene.}
+\item[\textsc{a.}] \didobf{εἰ γὰρ ἑκών τοῦτο πράττω, μισθὸν ἕχω}, \textit{perché se faccio questa cosa volentieri, ho una ricompensa.}
+\item[\textsc{b.}] \didobf{εἰ τοῦτο ἔπραξε, καλῶς ἔχει}, \textit{se ha fatto questo, è bene.}
 \item[\textsc{1.}] Osserva che in nessuno di questi due periodi si dice se la conclusione venga o meno verificata.
 \item[\textsc{2.}] Osserva che i tempi verbali sono al modo indicativo in tutte e due le parti del periodo ipotetico.
 \end{itemize} 
 
 \newthought{157. Regola di sintassi} Quanto la protasi indica semplicemente una supposizione presente o passata, senza implicare nulla sulla riuscita
-della condizione, si usa l'indicativo con \textbf{εἰ}. Nell'apodosi può trovarsi ogni forma verbale, ma generalmente anch'essa è all'indicativo. 
+della condizione, si usa l'indicativo con \didobf{εἰ}. Nell'apodosi può trovarsi ogni forma verbale, ma generalmente anch'essa è all'indicativo. 
 
-\newpage
 
 \newthought{158. Vocabolario}
 
 \begin{multicols}{2}
-    \noindent \hangindent=1em \textbf{μισθός, ὁ} \textit{salario, paga}.  \\
-    \noindent \hangindent=1em \textbf{νόμος, ὁ} \textit{legge, costume}.  \\
-    \noindent \hangindent=1em \textbf{ὁπλίτης, ὁ} \textit{oplite, fante (armato in modo) pesante}.  \\
-    \noindent \hangindent=1em \textbf{ὅπλον, τό} \textit{scudo;} pl. \textit{armi}.  \\
-    \noindent \hangindent=1em \textbf{παρασάγγης, ὁ} \textit{parasango}, misura persiana di distanza, circa 7 Km.  \\
-    \noindent \hangindent=1em \textbf{πελταστής, ὁ} \textit{peltasta, fante (armato in modo) leggero}.  \\
-    \noindent \hangindent=1em \textbf{πέλτη, ἡ} \textit{scudo, bersaglio}.  \\
-    \noindent \hangindent=1em \textbf{στρατιά, ἡ} \textit{esercito, armata}.  \\
+    \noindent \hangindent=1em \didobf{μισθός, ὁ} \textit{salario, paga}.  \\
+    \noindent \hangindent=1em \didobf{νόμος, ὁ} \textit{legge, costume}.  \\
+    \noindent \hangindent=1em \didobf{ὁπλίτης, ὁ} \textit{oplite, fante (armato in modo) pesante}.  \\
+    \noindent \hangindent=1em \didobf{ὅπλον, τό} \textit{scudo;} pl. \textit{armi}.  \\
+    \noindent \hangindent=1em \didobf{παρασάγγης, ὁ} \textit{parasango}, misura persiana di distanza, circa 7 Km.  \\
+    \noindent \hangindent=1em \didobf{πελταστής, ὁ} \textit{peltasta, fante (armato in modo) leggero}.  \\
+    \noindent \hangindent=1em \didobf{πέλτη, ἡ} \textit{scudo, bersaglio}.  \\
+    \noindent \hangindent=1em \didobf{στρατιά, ἡ} \textit{esercito, armata}.  \\
     
-	\noindent \hangindent=1em \textbf{ἱκανός, ή, όν} agg. \textit{sufficiente, capace}.  \\
-	\noindent \hangindent=1em \textbf{ὀλίγος, η, ον} agg.  \textit{poco numeroso, pochi}.  \\
+	\noindent \hangindent=1em \didobf{ἱκανός, ή, όν} agg. \textit{sufficiente, capace}.  \\
+	\noindent \hangindent=1em \didobf{ὀλίγος, η, ον} agg.  \textit{poco numeroso, pochi}.  \\
 	
-	\noindent \hangindent=1em \textbf{ἐξ-ελαύνω,} aor. \textbf{-ήλασα,} \textit{marciare indietro, marciare}. \\ 
-	\noindent \hangindent=1em \textbf{εἰ} cong. \textit{se}.  \\
+	\noindent \hangindent=1em \didobf{ἐξ-ελαύνω,} aor. \textbf{-ήλασα,} \textit{marciare indietro, marciare}. \\ 
+	\noindent \hangindent=1em \didobf{εἰ} cong. \textit{se}.  \\
 	
-	\noindent \hangindent=1em \textbf{ἐνταῦθα} avv. \textit{là, a quel punto}.  \\
-	\noindent \hangindent=1em \textbf{ἐντεῦθεν} avv. \textit{da quel posto, quinci}.  \\
+	\noindent \hangindent=1em \didobf{ἐνταῦθα} avv. \textit{là, a quel punto}.  \\
+	\noindent \hangindent=1em \didobf{ἐντεῦθεν} avv. \textit{da quel posto, quinci}.  \\
 	
-	\noindent \hangindent=1em \textbf{καλῶς,} avv. \textit{bene}  \textbf{καλῶς ἔχω,} avv. \textit{sto bene} \\
-	\noindent \hangindent=1em \textbf{μή} avv.neg. \textit{non}.
+	\noindent \hangindent=1em \didobf{καλῶς,} avv. \textit{bene}  \textbf{καλῶς ἔχω,} avv. \textit{sto bene} \\
+	\noindent \hangindent=1em \didobf{μή} avv.neg. \textit{non}.
 	
 \end{multicols}
 
@@ -252,17 +252,17 @@ della condizione, si usa l'indicativo con \textbf{εἰ}. Nell'apodosi può trov
 
 
 \newthought{159. Traduci:}
-\textsc{1.}~ὁ ἄγγελος, εἰ ἔπαιε τὸν κακὸν δοῦλον, δίκαιος ἦν. \quad
-\textsc{2.}~εἰ ὁ στρατηγὸς ἔφυγεν, οὐκ ἀγαθὸς ἦν μάχην. \quad
-\textsc{3.}~ἐπεὶ γὰρ δείλη ἦν, οἱ πολέμιοι ἔλιπον τὰς σκηνάς. \quad
-\textsc{4.}~ἐντεῦθεν ἐξ-ελαύνει δέκα παρασάγγης εἰς πεδίον καλόν. \quad
-\textsc{5.}~ἐνταῦθα δὲ πολλὰς ἠμέρας ἔθυεν ἡ στρατιὰ καὶ θεοῖς καὶ θεαῖς. \quad
-\textsc{6.}~οἱ σοφοὶ ἄνθρωποι τῆς κώμης γεγράφασι νόμους ἀγαθούς. \quad
-\textsc{7.}~ὀλίγοι δὲ νεανίαι τῶν Περσῶν ἔπιον τὸν οἶνον. \quad
-\textsc{8.}~ἱκανός γὰρ ἦν ὀ μαθητὴς δῶρα πέμπειν τῇ βασιλειᾳ. \quad
-\textsc{9.}~ἐν τῷ φοβερῷ πολέμῳ οἱ στρατιῶται ἐδίωξαν τοὺς Πέρσας εἰς τὴν θάλατταν. \quad
-\textsc{10.}~τῶν μὲν\sidenote{quando due parti di un periodo si corrispondono simmetricamente, si usano \textbf{μέν} e \textbf{δέ}; 
-\textbf{μέν,} meglio lasciarlo non tradotto, indica che una seconda frase seguirà a quella dove compare. Le due parti sono spesso in contrapposizione.} ὀπλιτῶν τὰ ὅπλα λόγχαι ἦσαν καὶ μάχαιραι· οἱ δὲ πελτασταὶ εἶχον πέλτας μικράς.
+\textsc{1.}~\dido{ὁ ἄγγελος, εἰ ἔπαιε τὸν κακὸν δοῦλον, δίκαιος ἦν.} \quad
+\textsc{2.}~\dido{εἰ ὁ στρατηγὸς ἔφυγεν, οὐκ ἀγαθὸς ἦν μάχην.} \quad
+\textsc{3.}~\dido{ἐπεὶ γὰρ δείλη ἦν, οἱ πολέμιοι ἔλιπον τὰς σκηνάς.} \quad
+\textsc{4.}~\dido{ἐντεῦθεν ἐξ-ελαύνει δέκα παρασάγγης εἰς πεδίον καλόν.} \quad
+\textsc{5.}~\dido{ἐνταῦθα δὲ πολλὰς ἠμέρας ἔθυεν ἡ στρατιὰ καὶ θεοῖς καὶ θεαῖς.} \quad
+\textsc{6.}~\dido{οἱ σοφοὶ ἄνθρωποι τῆς κώμης γεγράφασι νόμους ἀγαθούς.} \quad
+\textsc{7.}~\dido{ὀλίγοι δὲ νεανίαι τῶν Περσῶν ἔπιον τὸν οἶνον.} \quad
+\textsc{8.}~\dido{ἱκανός γὰρ ἦν ὀ μαθητὴς δῶρα πέμπειν τῇ βασιλειᾳ.} \quad
+\textsc{9.}~\dido{ἐν τῷ φοβερῷ πολέμῳ οἱ στρατιῶται ἐδίωξαν τοὺς Πέρσας εἰς τὴν θάλατταν.} \quad
+\textsc{10.}~\dido{τῶν μὲν\sidenote{quando due parti di un periodo si corrispondono simmetricamente, si usano \didobf{μέν} e \didobf{δέ}; 
+\textbf{μέν,} meglio lasciarlo non tradotto, indica che una seconda frase seguirà a quella dove compare. Le due parti sono spesso in contrapposizione.} ὀπλιτῶν τὰ ὅπλα λόγχαι ἦσαν καὶ μάχαιραι· οἱ δὲ πελτασταὶ εἶχον πέλτας μικράς.}
 
 \newthought{160. Scrivi in Greco:}
 \textsc{1.}~Se non lo hai ordinato, non porteremo i regali. \quad

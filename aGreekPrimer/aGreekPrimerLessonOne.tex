@@ -46,14 +46,14 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
-\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
+\newfontfamily\GFSDidotBf[Path=./fonts/GFS_Didot/]{GFSDidotBold.ttf}
+\newfontfamily\GFSDidot[Path=./fonts/GFS_Didot/]{GFSDidot.ttf}
 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
-% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
-% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+\newcommand{\didobf}[1]{{\GFSDidotBf #1}}
+\newcommand{\dido}[1]{{\GFSDidot #1}}
 
 \usepackage{lipsum}
 \usepackage{url}
@@ -146,8 +146,7 @@
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione I - Verbi: introduzione, il Presente Indicativo Attivo.}
 
-\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
-}
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities}
 
 \date{27 Dicembre 2016} % without \date command, current date is supplied
 
@@ -188,7 +187,7 @@ o a proprio vantaggio\sidenote{3 diatesi.}.
 \newthought{39. Modo.} Ci sono quattro modi finiti o propri: 
 indicativo, congiuntivo, ottativo e imperativo. 
 Ci sono anche infiniti e participi, come in latino, 
-e aggettivi verbali in \textbf{-τος} e \textbf{-τέος} 
+e aggettivi verbali in \didobf{-τος} e \didobf{-τέος} 
 \sidenote{4 modi finiti, 2 forme nominali.}.
 
 \newthought{40. Tempo.} Ci sono sette tempi: presente, futuro, perfetto, 
@@ -199,9 +198,9 @@ gli altri \textsc{tempi secondari}
 Non tutti i tempi si coniugano in tutti i modi.}.
 
 \newthought{41.} L' \textsc{Aoristo} indicativo corrisponde al perfetto storico 
-latino, come in \textbf{ἔλυσε}, \textit{egli sciolse}; 
+latino, come in \didobf{ἔλυσε}, \textit{egli sciolse}; 
 il perfetto al passato prossimo italiano, o al perfetto definito latino, 
-come in \textbf{λέλυκε}, \textit{egli ha sciolto}.
+come in \didobf{λέλυκε}, \textit{egli ha sciolto}.
 
 \newthought{42. Numero.} Ci sono tre numeri: singolare e plurale, 
 come in latino, e il duale, che indica due oggetti
@@ -222,16 +221,16 @@ come in latino, e il duale, che indica due oggetti
   \begin{tabular}{l l l l l l l}
     %\toprule
 	\multicolumn{7}{c}{\textsc{coniugazione del presente indicativo attivo}} \\
-	 & \multicolumn{3}{c}{\textbf{λύω}, \textit{sciogliere, distruggere}} & \multicolumn{3}{c}{\textbf{ἄγω}, \textit{condurre, portare}} \\
+	 & \multicolumn{3}{c}{\didobf{λύω}, \textit{sciogliere, distruggere}} & \multicolumn{3}{c}{\didobf{ἄγω}, \textit{condurre, portare}} \\
     %\midrule
 	& \multicolumn{6}{c}{\textsc{singolare}} \\
-    \textsc{1.} & \textbf{λύ-ω}   & lu-o  & \textit{io sciolgo}    & \textbf{ἄγ-ω}   & ag-o  & \textit{io conduco}  \\
-    \textsc{2.} & \textbf{λύ-εις} & lu-is & \textit{tu sciogli}    & \textbf{ἄγ-εις} & ag-is & \textit{tu conduci}  \\
-    \textsc{3.} & \textbf{λύ-ει}  & lu-it & \textit{egli scioglie} & \textbf{ἄγ-ει}  & ag-it & \textit{egli conduce}  \\
+    \textsc{1.} & \didobf{λύ-ω}   & lu-o  & \textit{io sciolgo}    & \didobf{ἄγ-ω}   & ag-o  & \textit{io conduco}  \\
+    \textsc{2.} & \didobf{λύ-εις} & lu-is & \textit{tu sciogli}    & \didobf{ἄγ-εις} & ag-is & \textit{tu conduci}  \\
+    \textsc{3.} & \didobf{λύ-ει}  & lu-it & \textit{egli scioglie} & \didobf{ἄγ-ει}  & ag-it & \textit{egli conduce}  \\
 	 & \multicolumn{6}{c}{\textsc{plurale}} \\
-	\textsc{1.} & \textbf{λύ-ομεν} & lu-imus & \textit{noi sciogliamo} & \textbf{ἄγ-ομεν} & ag-imus & \textit{noi conduciamo}  \\
-    \textsc{2.} & \textbf{λύ-ετε}  & lu-itis & \textit{voi sciogliete} & \textbf{ἄγ-ετε}  & ag-itis & \textit{voi conducete}  \\
-    \textsc{3.} & \textbf{λύ-ουσι} & lu-unt & \textit{essi sciolgono} & \textbf{ἄγ-ουσι} & ag-unt & \textit{essi conducono}  \\
+	\textsc{1.} & \didobf{λύ-ομεν} & lu-imus & \textit{noi sciogliamo} & \didobf{ἄγ-ομεν} & ag-imus & \textit{noi conduciamo}  \\
+    \textsc{2.} & \didobf{λύ-ετε}  & lu-itis & \textit{voi sciogliete} & \didobf{ἄγ-ετε}  & ag-itis & \textit{voi conducete}  \\
+    \textsc{3.} & \didobf{λύ-ουσι} & lu-unt & \textit{essi sciolgono} & \didobf{ἄγ-ουσι} & ag-unt & \textit{essi conducono}  \\
     %\bottomrule
   \end{tabular}
   \caption{λύω, ἄγω: presente indicativo attivo}
@@ -244,23 +243,23 @@ come in latino, e il duale, che indica due oggetti
 \begin{itemize}
 \item[\textsc{1.}] La sillaba λύ- appare in tutte le flessioni. Questa è la \textit{radice verbale} o \textit{tema}.  
 \item[\textsc{2.}] Confronta le terminazioni del verbo greco con quelle del latino \textit{luo, -is} e osserva le somiglianze.
-\item[\textsc{3.}] Le terminazioni greche del presente (tempo primario) indicativo sono fatte dalla cosiddetta \textit{vocale variabile} \textbf{ο} o \textbf{ε} 
-(che può essere indicata come \textbf{-ο/-ε}) e le \textit{desinenze personali (dei tempi primari)}
+\item[\textsc{3.}] Le terminazioni greche del presente (tempo primario) indicativo sono fatte dalla cosiddetta \textit{vocale variabile} \didobf{ο} o \didobf{ε} 
+(che può essere indicata come \didobf{-ο/-ε}) e le \textit{desinenze personali (dei tempi primari)}
 
 \begin{table}[!htbp]
   \centering
   \begin{tabular}{l c l}
     \textsc{singolare} & \hspace{10 mm} & \textsc{plurale} \\
-    \textbf{[μι]} & \hspace{10 mm} & \textbf{μεν} \\
-    \textbf{σ[ι]} & \hspace{10 mm} & \textbf{τε} \\
-    \textbf{[τι(σι)]}  & \hspace{10 mm} & \textbf{(ν)σι}  \\
+    \didobf{[μι]} & \hspace{10 mm} & \didobf{μεν} \\
+    \didobf{σ[ι]} & \hspace{10 mm} & \didobf{τε} \\
+    \didobf{[τι(σι)]}  & \hspace{10 mm} & \didobf{(ν)σι}  \\
 	
   \end{tabular}
   \caption{desinenze personali dei tempi primari}
   \label{tab:normaltab}
   %\zsavepos{pos:normaltab}
 \end{table}
-La vocale variabile è \textbf{ο} prima di \textbf{μ} ο \textbf{ν}, altrimenti è \textbf{ε}.
+La vocale variabile è \didobf{ο} prima di \didobf{μ} ο \didobf{ν}, altrimenti è \didobf{ε}.
 
 \end{itemize}
 
@@ -270,9 +269,9 @@ La vocale variabile è \textbf{ο} prima di \textbf{μ} ο \textbf{ν}, altrimen
   \centering
   \begin{tabular}{l c l}
     
-    \textbf{βάλλω,} \textit{getto, lancio} & \hspace{10 mm} & \textbf{μένω,} \textit{rimango} \\
-    \textbf{γράφω,} \textit{scrivo} & \hspace{10 mm} & \textbf{πέμπω,} \textit{mando} \\
-    \textbf{ἔχω,} \textit{ho, tengo} & \hspace{10 mm} & \textbf{φεύγω,} \textit{fuggo} \\
+    \didobf{βάλλω}, \textit{getto, lancio} & \hspace{10 mm} & \didobf{μένω}, \textit{rimango} \\
+    \didobf{γράφω}, \textit{scrivo} & \hspace{10 mm} & \didobf{πέμπω}, \textit{mando} \\
+    \didobf{ἔχω}, \textit{ho, tengo} & \hspace{10 mm} & \didobf{φεύγω}, \textit{fuggo} \\
 	
   \end{tabular}
   \caption{verbi comuni, presente indicativo attivo}
@@ -281,14 +280,14 @@ La vocale variabile è \textbf{ο} prima di \textbf{μ} ο \textbf{ν}, altrimen
 \end{table}
 
 \newthought{47. Leggi e traduci:}
-\textsc{1.}~ἄγεις, βάλλει. \quad  
-\textsc{2.}~φεύγομεν, ἔχετε. \quad
-\textsc{3.}~ἄγουσι, πέμπω. \quad
-\textsc{4.}~φεύγετε, γράφουσι. \quad
-\textsc{5.}~βάλλεις, ἔχομεν. \quad
-\textsc{6.}~ἔχεις, πέμπουσι. \quad
-\textsc{7.}~γράφετε, μένει. \quad
-\textsc{8.}~λύει, ἔχει, ἄγεις.
+\textsc{1.}~\dido{ἄγεις, βάλλει.} \quad  
+\textsc{2.}~\dido{φεύγομεν, ἔχετε.} \quad
+\textsc{3.}~\dido{ἄγουσι, πέμπω.} \quad
+\textsc{4.}~\dido{φεύγετε, γράφουσι.} \quad
+\textsc{5.}~\dido{βάλλεις, ἔχομεν.} \quad
+\textsc{6.}~\dido{ἔχεις, πέμπουσι.} \quad
+\textsc{7.}~\dido{γράφετε, μένει.} \quad
+\textsc{8.}~\dido{λύει, ἔχει, ἄγεις.}
 
 
 \newthought{48. Scrivi in greco, con accento e spirito:} 

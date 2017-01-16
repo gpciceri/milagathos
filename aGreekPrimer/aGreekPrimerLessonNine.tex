@@ -52,14 +52,14 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
-\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
+\newfontfamily\GFSDidotBf[Path=./fonts/GFS_Didot/]{GFSDidotBold.ttf}
+\newfontfamily\GFSDidot[Path=./fonts/GFS_Didot/]{GFSDidot.ttf}
 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
-% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
-% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+\newcommand{\didobf}[1]{{\GFSDidotBf #1}}
+\newcommand{\dido}[1]{{\GFSDidot #1}}
 
 \usepackage{lipsum}
 \usepackage{url}
@@ -152,8 +152,7 @@
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione IX - Regole di sintassi comuni a Latino e Greco.}
 
-\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
-}
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities}
 
 \date{5 Gennajo 2017} % without \date command, current date is supplied
 
@@ -212,7 +211,7 @@ possono avere un predicato in accusativo in aggiunta al complemento oggetto.
 
 \newthought{114. Dativo e verbi intransitivi.} Il dativo viene usato dopo certi verbi intransitivi che significano servire, credere, piacere, giovare, obbedire (e i loro opposti).
 
-\newthought{115. Dativo di Possesso.} Il dativo è usato dopo \textbf{εἰμί,} \textit{il verbo essere} per indicare il possessore del soggetto della frase.
+\newthought{115. Dativo di Possesso.} Il dativo è usato dopo \didobf{εἰμί}, \textit{il verbo essere} per indicare il possessore del soggetto della frase.
 
 \newthought{116.} Il dativo è usato con parole che implicano piacere, vicinanza ed approccio.
 
@@ -221,54 +220,48 @@ possono avere un predicato in accusativo in aggiunta al complemento oggetto.
 \newthought{118. Vocabolario}
 
 \begin{multicols}{2}
-    \noindent \hangindent=1em \textbf{βῖκος, ὁ} \textit{vaso, giara}.  \\
-    \noindent \hangindent=1em \textbf{βωμός, ὁ} \textit{altare}.  \\
-    \noindent \hangindent=1em \textbf{δένδρον, τό} \textit{albero}.  \\
-    \noindent \hangindent=1em \textbf{θάλαττα, ἡ} \textit{mare}.  \\
-    \noindent \hangindent=1em \textbf{θεά, ἡ} \textit{dea}.  \\
-    \noindent \hangindent=1em \textbf{καπηλεῖον, τό} \textit{taverna}.  \\
-    \noindent \hangindent=1em \textbf{κόγχη, ἡ} \textit{guscio}.  \\
-    \noindent \hangindent=1em \textbf{νἰκε, ἡ} \textit{vittoria}.  \\
-    \noindent \hangindent=1em \textbf{οῖνος, ὁ} \textit{vino}.  \\
-    \noindent \hangindent=1em \textbf{πέτρᾱ, ἡ} \textit{roccia}.  \\
-    \noindent \hangindent=1em \textbf{πλέθρον, τό} \textit{plethrum,} misura di distanza (circa 30 mt.).  \\
-    \noindent \hangindent=1em \textbf{στολή, ἡ} \textit{abito}.  \\
+    \noindent \hangindent=1em \didobf{βῖκος, ὁ} \textit{vaso, giara}.  \\
+    \noindent \hangindent=1em \didobf{βωμός, ὁ} \textit{altare}.  \\
+    \noindent \hangindent=1em \didobf{δένδρον, τό} \textit{albero}.  \\
+    \noindent \hangindent=1em \didobf{θάλαττα, ἡ} \textit{mare}.  \\
+    \noindent \hangindent=1em \didobf{θεά, ἡ} \textit{dea}.  \\
+    \noindent \hangindent=1em \didobf{καπηλεῖον, τό} \textit{taverna}.  \\
+    \noindent \hangindent=1em \didobf{κόγχη, ἡ} \textit{guscio}.  \\
+    \noindent \hangindent=1em \didobf{νἰκε, ἡ} \textit{vittoria}.  \\
+    \noindent \hangindent=1em \didobf{οῖνος, ὁ} \textit{vino}.  \\
+    \noindent \hangindent=1em \didobf{πέτρᾱ, ἡ} \textit{roccia}.  \\
+    \noindent \hangindent=1em \didobf{πλέθρον, τό} \textit{plethrum,} misura di distanza (circa 30 mt.).  \\
+    \noindent \hangindent=1em \didobf{στολή, ἡ} \textit{abito}.  \\
     
-	\noindent \hangindent=1em \textbf{λαμβάνω,} aor. \textbf{ἔλαβον,} \textit{prendere}. \\ 
-	\noindent \hangindent=1em \textbf{πίνω,} aor. \textbf{ἔπιον,} \textit{bere}. \\ 
+	\noindent \hangindent=1em \didobf{λαμβάνω}, aor. \didobf{ἔλαβον}, \textit{prendere}. \\ 
+	\noindent \hangindent=1em \didobf{πίνω}, aor. \didobf{ἔπιον}, \textit{bere}. \\ 
 
-	\noindent \hangindent=1em \textbf{παρά,} prep. 
+	\noindent \hangindent=1em \didobf{παρά}, prep. 
 	con \gen \textit{da, dal lato di}; 
 	con \dat \textit{vicino a, al lato di}; 
 	con \acc \textit{a, verso il lato di}.  \\
 	
 \end{multicols}
 
-\newthought{Osservazione}
-\begin{itemize}
-\item[\textsc{1.}] Per indicare il genere del nome, si usa normalmente scriverlo con l'articolo.
-In questo modo \textbf{ὁδός, ἡ} mostra che \textbf{ὁδός} è femminile. 
-\end{itemize}
-
 \newthought{119. Traduci:}
-\textsc{1.}~ἐδίωξε δέκα πλέθρα. \quad
-\textsc{2.}~πέντε τῶν οἰκιῶν. \quad
-\textsc{3.}~τῷ ἀγγέλῳ ἦν υἱός. \quad
-\textsc{4.}~τήν τῆς βασιλείας χώραν. \quad
-\textsc{5.}~οἱ ἀνθρώπων δικαίων λόγοι. \quad
-\textsc{6.}~φοβερῶν μαχῶν.
+\textsc{1.}~\dido{ἐδίωξε δέκα πλέθρα.} \quad
+\textsc{2.}~\dido{πέντε τῶν οἰκιῶν.} \quad
+\textsc{3.}~\dido{τῷ ἀγγέλῳ ἦν υἱός.} \quad
+\textsc{4.}~\dido{τήν τῆς βασιλείας χώραν.} \quad
+\textsc{5.}~\dido{οἱ ἀνθρώπων δικαίων λόγοι.} \quad
+\textsc{6.}~\dido{φοβερῶν μαχῶν.}
 
 \newthought{120.}
-\textsc{1.}~τὸ δὲ παιδίον ἐπιστολὴν ἔπεμψε τῷ ἀδελφῳ. \quad
-\textsc{2.}~κελεύσει δὲ τὸν ἀδελφὸν πένειν ἐν τῇ κώμῃ. \quad
-\textsc{3.}~ἐν γὰρ τῇ ὁδῷ ἔλαβον πέντε βίκους μικρούς. \quad
-\textsc{4.}~καὶ ἤγαγον τοὺς βίκους παρά τὰς σκηνάς. \quad
-\textsc{5.}~ἐν δὲ τοῖς καπηλείοις οἱ δοῦλοι ἔπιμον οἶνον. \quad
-\textsc{6.}~ἐπὶ τῇ θαλάττῃ ἦσαν πέτραι καὶ δένδρα μακρά. \quad
-\textsc{7.}~ἦσαν δὲ καὶ καλαὶ κόγχαι καὶ λίθοι καλοί. \quad
-\textsc{8.}~ηὖρε δὲω ὁ ἄγγελος παρὰ τῷ βωμῷ στολὰς καὶ ἱμάτια. \quad
-\textsc{9.}~ἔλιπε τὰς ἁμάξας παρά τῇ θύρᾳ τοῦ ἱεροῦ. \quad
-\textsc{10.}~διώξομεν γὰρ τὰ θηρία εἰς τὸ πεδίον.
+\textsc{1.}~\dido{τὸ δὲ παιδίον ἐπιστολὴν ἔπεμψε τῷ ἀδελφῳ.} \quad
+\textsc{2.}~\dido{κελεύσει δὲ τὸν ἀδελφὸν πένειν ἐν τῇ κώμῃ.} \quad
+\textsc{3.}~\dido{ἐν γὰρ τῇ ὁδῷ ἔλαβον πέντε βίκους μικρούς.} \quad
+\textsc{4.}~\dido{καὶ ἤγαγον τοὺς βίκους παρά τὰς σκηνάς.} \quad
+\textsc{5.}~\dido{ἐν δὲ τοῖς καπηλείοις οἱ δοῦλοι ἔπιμον οἶνον.} \quad
+\textsc{6.}~\dido{ἐπὶ τῇ θαλάττῃ ἦσαν πέτραι καὶ δένδρα μακρά.} \quad
+\textsc{7.}~\dido{ἦσαν δὲ καὶ καλαὶ κόγχαι καὶ λίθοι καλοί.} \quad
+\textsc{8.}~\dido{ηὖρε δὲω ὁ ἄγγελος παρὰ τῷ βωμῷ στολὰς καὶ ἱμάτια.} \quad
+\textsc{9.}~\dido{ἔλιπε τὰς ἁμάξας παρά τῇ θύρᾳ τοῦ ἱεροῦ.} \quad
+\textsc{10.}~\dido{διώξομεν γὰρ τὰ θηρία εἰς τὸ πεδίον.}
 
 
 \newthought{121. Scrivi in Greco:}

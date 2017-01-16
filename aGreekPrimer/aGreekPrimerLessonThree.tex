@@ -46,14 +46,14 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
-\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
+\newfontfamily\GFSDidotBf[Path=./fonts/GFS_Didot/]{GFSDidotBold.ttf}
+\newfontfamily\GFSDidot[Path=./fonts/GFS_Didot/]{GFSDidot.ttf}
 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
-% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
-% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+\newcommand{\didobf}[1]{{\GFSDidotBf #1}}
+\newcommand{\dido}[1]{{\GFSDidot #1}}
 
 \usepackage{lipsum}
 \usepackage{url}
@@ -146,8 +146,7 @@
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione III - Nomi: introduzione, la declinazione in O.}
 
-\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
-}
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities}
 
 \date{29 Dicembre 2016} % without \date command, current date is supplied
 
@@ -195,14 +194,14 @@ Anche la maggior parte dei nomi che indicano \textit{qualità} o \textit{condizi
 \newthought{58. Caso.} Il greco antico ha cinque casi: nominativo, genitivo, dativo, accusativo e vocativo
 \sidenote{5 casi. Gli usi dell'ablativo latino sono suddivisi tra genitivo e dativo.}.
  
-\newthought{59. Declinazione.} Ci sono tre declinazioni dei nomi: la declinazione in \textbf{O} o \textit{Seconda declinazione}, 
-la declinazione in \textbf{A} o \textit{Prima declinazione} 
+\newthought{59. Declinazione.} Ci sono tre declinazioni dei nomi: la declinazione in \didobf{O} o \textit{Seconda declinazione}, 
+la declinazione in \didobf{A} o \textit{Prima declinazione} 
 e la declinazione in \textbf{Consonante} o \textit{Terza declinazione}
 \sidenote{3 declinazioni.}.
 
-\newthought{60. La declinazione in O.} I temi dei nomi di questa declinazione finiscono in \textbf{ο}, qualche volta allungato in \textbf{ω}.
+\newthought{60. La declinazione in O.} I temi dei nomi di questa declinazione finiscono in \didobf{ο}, qualche volta allungato in \didobf{ω}.
  
-\newthought{61.} I nomi in \textbf{ος} sono di solito maschili, qualche volta femminili; i nomi in \textbf{ον} sono neutri.
+\newthought{61.} I nomi in \didobf{ος} sono di solito maschili, qualche volta femminili; i nomi in \didobf{ον} sono neutri.
 
 \newpage
 
@@ -214,22 +213,22 @@ e la declinazione in \textbf{Consonante} o \textit{Terza declinazione}
   \begin{tabular}{l l c l l l l}
     %\toprule
 	\multicolumn{7}{c}{\textsc{parole guida}} \\
-	\multicolumn{2}{c}{\textbf{δοῦλος,}}              & \textsc{nome latino}    & \textbf{λόγος},               & \multicolumn{3}{c}{\textbf{ὁ σοφός ἄνθρωπος},} \\
+	\multicolumn{2}{c}{\didobf{δοῦλος,}}              & \textsc{nome latino}    & \didobf{λόγος},               & \multicolumn{3}{c}{\didobf{ὁ σοφός ἄνθρωπος},} \\
 	\multicolumn{2}{c}{\textit{schiavo,} \textsc{m.}} & \textsc{corrispondente} & \textit{parola,} \textsc{m.}  & \multicolumn{3}{c}{\textit{l'uomo saggio}} \\
    
 	\multicolumn{7}{c}{\textsc{singolare}} \\
-    \textsc{n.} & \textbf{δοῦλος} & \textit{servus} & \textbf{λόγος} & \textbf{ὁ}   & \textbf{σοφὸς} & \textbf{ἄνθρωπος}  \\
-    \textsc{g.} & \textbf{δούλου} & \textit{servi}  & \textbf{λόγου} & \textbf{τοῦ} & \textbf{σοφοῦ} & \textbf{ἀνθρώπου}  \\
-    \textsc{d.} & \textbf{δούλῳ}  & \textit{servo}  & \textbf{λόγῳ}  & \textbf{τῷ}  & \textbf{σοφῷ}  & \textbf{ἀνθρώπῳ}  \\
-	\textsc{a.} & \textbf{δοῦλον} & \textit{servum} & \textbf{λόγον} & \textbf{τὸν} & \textbf{σοφὸν} & \textbf{ἄνθρωπον}  \\
-	\textsc{v.} & \textbf{δοῦλε}  & \textit{serve}  & \textbf{λόγε}  & \textemdash  & \textbf{σοφὲ}  & \textbf{ἄνθρωπε}  \\
+    \textsc{n.} & \didobf{δοῦλος} & \textit{servus} & \didobf{λόγος} & \didobf{ὁ}   & \didobf{σοφὸς} & \didobf{ἄνθρωπος}  \\
+    \textsc{g.} & \didobf{δούλου} & \textit{servi}  & \didobf{λόγου} & \didobf{τοῦ} & \didobf{σοφοῦ} & \didobf{ἀνθρώπου}  \\
+    \textsc{d.} & \didobf{δούλῳ}  & \textit{servo}  & \didobf{λόγῳ}  & \didobf{τῷ}  & \didobf{σοφῷ}  & \didobf{ἀνθρώπῳ}  \\
+	\textsc{a.} & \didobf{δοῦλον} & \textit{servum} & \didobf{λόγον} & \didobf{τὸν} & \didobf{σοφὸν} & \didobf{ἄνθρωπον}  \\
+	\textsc{v.} & \didobf{δοῦλε}  & \textit{serve}  & \didobf{λόγε}  & \textemdash  & \didobf{σοφὲ}  & \didobf{ἄνθρωπε}  \\
 	
 	\multicolumn{7}{c}{\textsc{plurale}} \\
-	\textsc{n.} & \textbf{δοῦλοι}  & \textit{servi}    & \textbf{λόγοι}  & \textbf{οἱ}   & \textbf{σοφοὶ}  & \textbf{ἄνθρωποι}  \\
-    \textsc{g.} & \textbf{δούλων}  & \textit{servorum} & \textbf{λόγων}  & \textbf{τῶν}  & \textbf{σοφῶν}  & \textbf{ἀνθρώπων}  \\
-    \textsc{d.} & \textbf{δούλοις} & \textit{servis}   & \textbf{λόγοις} & \textbf{τοὶς} & \textbf{σοφοῖς} & \textbf{ἀνθρώποις}  \\
-	\textsc{a.} & \textbf{δούλους} & \textit{servos}   & \textbf{λόγους} & \textbf{τούς} & \textbf{σοφοὺς} & \textbf{ἄνθρωπους}  \\
-	\textsc{v.} & \textbf{δοῦλοι}  & \textit{servi}   & \textbf{λόγοι}  & \textemdash   & \textbf{σοφοὶ}  & \textbf{ἄνθρωποι}  \\
+	\textsc{n.} & \didobf{δοῦλοι}  & \textit{servi}    & \didobf{λόγοι}  & \didobf{οἱ}   & \didobf{σοφοὶ}  & \didobf{ἄνθρωποι}  \\
+    \textsc{g.} & \didobf{δούλων}  & \textit{servorum} & \didobf{λόγων}  & \didobf{τῶν}  & \didobf{σοφῶν}  & \didobf{ἀνθρώπων}  \\
+    \textsc{d.} & \didobf{δούλοις} & \textit{servis}   & \didobf{λόγοις} & \didobf{τοὶς} & \didobf{σοφοῖς} & \didobf{ἀνθρώποις}  \\
+	\textsc{a.} & \didobf{δούλους} & \textit{servos}   & \didobf{λόγους} & \didobf{τούς} & \didobf{σοφοὺς} & \didobf{ἄνθρωπους}  \\
+	\textsc{v.} & \didobf{δοῦλοι}  & \textit{servi}   & \didobf{λόγοι}  & \textemdash   & \didobf{σοφοὶ}  & \didobf{ἄνθρωποι}  \\
     %\bottomrule
   \end{tabular}
   \label{tab:normaltab}
@@ -239,7 +238,7 @@ e la declinazione in \textbf{Consonante} o \textit{Terza declinazione}
 
 \newthought{Osservazioni}
 \begin{itemize}
-\item[\textsc{1.}] Nota le somiglianze tra le terminazioni di \textbf{δοῦλος} e \textit{servus}.  
+\item[\textsc{1.}] Nota le somiglianze tra le terminazioni di \didobf{δοῦλος} e \textit{servus}.  
 \item[\textsc{2.}] Osserva come l'articolo determinativo in greco sia declinato, e concordi con il nome a cui si riferisce come un aggettivo. 
 Non vi è articolo indeterminativo.
 \item[\textsc{3.}] Tieni ben presente le variazioni degli accenti, a partire dal caso nominativo, nelle parola guida declinate sopra.
@@ -251,29 +250,29 @@ Non vi è articolo indeterminativo.
 
 \begin{multicols}{2}
 
-    \noindent \hangindent=1em \textbf{ἄνθρωπος,} \textit{uomo}.  \\
-    \noindent \hangindent=1em \textbf{δοῦλος,} \textit{schiavo}.  \\
-	\noindent \hangindent=1em \textbf{ἵππος,} \textit{cavallo}.  \\
-	\noindent \hangindent=1em \textbf{λίθος,} \textit{pietra}.  \\
-	\noindent \hangindent=1em \textbf{λόγος,} \textit{parola, discorso}.  \\
-	\noindent \hangindent=1em \textbf{ποταμός,} \textit{fiume}.  \\
-	\noindent \hangindent=1em \textbf{υἱός,} \textit{figlio}.  \\
-	\noindent \hangindent=1em \textbf{ἀγαθός,} \textit{buono, virtuoso}.  \\
-	\noindent \hangindent=1em \textbf{καλός,} \textit{bello}.  \\
-	\noindent \hangindent=1em \textbf{σοφός,} \textit{saggio}.  \\
-	\noindent \hangindent=1em \textbf{εἰς,} \textit{in} prep. con acc.  \\
-	\noindent \hangindent=1em \textbf{ἦν, ἦσαν} \textit{era, erano}.  \\
+    \noindent \hangindent=1em \didobf{ἄνθρωπος}, \textit{uomo}.  \\
+    \noindent \hangindent=1em \didobf{δοῦλος}, \textit{schiavo}.  \\
+	\noindent \hangindent=1em \didobf{ἵππος}, \textit{cavallo}.  \\
+	\noindent \hangindent=1em \didobf{λίθος}, \textit{pietra}.  \\
+	\noindent \hangindent=1em \didobf{λόγος}, \textit{parola, discorso}.  \\
+	\noindent \hangindent=1em \didobf{ποταμός}, \textit{fiume}.  \\
+	\noindent \hangindent=1em \didobf{υἱός}, \textit{figlio}.  \\
+	\noindent \hangindent=1em \didobf{ἀγαθός}, \textit{buono, virtuoso}.  \\
+	\noindent \hangindent=1em \didobf{καλός}, \textit{bello}.  \\
+	\noindent \hangindent=1em \didobf{σοφός}, \textit{saggio}.  \\
+	\noindent \hangindent=1em \didobf{εἰς}, \textit{in} prep. con acc.  \\
+	\noindent \hangindent=1em \didobf{ἦν, ἦσαν}, \textit{era, erano}.  \\
 \end{multicols}
 
 \newthought{64. Leggi e traduci:}
-\textsc{1.}~λόγων σοφῶν, ἀνθρώπου ἀγαθοῦ. \quad
-\textsc{2.}~ὁ δοῦλος υἱὸν ἔχει σοφόν. \quad
-\textsc{3.}~ὁ τοῦ δούλον υἱὸς σοφὸς ἦν. \quad
-\textsc{4.}~λόγους δὲ σοφοὺς γράφει. \quad
-\textsc{5.}~οὐκ εἰς τόν ποταμὸν ἄγει τοὺσ ἵππους. \quad
-\textsc{6.}~παίεις τοὺς τοῦ δούλον υἱούς; \quad
-\textsc{7.}~πέμψομεν δὲ τῳ ἀνθρώπῳ ἵππους καλόυς. \quad
-\textsc{8.}~ἔχετε, λύομεν, γράφει, θύσουσι, λείψεις, ἁρπάζει.
+\textsc{1.}~\dido{λόγων σοφῶν, ἀνθρώπου ἀγαθοῦ.} \quad
+\textsc{2.}~\dido{ὁ δοῦλος υἱὸν ἔχει σοφόν.} \quad
+\textsc{3.}~\dido{ὁ τοῦ δούλον υἱὸς σοφὸς ἦν.} \quad
+\textsc{4.}~\dido{λόγους δὲ σοφοὺς γράφει.} \quad
+\textsc{5.}~\dido{οὐκ εἰς τόν ποταμὸν ἄγει τοὺσ ἵππους.} \quad
+\textsc{6.}~\dido{παίεις τοὺς τοῦ δούλον υἱούς;} \quad
+\textsc{7.}~\dido{πέμψομεν δὲ τῳ ἀνθρώπῳ ἵππους καλόυς.} \quad
+\textsc{8.}~\dido{ἔχετε, λύομεν, γράφει, θύσουσι, λείψεις, ἁρπάζει.}
 
 
 \hyphenation{sa-cri-fi-che-re-mo}

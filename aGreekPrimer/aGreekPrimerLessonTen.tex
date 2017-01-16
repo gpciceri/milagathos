@@ -52,14 +52,14 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
-\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
+\newfontfamily\GFSDidotBf[Path=./fonts/GFS_Didot/]{GFSDidotBold.ttf}
+\newfontfamily\GFSDidot[Path=./fonts/GFS_Didot/]{GFSDidot.ttf}
 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
-% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
-% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+\newcommand{\didobf}[1]{{\GFSDidotBf #1}}
+\newcommand{\dido}[1]{{\GFSDidot #1}}
 
 \usepackage{lipsum}
 \usepackage{url}
@@ -152,8 +152,7 @@
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione X - Perfetto e Piuccheperfetto Indicativo Attivo. Il raddoppiamento.}
 
-\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
-}
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities}
 
 \date{6 Gennajo 2017} % without \date command, current date is supplied
 
@@ -186,27 +185,28 @@ Lezione IX: Perfetto e Piuccheperfetto indicativo attivo, il raddoppiamento, voc
 
 \newthought{122.} Il tempi verbali perfetto e il piuccheperfetto presentano il raddoppiamento, che indica un'azione compiuta\sidenote{il raddoppiamento si trova in tutti i modi verbali, mentre l'aumento si trova solo all'indicativo}.
 
-\newthought{123.} Nella maggior parte dei verbi che iniziano \textit{con una singola consonante,} il raddoppiamento avviene mettendo come prefisso quella stessa consonante, seguita da \textbf{ε,} come in \textbf{λύω,} perfetto \textbf{λέ-λυκα,} \textit{ho sciolto}. 
-Ma se la consonante è una muta aspra (\textbf{φ, χ, θ}) per prefisso si prende la muta dolce corrispondente
-\sidenote{\textbf{φ} $\rightarrow$ \textbf{π;} \textbf{χ} $\rightarrow$ \textbf{κ;} \textbf{θ} $\rightarrow$ \textbf{τ,}} 
-come in \textbf{θύω,} perfetto \textbf{τέ-θυκα,} \textit{ho sacrificato}.
+\newthought{123.} Nella maggior parte dei verbi che iniziano \textit{con una singola consonante,} il raddoppiamento avviene 
+mettendo come prefisso quella stessa consonante, seguita da \didobf{ε}, come in \didobf{λύω}, perfetto \didobf{λέ-λυκα}, \textit{ho sciolto}. 
+Ma se la consonante è una muta aspra (\didobf{φ, χ, θ}) per prefisso si prende la muta dolce corrispondente
+\sidenote{\didobf{φ} $\rightarrow$ \didobf{π}; \didobf{χ} $\rightarrow$ \didobf{κ}; \didobf{θ} $\rightarrow$ \didobf{τ},} 
+come in \didobf{θύω}, perfetto \didobf{τέ-θυκα}, \textit{ho sacrificato}.
 
-\newthought{124.} I verbi che iniziano \textit{con due consonanti\sidenote{eccetto si tratti di una muta seguita da una liquida (\textbf{λ, μ, ν, ρ}).}, con una consonante doppia o con \textbf{ρ,}} presentano aumento sillabico al posto del raddoppiamento, 
-come in \textbf{ζητέω,} \textit{cercare,} perfetto \textbf{ἐ-ζήτηκα;}
-\textbf{στρατεύω,} \textit{fare una spedizione,} perfetto \textbf{ἐ-στράτεθκα;} 
-fa eccezione \textbf{γράφω,} perfetto \textbf{γέ-γραφα;}.
+\newthought{124.} I verbi che iniziano \textit{con due consonanti\sidenote{eccetto si tratti di una muta seguita da una liquida (\didobf{λ, μ, ν, ρ}).}, con una consonante doppia o con \didobf{ρ},} presentano aumento sillabico al posto del raddoppiamento, 
+come in \didobf{ζητέω}, \textit{cercare,} perfetto \didobf{ἐ-ζήτηκα};
+\didobf{στρατεύω}, \textit{fare una spedizione,} perfetto \didobf{ἐ-στράτεθκα}; 
+fa eccezione \didobf{γράφω}, perfetto \didobf{γέ-γραφα}.
 \newthought{Osservazione}
 \begin{itemize}
-\item[\textsc{1.}] Tutti i verbi che iniziano per \textbf{ρ,} raddoppiano questa lettera nel prefisso dell'aumento sillabico, come in \textbf{ῥίπτω,} \textit{tirare,} perfetto \textbf{ἔρ-ριφα.}  
+\item[\textsc{1.}] Tutti i verbi che iniziano per \didobf{ρ}, raddoppiano questa lettera nel prefisso dell'aumento sillabico, come in \didobf{ῥίπτω}, \textit{tirare,} perfetto \didobf{ἔρ-ριφα}.  
 \end{itemize}
 
-\newthought{125.} Per i verbi che iniziano \textit{con una vocale corta o un dittongo,} il raddoppiamento prende la forma dell'aumento temporale, come in \textbf{ἄγω,} perfetto \textbf{ἦχα} e in \textbf{οἰκέω,} \textit{vivere,} perfetto \textbf{ᾤκηκα.}
+\newthought{125.} Per i verbi che iniziano \textit{con una vocale corta o un dittongo,} il raddoppiamento prende la forma dell'aumento temporale, come in \didobf{ἄγω}, perfetto \didobf{ἦχα} e in \didobf{οἰκέω}, \textit{vivere,} perfetto \didobf{ᾤκηκα}.
 
 \newpage
 
-\newthought{126. Il Piuccheperfetto.} Quando il perfetto ha il raddoppiamento (123.), il piuccheperfetto presenta l'aumento sillabico come prefisso al raddoppiamento, come in \textbf{λύω,} perfetto \textbf{λέ-λυκα,} piuccheperfetto \textbf{ἐ-λε-λυκη.} Negli altri casi il piuccheperfetto mantiene l'aumento del perfetto, come in \textbf{στρατεύω,} perfetto \textbf{ἐστράτευκα,} piuccheperfetto \textbf{ἐστρατεύκη.}
+\newthought{126. Il Piuccheperfetto.} Quando il perfetto ha il raddoppiamento (123.), il piuccheperfetto presenta l'aumento sillabico come prefisso al raddoppiamento, come in \didobf{λύω}, perfetto \didobf{λέ-λυκα}, piuccheperfetto \didobf{ἐ-λε-λυκη}. Negli altri casi il piuccheperfetto mantiene l'aumento del perfetto, come in \didobf{στρατεύω}, perfetto \didobf{ἐστράτευκα}, piuccheperfetto \didobf{ἐστρατεύκη}.
 
-\newthought{127. Perfetto e Piuccheperfetto Indicativo Attivo di \textbf{λύω.}} 
+\newthought{127. Perfetto e Piuccheperfetto Indicativo Attivo di \didobf{λύω}.} 
 
 \begin{fullwidth}
 \begin{table}[!htbp]
@@ -218,13 +218,13 @@ fa eccezione \textbf{γράφω,} perfetto \textbf{γέ-γραφα;}.
 	& \textit{Ho sciolto} & \textit{Avevo sciolto} \\
     %\midrule
 	\multicolumn{3}{c}{\textsc{singolare}} \\
-    \textsc{1.} & \textbf{λέλυκα}   & \textbf{ἐλελύκη} \\
-    \textsc{2.} & \textbf{λέλυκας}   & \textbf{ἐλελύκης} \\
-    \textsc{3.} & \textbf{λέλυκε}   & \textbf{ἐλελύκει} \\
+    \textsc{1.} & \didobf{λέλυκα}   & \didobf{ἐλελύκη} \\
+    \textsc{2.} & \didobf{λέλυκας}   & \didobf{ἐλελύκης} \\
+    \textsc{3.} & \didobf{λέλυκε}   & \didobf{ἐλελύκει} \\
 	\multicolumn{3}{c}{\textsc{plurale}}  \\
-	\textsc{1.} & \textbf{λελύκαμεν}   & \textbf{ἐλελύκεμεν} \\
-    \textsc{2.} & \textbf{λελύκατε}   & \textbf{ἐλελύκετε} \\
-    \textsc{3.} & \textbf{λελύκασι}   & \textbf{ἐλελύκεσαν} \\
+	\textsc{1.} & \didobf{λελύκαμεν}   & \didobf{ἐλελύκεμεν} \\
+    \textsc{2.} & \didobf{λελύκατε}   & \didobf{ἐλελύκετε} \\
+    \textsc{3.} & \didobf{λελύκασι}   & \didobf{ἐλελύκεσαν} \\
     %\bottomrule
   \end{tabular}
   \caption{λύω: perfetto e piuccheperfetto indicativo attivo}
@@ -235,28 +235,28 @@ fa eccezione \textbf{γράφω,} perfetto \textbf{γέ-γραφα;}.
 
 \newthought{Esercizi}
 \begin{itemize}
-\item[\textsc{1.}] Coniuga allo stesso modo questi tempi per i verbi \textbf{θύω, κελεύω, παίω, θηρεύω,} e \textbf{κωλύω,} \textit{ostacolare.}  
+\item[\textsc{1.}] Coniuga allo stesso modo questi tempi per i verbi \didobf{θύω, κελεύω, παίω, θηρεύω}, e \didobf{κωλύω}, \textit{ostacolare.}  
 \end{itemize}
 
 \newthought{128. Vocabolario}
 
 \begin{multicols}{2}
-    \noindent \hangindent=1em \textbf{δείλη, ἡ} \textit{sera, pomeriggio}.  \\
-    \noindent \hangindent=1em \textbf{κόρη, ἡ} \textit{ragazza}.  \\
-    \noindent \hangindent=1em \textbf{νῆσος, ἡ} \textit{isola}.  \\
-    \noindent \hangindent=1em \textbf{μεστός, ή, όν} agg. \textit{pieno di}.  \\
-    \noindent \hangindent=1em \textbf{στενός, ή, όν} agg. \textit{stretto}.  \\
+    \noindent \hangindent=1em \didobf{δείλη, ἡ} \textit{sera, pomeriggio}.  \\
+    \noindent \hangindent=1em \didobf{κόρη, ἡ} \textit{ragazza}.  \\
+    \noindent \hangindent=1em \didobf{νῆσος, ἡ} \textit{isola}.  \\
+    \noindent \hangindent=1em \didobf{μεστός, ή, όν} agg. \textit{pieno di}.  \\
+    \noindent \hangindent=1em \didobf{στενός, ή, όν} agg. \textit{stretto}.  \\
 
-    \noindent \hangindent=1em \textbf{κωλύω,} fut. \textbf{κωλύσω,} aor. \textbf{ἐκώλυσα,} 
-	pf. \textbf{κεκώλυσα,} 
+    \noindent \hangindent=1em \didobf{κωλύω}, fut. \didobf{κωλύσω}, aor. \didobf{ἐκώλυσα}, 
+	pf. \didobf{κεκώλυσα}, 
 	\textit{ostacolare, prevenire.} \\ 
-	\noindent \hangindent=1em \textbf{στρατεύω,} fut. \textbf{στρατεύσω,} aor. \textbf{ἐστράτευσα,} 
-	pf. \textbf{ἐστράτευκα,} 
+	\noindent \hangindent=1em \didobf{στρατεύω}, fut. \didobf{στρατεύσω}, aor. \didobf{ἐστράτευσα}, 
+	pf. \didobf{ἐστράτευκα}, 
 	\textit{fare una spedizione, scendere in campo.} \\ 
-	\noindent \hangindent=1em \textbf{ἐπεί,} avv. \textit{quando, dopo.} \\ 
-	\noindent \hangindent=1em \textbf{εὐθύς,} avv. \textit{subito, immediatamente.} \\ 
+	\noindent \hangindent=1em \didobf{ἐπεί}, avv. \textit{quando, dopo.} \\ 
+	\noindent \hangindent=1em \didobf{εὐθύς}, avv. \textit{subito, immediatamente.} \\ 
 
-	\noindent \hangindent=1em \textbf{παρά,} prep. 
+	\noindent \hangindent=1em \didobf{παρά}, prep. 
 	con \gen \textit{da, dal lato di}; 
 	con \dat \textit{vicino a, al lato di}; 
 	con \acc \textit{a, verso il lato di}.
@@ -264,22 +264,22 @@ fa eccezione \textbf{γράφω,} perfetto \textbf{γέ-γραφα;}.
 \end{multicols}
 
 \newthought{119. Traduci:}
-\textsc{1.}~ἐλελύκεσαν, κεκελεύκασι, τέθυκας. \quad
-\textsc{2.}~ἔλυσαν, πέπαικε, κεκωλύκαμεν. \quad
-\textsc{3.}~λύε, ἔλυε, λύσει, ἔλυσε, λέλυκε, ἐλελύκει. \\
-\textit{(a).} Scrivere, per il verbo θύω, tutti i tempi dell'indicativo alla terza persona plurale.
+\textsc{1.}~\dido{ἐλελύκεσαν, κεκελεύκασι, τέθυκας.} \quad
+\textsc{2.}~\dido{ἔλυσαν, πέπαικε, κεκωλύκαμεν.} \quad
+\textsc{3.}~\dido{λύε, ἔλυε, λύσει, ἔλυσε, λέλυκε, ἐλελύκει.} \\
+\textit{(a).} Scrivere, per il verbo \dido{θύω}, tutti i tempi dell'indicativo alla terza persona plurale.
 
 \newthought{130.}
-\textsc{1.}~ὁ τῆς κόρης ἀδελφὸς εἶχε πλοῖοω καλόν. \quad
-\textsc{2.}~τῷ δὲ τῆς κόρης ἀδελφῷ πλοῖον ἦν καλόν. \quad
-\textsc{3.}~ἐν δὲ τῷ πλοίῳ ἤγαγε τὰ παιδία εἰς τὴν νῆσον. \quad
-\textsc{4.}~ἡ γὰρ νῆσος μικρὰ ἦν, μεστὴ δὲ δένδρων μακρῶν καὶ καλῶν. \quad
-\textsc{5.}~ἐπεὶ δὲ ὁ ἄγγελος ἐτεθύκει, ἐθήρευεν ἐν τῷ πεδίῳ. \quad
-\textsc{6.}~καὶ εὐθὺς ἐδίωξε τὰ θηρία ἐκ τοῦ χωρίου. \quad
-\textsc{7.}~ἡ δὲ βασίλεια κεκώλυκε αὐτὸν (suo) πέμπειν ἐπιστολὰ τῷ υἱῷ. \quad
-\textsc{8.}~ἐπεὶ δείλη ἦν, ταχέως εἰς τὸν ποταμὸν ἔβαλον τοὺς βίκους μεστοὺς οἴνου. \quad
-\textsc{9.}~εὐθὺς δὲ γράψουσι δικαίους λόγους. \quad
-\textsc{10.}~τίς γὰρ ἔλιπεν ἐν ταῖς σκηναῖς τὰς λόγχας καὶ τὰς μαχαίρας;
+\textsc{1.}~\dido{ὁ τῆς κόρης ἀδελφὸς εἶχε πλοῖοω καλόν.} \quad
+\textsc{2.}~\dido{τῷ δὲ τῆς κόρης ἀδελφῷ πλοῖον ἦν καλόν.} \quad
+\textsc{3.}~\dido{ἐν δὲ τῷ πλοίῳ ἤγαγε τὰ παιδία εἰς τὴν νῆσον.} \quad
+\textsc{4.}~\dido{ἡ γὰρ νῆσος μικρὰ ἦν, μεστὴ δὲ δένδρων μακρῶν καὶ καλῶν.} \quad
+\textsc{5.}~\dido{ἐπεὶ δὲ ὁ ἄγγελος ἐτεθύκει, ἐθήρευεν ἐν τῷ πεδίῳ.} \quad
+\textsc{6.}~\dido{καὶ εὐθὺς ἐδίωξε τὰ θηρία ἐκ τοῦ χωρίου.} \quad
+\textsc{7.}~\dido{ἡ δὲ βασίλεια κεκώλυκε αὐτὸν (suo) πέμπειν ἐπιστολὰ τῷ υἱῷ.} \quad
+\textsc{8.}~\dido{ἐπεὶ δείλη ἦν, ταχέως εἰς τὸν ποταμὸν ἔβαλον τοὺς βίκους μεστοὺς οἴνου.} \quad
+\textsc{9.}~\dido{εὐθὺς δὲ γράψουσι δικαίους λόγους.} \quad
+\textsc{10.}~\dido{τίς γὰρ ἔλιπεν ἐν ταῖς σκηναῖς τὰς λόγχας καὶ τὰς μαχαίρας;}
 
 \newthought{131. Scrivi in Greco:}
 \textsc{1.}~Trovarono nel mare celle conchiglie. \quad
@@ -287,7 +287,7 @@ fa eccezione \textbf{γράφω,} perfetto \textbf{γέ-γραφα;}.
 \textsc{3.}~Vi erano cavalli e carri sul ponte. \quad
 \textsc{4.}~La strada per l'altura era lunga.
 
-\newthought{132. Sicuro di essere Grande:} Ἔλεγε δὲ τῷ Θεμιστοκλεῖ ὁ διδάσκαλος, Οὐδὲν ἔσῃ\sidenote{non sarai nulla.}, παῖ\sidenote{παίδιον.}, σὺ μικρόν, ἀλλά μέγα πάντως\sidenote{interamente.} ἀγαθὸν ἢ (oppure) καkόν.
+\newthought{132. Sicuro di essere Grande:} \dido{Ἔλεγε δὲ τῷ Θεμιστοκλεῖ ὁ διδάσκαλος, Οὐδὲν ἔσῃ\sidenote{non sarai nulla.}, παῖ\sidenote{παίδιον.}, σὺ μικρόν, ἀλλά μέγα πάντως\sidenote{interamente.} ἀγαθὸν ἢ (oppure) καkόν.}
 
 \begin{figure*}[!b]
   \includegraphics[width=0.7\linewidth]{thumb-lesson_X.jpeg}

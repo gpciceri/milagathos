@@ -52,14 +52,14 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
-\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
+\newfontfamily\GFSDidotBf[Path=./fonts/GFS_Didot/]{GFSDidotBold.ttf}
+\newfontfamily\GFSDidot[Path=./fonts/GFS_Didot/]{GFSDidot.ttf}
 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
-% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
-% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+\newcommand{\didobf}[1]{{\GFSDidotBf #1}}
+\newcommand{\dido}[1]{{\GFSDidot #1}}
 
 \usepackage{lipsum}
 \usepackage{url}
@@ -152,8 +152,7 @@
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione VII - Declinazione in A o Prima declinazione. Nomi in ᾱ (alfa lungo) o η.}
 
-\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
-}
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities}
 
 \date{2 Gennajo 2017} % without \date command, current date is supplied
 
@@ -184,12 +183,12 @@ Lezione VII: la declinazione in A (la prima declinazione), nomi femminili in ᾱ
 
 %\printclassoptions
 
-\newthought{87.} I nomi femminili di questa declinazione terminano in \textbf{α} o \textbf{η}, quelli maschili in \textbf{ᾱς} o \textbf{ης}.
+\newthought{87.} I nomi femminili di questa declinazione terminano in \didobf{α} o \didobf{η}, quelli maschili in \didobf{ᾱς} o \didobf{ης}.
 
-\newthought{88.} La radice del nome termina in \textbf{α}, che al singolare è spesso allungata in 
-\textbf{ᾱ} (dopo \textbf{ε, ι} o \textbf{ρ}) o \textbf{η.}
+\newthought{88.} La radice del nome termina in \didobf{α}, che al singolare è spesso allungata in 
+\didobf{ᾱ} (dopo \didobf{ε, ι} o \didobf{ρ}) o \didobf{η.}
 
-I nomi femminili di questa declinazione terminano in \textbf{ᾱ} o \textbf{η}, quelli maschili in \textbf{ᾱς} o \textbf{ης}.
+I nomi femminili di questa declinazione terminano in \didobf{ᾱ} o \didobf{η}, quelli maschili in \didobf{ᾱς} o \didobf{ης}.
 
 \newthought{89. Modelli}
 
@@ -199,21 +198,21 @@ I nomi femminili di questa declinazione terminano in \textbf{ᾱ} o \textbf{η},
   \begin{tabular}{l l c l l l l}
     %\toprule
 	\multicolumn{7}{c}{\textsc{parole guida}} \\
-	\multicolumn{2}{c}{\textbf{ὥρᾱ,}}              & \textsc{nome latino}    & \textbf{ἄκρᾱ,}  & \multicolumn{3}{c}{\textbf{ἡ μῑκρὰ σκηνή,}} \\
+	\multicolumn{2}{c}{\didobf{ὥρᾱ,}}              & \textsc{nome latino}    & \didobf{ἄκρᾱ,}  & \multicolumn{3}{c}{\didobf{ἡ μῑκρὰ σκηνή,}} \\
 	\multicolumn{2}{c}{\textit{tempo, ora,} \textsc{F.}} & \textsc{corrispondente} & \textit{cittadella,} \textsc{f.}  & \multicolumn{3}{c}{\textit{la piccola tenda}} \\
    
 	\multicolumn{7}{c}{\textsc{singolare}} \\
-    \textsc{n.} & \textbf{ὥρᾱ} & \textit{hōra} & \textbf{ἄκρᾱ} & \textbf{ἡ}   & \textbf{μῑκρὰ} & \textbf{σκηνή}  \\
-    \textsc{g.} & \textbf{ὥρᾱς} & \textit{hōrae}  & \textbf{ἄκρᾱς} & \textbf{τῆς} & \textbf{μῑκρᾶς} & \textbf{σκηνῆς}  \\
-    \textsc{d.} & \textbf{ὥρᾳ}  & \textit{hōrae}  & \textbf{ἄκρᾳ}  & \textbf{τῇ}  & \textbf{μῑκρᾷ}  & \textbf{σκηνῇ}  \\
-	\textsc{a.} & \textbf{ὥρᾱν} & \textit{hōram} & \textbf{ἄκρᾱν} & \textbf{τὴν} & \textbf{μῑκρὰν} & \textbf{σκηνήν}  \\
-	\textsc{v.} & \textbf{ὥρᾱ}  & \textit{hōra}  & \textbf{ἄκρᾱ}  & \textemdash  & \textbf{μῑκρὰ}  & \textbf{σκηνή}  \\
+    \textsc{n.} & \didobf{ὥρᾱ} & \textit{hōra} & \didobf{ἄκρᾱ} & \didobf{ἡ}   & \didobf{μῑκρὰ} & \didobf{σκηνή}  \\
+    \textsc{g.} & \didobf{ὥρᾱς} & \textit{hōrae}  & \didobf{ἄκρᾱς} & \didobf{τῆς} & \didobf{μῑκρᾶς} & \didobf{σκηνῆς}  \\
+    \textsc{d.} & \didobf{ὥρᾳ}  & \textit{hōrae}  & \didobf{ἄκρᾳ}  & \didobf{τῇ}  & \didobf{μῑκρᾷ}  & \didobf{σκηνῇ}  \\
+	\textsc{a.} & \didobf{ὥρᾱν} & \textit{hōram} & \didobf{ἄκρᾱν} & \didobf{τὴν} & \didobf{μῑκρὰν} & \didobf{σκηνήν}  \\
+	\textsc{v.} & \didobf{ὥρᾱ}  & \textit{hōra}  & \didobf{ἄκρᾱ}  & \textemdash  & \didobf{μῑκρὰ}  & \didobf{σκηνή}  \\
 	
 	\multicolumn{7}{c}{\textsc{plurale}} \\
-	\textsc{n.v.} & \textbf{ὧραι}  & \textit{hōrae}    & \textbf{ἄκραι}  & \textbf{αἱ}   & \textbf{μῑκραὶ}  & \textbf{σκηναί}  \\
-    \textsc{g.} & \textbf{ὡρῶν}  & \textit{hōrārum} & \textbf{ἄκρῶν}  & \textbf{τῶν}  & \textbf{μῑκρῶν}  & \textbf{σκηνῶν}  \\
-    \textsc{d.} & \textbf{ὥραις} & \textit{hōrīs}   & \textbf{ἄκραις} & \textbf{ταῖς} & \textbf{μῑκραῖς} & \textbf{σκηναῖς}  \\
-	\textsc{a.} & \textbf{ὥρᾱς} & \textit{hōrās}   & \textbf{ἄκρᾱς} & \textbf{τὰς} & \textbf{μῑκρὰς} & \textbf{σκηνάς}  \\
+	\textsc{n.v.} & \didobf{ὧραι}  & \textit{hōrae}    & \didobf{ἄκραι}  & \didobf{αἱ}   & \didobf{μῑκραὶ}  & \didobf{σκηναί}  \\
+    \textsc{g.} & \didobf{ὡρῶν}  & \textit{hōrārum} & \didobf{ἄκρῶν}  & \didobf{τῶν}  & \didobf{μῑκρῶν}  & \didobf{σκηνῶν}  \\
+    \textsc{d.} & \didobf{ὥραις} & \textit{hōrīs}   & \didobf{ἄκραις} & \didobf{ταῖς} & \didobf{μῑκραῖς} & \didobf{σκηναῖς}  \\
+	\textsc{a.} & \didobf{ὥρᾱς} & \textit{hōrās}   & \didobf{ἄκρᾱς} & \didobf{τὰς} & \didobf{μῑκρὰς} & \didobf{σκηνάς}  \\
     %\bottomrule
   \end{tabular}
   \label{tab:normaltab}
@@ -225,14 +224,14 @@ I nomi femminili di questa declinazione terminano in \textbf{ᾱ} o \textbf{η},
 
 \newthought{Osservazione}
 \begin{itemize}
-\item[\textsc{1.}] In tutte le parole sopra, il genitivo plurale ha l'accento circonflesso sull'ultima sillaba\sidenote{la parola in questo caso si dice \textit{perispomena}.}. Questo accade perché la sillaba risulta da una contrazione di \textbf{-άων}, e vale per tutti i nomi della Declinazione in A. 
+\item[\textsc{1.}] In tutte le parole sopra, il genitivo plurale ha l'accento circonflesso sull'ultima sillaba\sidenote{la parola in questo caso si dice \textit{perispomena}.}. Questo accade perché la sillaba risulta da una contrazione di \didobf{-άων}, e vale per tutti i nomi della Declinazione in A. 
 \end{itemize}
 
 
 \newthought{90. Aggettivi e concordanza} La maggior parte degli aggettivi in Greco vengono declinati e, come in latino, concordano in caso, genere e numero con il nome cui si riferiscono\sidenote{o limitano, nel senso che l'aggettovo precisa il senso del nome limitandolo opportunamente: un vaso rosso non può essere di un altro colore.}.
 
-\newthought{91.} Gli aggettivi della Declinazione in vocale\sidenote{\textit{Declinazione in Vocale:} indica sia la Declinazione in O che la Declinazione in A.} si declinano al maschile e al neutro come i nomi (della Declinazione in O) in \textbf{-ος} e \textbf{-ον}, al femminile come i nomi (della Declinazione in A) in \textbf{ᾱ} o \textbf{η.}
-Quindi avremo: \nom \textbf{ἀγαθός, ἀγαθή, ἀγαθόν} \gen \textbf{ἀγαθοῦ, ἀγαθῆς, ἀγαθοῦ,} ecc.\sidenote{Cfr. in Latino \textit{bonus, bona, bonum}}
+\newthought{91.} Gli aggettivi della Declinazione in vocale\sidenote{\textit{Declinazione in Vocale:} indica sia la Declinazione in O che la Declinazione in A.} si declinano al maschile e al neutro come i nomi (della Declinazione in O) in \didobf{-ος} e \didobf{-ον}, al femminile come i nomi (della Declinazione in A) in \didobf{ᾱ} o \didobf{η.}
+Quindi avremo: \nom \didobf{ἀγαθός, ἀγαθή, ἀγαθόν} \gen \didobf{ἀγαθοῦ, ἀγαθῆς, ἀγαθοῦ}, ecc.\sidenote{Cfr. in Latino \textit{bonus, bona, bonum}}
 
 \newthought{Aggettivi della Declinazione in Vocale.}(681, anticipazione)
 
@@ -242,21 +241,21 @@ Quindi avremo: \nom \textbf{ἀγαθός, ἀγαθή, ἀγαθόν} \gen \tex
   \begin{tabular}{l l l l l l l l}
     %\toprule
 	\multicolumn{8}{c}{\textsc{parole guida}} \\
-	& \multicolumn{3}{c}{\textbf{ἀγαθός,} \textit{buono}} & \quad & \multicolumn{3}{c}{\textbf{φίλιος,} \textit{amichevole}} \\
+	& \multicolumn{3}{c}{\didobf{ἀγαθός}, \textit{buono}} & \quad & \multicolumn{3}{c}{\didobf{φίλιος}, \textit{amichevole}} \\
 	\multicolumn{8}{c}{\textsc{singolare}} \\
 	& \multicolumn{1}{c}{\textsc{masc}} & \multicolumn{1}{c}{\textsc{femm}} & \multicolumn{1}{c}{\textsc{neut}} & \quad & \multicolumn{1}{c}{\textsc{masc}} & \multicolumn{1}{c}{\textsc{femm}} & \multicolumn{1}{c}{\textsc{neut}} \\
-    \textsc{n.} & \textbf{ἀγαθός} & \textbf{ἀγαθή} & \textbf{ἀγαθόν} & \quad   & \textbf{φίλιος} & \textbf{φιλία} & \textbf{φίλιον}  \\
-    \textsc{g.} & \textbf{ἀγαθοῦ} & \textbf{ἀγαθῆς} & \textbf{ἀγαθοῦ} & \quad   & \textbf{φίλιου} & \textbf{φιλίας} & \textbf{φίλιου}  \\
-	\textsc{d.} & \textbf{ἀγαθῷ} & \textbf{ἀγαθῇ} & \textbf{ἀγαθῷ} & \quad   & \textbf{φίλιῳ} & \textbf{φίλιᾳ} & \textbf{φίλιῳ}  \\
-	\textsc{a.} & \textbf{ἀγαθόν} & \textbf{ἀγαθήν} & \textbf{ἀγαθόν} & \quad   & \textbf{φίλιος} & \textbf{φίλιος} & \textbf{φίλιος}  \\
-	\textsc{v.} & \textbf{ἀγαθέ} & \textbf{ἀγαθή} & \textbf{ἀγαθόν} & \quad   & \textbf{φίλιε} & \textbf{φιλία} & \textbf{φίλιον}  \\
+    \textsc{n.} & \didobf{ἀγαθός} & \didobf{ἀγαθή} & \didobf{ἀγαθόν} & \quad   & \didobf{φίλιος} & \didobf{φιλία} & \didobf{φίλιον}  \\
+    \textsc{g.} & \didobf{ἀγαθοῦ} & \didobf{ἀγαθῆς} & \didobf{ἀγαθοῦ} & \quad   & \didobf{φίλιου} & \didobf{φιλίας} & \didobf{φίλιου}  \\
+	\textsc{d.} & \didobf{ἀγαθῷ} & \didobf{ἀγαθῇ} & \didobf{ἀγαθῷ} & \quad   & \didobf{φίλιῳ} & \didobf{φίλιᾳ} & \didobf{φίλιῳ}  \\
+	\textsc{a.} & \didobf{ἀγαθόν} & \didobf{ἀγαθήν} & \didobf{ἀγαθόν} & \quad   & \didobf{φίλιος} & \didobf{φίλιος} & \didobf{φίλιος}  \\
+	\textsc{v.} & \didobf{ἀγαθέ} & \didobf{ἀγαθή} & \didobf{ἀγαθόν} & \quad   & \didobf{φίλιε} & \didobf{φιλία} & \didobf{φίλιον}  \\
 	
 	\multicolumn{8}{c}{\textsc{plurale}} \\
 	& \multicolumn{1}{c}{\textsc{masc}} & \multicolumn{1}{c}{\textsc{femm}} & \multicolumn{1}{c}{\textsc{neut}} & \quad & \multicolumn{1}{c}{\textsc{masc}} & \multicolumn{1}{c}{\textsc{femm}} & \multicolumn{1}{c}{\textsc{neut}} \\
-	\textsc{n.v.} & \textbf{ἀγαθοί} & \textbf{ἀγαθαί} & \textbf{ἀγαθά} & \quad   & \textbf{φίλιοι} & \textbf{φίλιαι} & \textbf{φίλια}  \\
-    \textsc{g.} & \textbf{ἀγαθῶν} &\textbf{ἀγαθῶν} & \textbf{ἀγαθῶν} & \quad   & \textbf{φιλίων} & \textbf{φιλίων} & \textbf{φιλίων}  \\
-	\textsc{d.} & \textbf{ἀγαθοῖς} & \textbf{ἀγαθαῖς} & \textbf{ἀγαθοῖς} & \quad   & \textbf{φιλίοις} & \textbf{φιλίαις} & \textbf{φιλίοις}  \\
-	\textsc{a.} & \textbf{ἀγαθούς} & \textbf{ἀγαθάς} & \textbf{ἀγαθά} & \quad   & \textbf{φιλίοις} & \textbf{φιλίας} & \textbf{φίλια}  \\
+	\textsc{n.v.} & \didobf{ἀγαθοί} & \didobf{ἀγαθαί} & \didobf{ἀγαθά} & \quad   & \didobf{φίλιοι} & \didobf{φίλιαι} & \didobf{φίλια}  \\
+    \textsc{g.} & \didobf{ἀγαθῶν} &\didobf{ἀγαθῶν} & \didobf{ἀγαθῶν} & \quad   & \didobf{φιλίων} & \didobf{φιλίων} & \didobf{φιλίων}  \\
+	\textsc{d.} & \didobf{ἀγαθοῖς} & \didobf{ἀγαθαῖς} & \didobf{ἀγαθοῖς} & \quad   & \didobf{φιλίοις} & \didobf{φιλίαις} & \didobf{φιλίοις}  \\
+	\textsc{a.} & \didobf{ἀγαθούς} & \didobf{ἀγαθάς} & \didobf{ἀγαθά} & \quad   & \didobf{φιλίοις} & \didobf{φιλίας} & \didobf{φίλια}  \\
 	
     %\bottomrule
   \end{tabular}
@@ -272,7 +271,7 @@ Quindi avremo: \nom \textbf{ἀγαθός, ἀγαθή, ἀγαθόν} \gen \tex
 
 \newthought{92. Esercizi}
 \begin{itemize}
-\item[\textsc{1.}] Declina in tutti i generi \textbf{καλός, σοφός, κακός, δίκαιος.}
+\item[\textsc{1.}] Declina in tutti i generi \didobf{καλός, σοφός, κακός, δίκαιος}.
 \item[\textsc{2.}] Scrivi la declinazione di \textit{la valida barca, la terribile battaglia.}
 \end{itemize}
 
@@ -281,24 +280,24 @@ Quindi avremo: \nom \textbf{ἀγαθός, ἀγαθή, ἀγαθόν} \gen \tex
 \newthought{93. Vocabolario}
 
 \begin{multicols}{2}
-    \noindent \hangindent=1em \textbf{ἄκρᾱ,} \textit{altura, cittadella}.  \\
-    \noindent \hangindent=1em \textbf{ἐπιστολή,} \textit{lettera}.  \\
-    \noindent \hangindent=1em \textbf{ἡμέρᾱ,} \textit{giorno}.  \\
-    \noindent \hangindent=1em \textbf{κώμη,} \textit{villaggio}.  \\
-    \noindent \hangindent=1em \textbf{μάχη,} \textit{battaglia}.  \\
-    \noindent \hangindent=1em \textbf{οἰκίᾱ,} \textit{casa}.  \\
-    \noindent \hangindent=1em \textbf{πόλεμος,} \textit{guerra}.  \\
-    \noindent \hangindent=1em \textbf{σκηνή,} \textit{tenda}.  \\
+    \noindent \hangindent=1em \didobf{ἄκρᾱ,} \textit{altura, cittadella}.  \\
+    \noindent \hangindent=1em \didobf{ἐπιστολή,} \textit{lettera}.  \\
+    \noindent \hangindent=1em \didobf{ἡμέρᾱ,} \textit{giorno}.  \\
+    \noindent \hangindent=1em \didobf{κώμη,} \textit{villaggio}.  \\
+    \noindent \hangindent=1em \didobf{μάχη,} \textit{battaglia}.  \\
+    \noindent \hangindent=1em \didobf{οἰκίᾱ,} \textit{casa}.  \\
+    \noindent \hangindent=1em \didobf{πόλεμος,} \textit{guerra}.  \\
+    \noindent \hangindent=1em \didobf{σκηνή,} \textit{tenda}.  \\
 	
-    \noindent \hangindent=1em \textbf{χώρᾱ,} \textit{terra, nazione}.  \\
-    \noindent \hangindent=1em \textbf{ὥρᾱ,} \textit{ora, stagione, tempo}.  \\
+    \noindent \hangindent=1em \didobf{χώρᾱ,} \textit{terra, nazione}.  \\
+    \noindent \hangindent=1em \didobf{ὥρᾱ,} \textit{ora, stagione, tempo}.  \\
 	
-	\noindent \hangindent=1em \textbf{δέκα,} agg.indecl. \textit{dieci}. \\ 
+	\noindent \hangindent=1em \didobf{δέκα,} agg.indecl. \textit{dieci}. \\ 
 	
 	
-    \noindent \hangindent=1em \textbf{μακρός, ά, όν,} \textit{lungo, grande}.  \\
-	\noindent \hangindent=1em \textbf{μικρός, ά, όν,} \textit{corto, piccolo}.  \\
-	\noindent \hangindent=1em \textbf{φοβερός, ά, όν,} agg. \textit{spaventevole, terribile}.  \\
+    \noindent \hangindent=1em \didobf{μακρός, ά, όν,} \textit{lungo, grande}.  \\
+	\noindent \hangindent=1em \didobf{μικρός, ά, όν,} \textit{corto, piccolo}.  \\
+	\noindent \hangindent=1em \didobf{φοβερός, ά, όν,} agg. \textit{spaventevole, terribile}.  \\
 \end{multicols}
 
 \newthought{94. Traduci:}
@@ -311,45 +310,45 @@ Quindi avremo: \nom \textbf{ἀγαθός, ἀγαθή, ἀγαθόν} \gen \tex
 % ᾷῇῷ
 % ᾳῃῳ
 \newthought{95. Traduci:}
-\textsc{1.}~ὁ τῶν θεῶν πόλεμος ἦν φοβερός. \quad
-\textsc{2.}~τὰ γὰρ τέκνα οὐκ εἶχε\sidenote{imperfetto di ἔχω (da ἔεχον).} πλοῖα. \quad
-\textsc{3.}~ἐν δὲ τῇ μικρᾷ κώμῃ ἦν μάχη φοβερά. \quad
-\textsc{4.}~εἰς γὰρ τὴν οἰκίαν ἔφυγον οἱ δοῦλοι. \quad
-\textsc{5.}~καὶ ἐκ τῶν σκηνῶν ἔβαλλον λίθους μακρούς. \quad
-\textsc{6.}~ἡμέρᾱς δέκα ἐμένομεν ἐν τῷ ἱερῷ. \quad
-\textsc{7.}~ὥρα ἦν πέμπειν\sidenote{presente infinito attivo.} τὰς ἐπιστολάς. \quad
-\textsc{8.}~τὰ κακὰ παιδία οὐκ ἔλυσαν τοὺς ἵππους. \quad
-\textsc{9.}~τίς γὰρ ἁρπάσει τὰς τῆς ἄκρας οἰκίας; \quad
-\textsc{10.}~τί γράφεις; \quad
-\textsc{11.}~τί ηὖρες ἐπὶ τῷ ποταμῷ;
+\textsc{1.}~\dido{ὁ τῶν θεῶν πόλεμος ἦν φοβερός.} \quad
+\textsc{2.}~\dido{τὰ γὰρ τέκνα οὐκ εἶχε\sidenote{imperfetto di ἔχω (da ἔεχον).} πλοῖα.} \quad
+\textsc{3.}~\dido{ἐν δὲ τῇ μικρᾷ κώμῃ ἦν μάχη φοβερά.} \quad
+\textsc{4.}~\dido{εἰς γὰρ τὴν οἰκίαν ἔφυγον οἱ δοῦλοι.} \quad
+\textsc{5.}~\dido{καὶ ἐκ τῶν σκηνῶν ἔβαλλον λίθους μακρούς.} \quad
+\textsc{6.}~\dido{ἡμέρᾱς δέκα ἐμένομεν ἐν τῷ ἱερῷ.} \quad
+\textsc{7.}~\dido{ὥρα ἦν πέμπειν\sidenote{presente infinito attivo.} τὰς ἐπιστολάς.} \quad
+\textsc{8.}~\dido{τὰ κακὰ παιδία οὐκ ἔλυσαν τοὺς ἵππους.} \quad
+\textsc{9.}~\dido{τίς γὰρ ἁρπάσει τὰς τῆς ἄκρας οἰκίας;} \quad
+\textsc{10.}~\dido{τί γράφεις;} \quad
+\textsc{11.}~\dido{τί ηὖρες ἐπὶ τῷ ποταμῷ;}
 
 
 \newthought{96.} 
-\textbf{Διάλογος.} \textemdash 
-\textbf{Δύο}\sidenote{due.}\textbf{Μαθηταί}
+\didobf{Διάλογος}. \textemdash 
+\didobf{Δύο}\sidenote{due.}\didobf{Μαθηταί}
 
 \begin{itemize}
-\item[Μικρός.] Ὁ ἐμος πατὴρ\sidenote{Cfr. in latino \textit{meus pater}} ἔπεμψέ 
-\stackunder{μοι}{\scriptsize{me}} τὴμερον δῶρον καλόν.
-\item[Μακρός.] \stackunder{Καλῶς!}{\scriptsize{bello!}} τί ἐστιν;
+\item[\dido{Μικρός.}] \dido{Ὁ ἐμος πατὴρ\sidenote{Cfr. in latino \textit{meus pater}} ἔπεμψέ 
+\stackunder{μοι}{\scriptsize{me}} τὴμερον δῶρον καλόν.}
+\item[\dido{Μακρός.}] \dido{\stackunder{Καλῶς!}{\scriptsize{bello!}} τί ἐστιν;}
 
-\item[Μικ.] \stackunder{Οὔποτε}{\scriptsize{giammai}} 
+\item[\dido{Μικ.}] \dido{\stackunder{Οὔποτε}{\scriptsize{giammai}} 
 \stackunder{εἰκάζειν}{\scriptsize{indovinare}} 
-\stackunder{δυνήσει.}{\scriptsize{potrai}}
-\item[Μακ.] Τοῦτ´ \stackunder{οἶδα.}{\scriptsize{Lo so}} 
+\stackunder{δυνήσει.}{\scriptsize{potrai}}}
+\item[\dido{Μακ.}] \dido{Τοῦτ´ \stackunder{οἶδα.}{\scriptsize{Lo so}} 
 ἀλλὰ \stackunder{λέγε}{\scriptsize{di'}} 
 μοι \stackunder{ὡς τάχιστα,}{\scriptsize{subito,}} 
-\stackunder{ὠς}{\scriptsize{come}} παιδίον ἀγαθόν.
+\stackunder{ὠς}{\scriptsize{come}} παιδίον ἀγαθόν.}
 
-\item[Μικ.] \stackunder{Ἰδού,}{\scriptsize{Guarda qui,}} πλοῖον καλόν.
-\item[Μακ.] Καλῶς, καλῶς! νῦν γὰρ ὥρα ἐστὶ \stackunder{καταβαίνειν}{\scriptsize{scendere}} ἐπὶ τὸν ποταμόν.
+\item[\dido{Μικ.}] \dido{\stackunder{Ἰδού,}{\scriptsize{Guarda qui,}} πλοῖον καλόν.}
+\item[\dido{Μακ.}] \dido{Καλῶς, καλῶς! νῦν γὰρ ὥρα ἐστὶ \stackunder{καταβαίνειν}{\scriptsize{scendere}} ἐπὶ τὸν ποταμόν.}
 
-\item[Μικ.] Οὐ δῆτα. τήμερον γὰρ ὁ πατὴρ ἐκέλευσέ με μένειν
-ἐν τῇ οἰκίᾳ. ἔπαισα γὰρ τὸν ἐμὸν ἀδελφὸν καὶ ἥρπασα τὸ ἱμάτιον αὐτοῦ\sidenote{suo.}.
-\item[Μακ.] \stackunder{Ὡς}{\scriptsize{Come}} φοβερόν! 
+\item[\dido{Μικ.}] \dido{Οὐ δῆτα. τήμερον γὰρ ὁ πατὴρ ἐκέλευσέ με μένειν
+ἐν τῇ οἰκίᾳ. ἔπαισα γὰρ τὸν ἐμὸν ἀδελφὸν καὶ ἥρπασα τὸ ἱμάτιον αὐτοῦ\sidenote{suo.}.}
+\item[\dido{Μακ.}] \dido{\stackunder{Ὡς}{\scriptsize{Come}} φοβερόν! 
 ἀλλὰ \stackunder{μὴ φρόντιζε.}{\scriptsize{non importa.}} 
 \stackunder{κἀγὼ}{\scriptsize{Anch'io}} ἐν τῇ οἰκίᾳ 
-μενῶ\sidenote{futuro indicativo.} καὶ ἐπιστολὴν μακρὰν γράψω τῷ ἀδελφῷ.
+μενῶ\sidenote{futuro indicativo.} καὶ ἐπιστολὴν μακρὰν γράψω τῷ ἀδελφῷ.}
 \end{itemize}
 
 \begin{figure*}[!b]

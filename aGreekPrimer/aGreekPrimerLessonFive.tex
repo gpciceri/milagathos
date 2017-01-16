@@ -46,14 +46,14 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
-\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
+\newfontfamily\GFSDidotBf[Path=./fonts/GFS_Didot/]{GFSDidotBold.ttf}
+\newfontfamily\GFSDidot[Path=./fonts/GFS_Didot/]{GFSDidot.ttf}
 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
-% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
-% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+\newcommand{\didobf}[1]{{\GFSDidotBf #1}}
+\newcommand{\dido}[1]{{\GFSDidot #1}}
 
 \usepackage{lipsum}
 \usepackage{url}
@@ -146,8 +146,7 @@
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione V - L'imperfetto indicativo attivo. L'aumento.}
 
-\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
-}
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities}
 
 \date{31 Dicembre 2016} % without \date command, current date is supplied
 
@@ -182,16 +181,16 @@ Lezione V: l'imperfetto indicativo attivo, l'aumento sillabico e l'aumento tempo
 L'aumento può essere di due tipi.
 
 \newthought{74. Aumento sillabico} L'imperfetto e l'aoristo indicativo dei verbi che iniziano per consonante 
-presentano come prefisso una sillaba \textbf{ε}, come in \textbf{ἔ-λυον} (imperfetto indicativo di \textbf{λύω}), \textit{io scioglievo}. 
+presentano come prefisso una sillaba \didobf{ε}, come in \didobf{ἔ-λυον} (imperfetto indicativo di \didobf{λύω}), \textit{io scioglievo}. 
 Questo fenomeno viene detto \textit{aumento sillabico}.
 
 \newthought{74. Aumento temporale} L'imperfetto e l'aoristo indicativo dei verbi che iniziano per vocale o per dittongo 
-allungano la prima vocale, come in \textbf{ἦ-γον} (imperfetto indicativo di \textbf{ἄγω}), \textit{io conducevo}. 
+allungano la prima vocale, come in \didobf{ἦ-γον} (imperfetto indicativo di \didobf{ἄγω}), \textit{io conducevo}. 
 \begin{multicols}{2}
-    \noindent \hangindent=1em \textbf{α, ε} diventano \textbf{η}.  \\
-	\noindent \hangindent=1em \textbf{ι, ο, υ} diventano \textbf{ῑ, ω, ῡ}.  \\
-	\noindent \hangindent=1em \textbf{αι , ᾳ} diventano \textbf{ῃ}.  \\
-	\noindent \hangindent=1em \textbf{οι} diventa \textbf{ῳ}.  \\
+    \noindent \hangindent=1em \didobf{α, ε} diventano \didobf{η}.  \\
+	\noindent \hangindent=1em \didobf{ι, ο, υ} diventano \didobf{ῑ, ω, ῡ}.  \\
+	\noindent \hangindent=1em \didobf{αι , ᾳ} diventano \didobf{ῃ}.  \\
+	\noindent \hangindent=1em \didobf{οι} diventa \didobf{ῳ}.  \\
 \end{multicols}
 Questo fenomeno viene detto \textit{aumento temporale}.
 
@@ -203,16 +202,16 @@ Questo fenomeno viene detto \textit{aumento temporale}.
   \begin{tabular}{l l l l l}
     %\toprule
 	\multicolumn{5}{c}{\textsc{coniugazione dell'imperfetto indicativo attivo}} \\
-	\multicolumn{3}{c}{\textbf{λύω}} & \textbf{ἄγω} & \textbf{γράφω} \\
+	\multicolumn{3}{c}{\didobf{λύω}} & \didobf{ἄγω} & \didobf{γράφω} \\
     %\midrule
 	& \multicolumn{4}{c}{\textsc{singolare}} \\
-    \textsc{1.} & \textbf{ἔλυ-ον}   & \textit{io scioglievo}    & \textbf{ἦγον}   & \textbf{ἔγραφον} \\
-    \textsc{2.} & \textbf{ἔλυ-ες}   & \textit{tu scioglievi}    & \textbf{ἦγες} & \textbf{ἔγραφες} \\
-    \textsc{3.} & \textbf{ἔλυ-ε}    & \textit{egli scioglieva} & \textbf{ἦγε}  & \textbf{ἔγραφε}  \\
+    \textsc{1.} & \didobf{ἔλυ-ον}   & \textit{io scioglievo}    & \didobf{ἦγον}   & \didobf{ἔγραφον} \\
+    \textsc{2.} & \didobf{ἔλυ-ες}   & \textit{tu scioglievi}    & \didobf{ἦγες} & \didobf{ἔγραφες} \\
+    \textsc{3.} & \didobf{ἔλυ-ε}    & \textit{egli scioglieva} & \didobf{ἦγε}  & \didobf{ἔγραφε}  \\
 	 & \multicolumn{4}{c}{\textsc{plurale}} \\
-	\textsc{1.} & \textbf{ἔλυ-ομεν} & \textit{noi scioglievamo} & \textbf{ἦγομεν} & \textbf{ἔγραφομεν}   \\
-    \textsc{2.} & \textbf{ἔλυ-ετε}  & \textit{voi scioglievate} & \textbf{ἦγετε}  & \textbf{ἔγραφετε}  \\
-    \textsc{3.} & \textbf{ἔλυ-ον}   & \textit{essi sciolgevano} & \textbf{ἦγουσι} & \textbf{ἔγραφον}  \\
+	\textsc{1.} & \didobf{ἔλυ-ομεν} & \textit{noi scioglievamo} & \didobf{ἦγομεν} & \didobf{ἔγραφομεν}   \\
+    \textsc{2.} & \didobf{ἔλυ-ετε}  & \textit{voi scioglievate} & \didobf{ἦγετε}  & \didobf{ἔγραφετε}  \\
+    \textsc{3.} & \didobf{ἔλυ-ον}   & \textit{essi sciolgevano} & \didobf{ἦγουσι} & \didobf{ἔγραφον}  \\
     %\bottomrule
   \end{tabular}
   \caption{λύω, ἄγω, γράφω: imperfetto indicativo attivo}
@@ -223,50 +222,50 @@ Questo fenomeno viene detto \textit{aumento temporale}.
 
 \newthought{Osservazioni}
 \begin{itemize}
-\item[\textsc{1.}] L'imperfetto è formato a partire dal tema del presente \textbf{λυ(ο-/ε-)}.  
+\item[\textsc{1.}] L'imperfetto è formato a partire dal tema del presente \didobf{λυ(ο-/ε-)}.  
 \item[\textsc{2.}] Confronta le terminazioni dell'imperfetto con quelle del presente (45) e impara le \textit{desinenze personali dei tempi secondari}.
 \begin{table}[!htbp]
   \centering
   \begin{tabular}{l c l}
     \textsc{singolare} & \hspace{10 mm} & \textsc{plurale} \\
-    \textbf{ν} & \hspace{10 mm} & \textbf{μεν} \\
-    \textbf{ς} & \hspace{10 mm} & \textbf{τε} \\
-    \textemdash & \hspace{10 mm} & \textbf{ν}  \\
+    \didobf{ν} & \hspace{10 mm} & \didobf{μεν} \\
+    \didobf{ς} & \hspace{10 mm} & \didobf{τε} \\
+    \textemdash & \hspace{10 mm} & \didobf{ν}  \\
 	
   \end{tabular}
   \caption{desinenze personali dei tempi secondari}
   \label{tab:normaltab}
   %\zsavepos{pos:normaltab}
 \end{table}
-\item[\textsc{3.}] Osserva l'effetto sull'accento dell'aumento temporale \textbf{ἦγον} (da \textbf{ἄγω}).
-\item[\textsc{4. Esercizio}] Scrivi l'imperfetto indicativo di \textbf{ἁρπάζω, παίω, πέμπω}.
+\item[\textsc{3.}] Osserva l'effetto sull'accento dell'aumento temporale \didobf{ἦγον} (da \didobf{ἄγω}).
+\item[\textsc{4. Esercizio}] Scrivi l'imperfetto indicativo di \didobf{ἁρπάζω, παίω, πέμπω}.
 \end{itemize}
 
 
 \newthought{77. Vocabolario}
 
 \begin{multicols}{2}
-    \noindent \hangindent=1em \textbf{ἄγγελος,} \textit{messaggero}.  \\
-    \noindent \hangindent=1em \textbf{ἀδελφός,} \textit{fratello}\marginnote{Il vocativo ha accento irregolare, \textbf{ἄδελφε}}.  \\
-    \noindent \hangindent=1em \textbf{θεός,} \textit{dio}.  \\
-    \noindent \hangindent=1em \textbf{παιδίον,} \textit{bambino}.  \\
-    \noindent \hangindent=1em \textbf{πλοῖον,} \textit{barca}.  \\
-    \noindent \hangindent=1em \textbf{δίκαιος, δίκαιον,} agg. \textit{giusto, corretto}.  \\
-    \noindent \hangindent=1em \textbf{πέντε,} agg.indecl. \textit{cinque}.  \\
-    \noindent \hangindent=1em \textbf{τίς; τί;} pronome \textit{chi? cosa?}   \\
-    \noindent \hangindent=1em \textbf{ἐπί,} prep. con gen. \textit{in}; con dat. \textit{su, da};  con acc. \textit{a, contro}.\\
+    \noindent \hangindent=1em \didobf{ἄγγελος}, \textit{messaggero}.  \\
+    \noindent \hangindent=1em \didobf{ἀδελφός}, \textit{fratello}\marginnote{Il vocativo ha accento irregolare, \didobf{ἄδελφε}}.  \\
+    \noindent \hangindent=1em \didobf{θεός}, \textit{dio}.  \\
+    \noindent \hangindent=1em \didobf{παιδίον}, \textit{bambino}.  \\
+    \noindent \hangindent=1em \didobf{πλοῖον}, \textit{barca}.  \\
+    \noindent \hangindent=1em \didobf{δίκαιος, δίκαιον}, agg. \textit{giusto, corretto}.  \\
+    \noindent \hangindent=1em \didobf{πέντε}, agg.indecl. \textit{cinque}.  \\
+    \noindent \hangindent=1em \didobf{τίς; τί;} pronome \textit{chi? cosa?}   \\
+    \noindent \hangindent=1em \didobf{ἐπί}, prep. con gen. \textit{in}; con dat. \textit{su, da};  con acc. \textit{a, contro}.\\
 \end{multicols}
 
 \newthought{78. Traduci:}
-\textsc{1.}~οἱ τῶν θεῶν λόγοι ἦσαν σοφοί. \quad 
-\textsc{2.}~τοῖς θεοῖς ἔθυον οἱ δίκαιοι ἄνθρωποι ἐν τῷ χωρίῳ. \quad
-\textsc{3.}~τίς γὰρ ἦγε τὰ παιδία ἐπὶ τὸν ποταμόν; \quad
-\textsc{4.}~καὶ πέντε δοῦλοι ἔφευγον εἰς τὸ πεδίον. \quad
-\textsc{5.}~ὁ δὲ υἱὸς τοῦ ἀγγέλου ἔμενεν ἐν τῷ πλοιῷ. \quad
-\textsc{6.}~ἐπὶ γὰρ τῷ ποταμῷ ἔχει πλοῖον καλόν, δῶρον τοῦ (suo) ἀδελφοῦ. \quad
-\textsc{7.}~τίς δὲ ἔπεμπε τοὺς ἵππους; τί ἄχει ὀ ἄγγελος; \quad
-\textsc{8.}~τὸ παιδίον ἔλειπε τὸ ἱμάτιον ἐν τῷ ἰερῷ. \quad
-\textsc{9.}~ἐβάλλομεν, ἐπαίετε, κελεύσεις, ἥρπαζον. \quad
+\textsc{1.}~\dido{οἱ τῶν θεῶν λόγοι ἦσαν σοφοί.} \quad 
+\textsc{2.}~\dido{τοῖς θεοῖς ἔθυον οἱ δίκαιοι ἄνθρωποι ἐν τῷ χωρίῳ.} \quad
+\textsc{3.}~\dido{τίς γὰρ ἦγε τὰ παιδία ἐπὶ τὸν ποταμόν;} \quad
+\textsc{4.}~\dido{καὶ πέντε δοῦλοι ἔφευγον εἰς τὸ πεδίον.} \quad
+\textsc{5.}~\dido{ὁ δὲ υἱὸς τοῦ ἀγγέλου ἔμενεν ἐν τῷ πλοιῷ.} \quad
+\textsc{6.}~\dido{ἐπὶ γὰρ τῷ ποταμῷ ἔχει πλοῖον καλόν, δῶρον τοῦ (suo) ἀδελφοῦ.} \quad
+\textsc{7.}~\dido{τίς δὲ ἔπεμπε τοὺς ἵππους; τί ἄχει ὀ ἄγγελος;} \quad
+\textsc{8.}~\dido{τὸ παιδίον ἔλειπε τὸ ἱμάτιον ἐν τῷ ἰερῷ.} \quad
+\textsc{9.}~\dido{ἐβάλλομεν, ἐπαίετε, κελεύσεις, ἥρπαζον.} \quad
 
 
 \newthought{79. Scrivi in greco:} 
@@ -275,39 +274,39 @@ Questo fenomeno viene detto \textit{aumento temporale}.
 \textsc{3.}~Nella pianura vi erano cinque fiumi.
 
 \newthought{80.} 
-\stackunder{\textbf{Διάλογος.}}{\scriptsize{Dialogo.}} \textemdash 
-\stackunder{\textbf{Θωμᾶς}}{\scriptsize{Tommaso}} \textbf{καὶ ὁ} 
-\stackunder{\textbf{Μαθητής}}{\scriptsize{Scolaro}}
+\stackunder{\didobf{Διάλογος.}}{\scriptsize{Dialogo.}} \textemdash 
+\stackunder{\didobf{Θωμᾶς}}{\scriptsize{Tommaso}} \didobf{καὶ ὁ} 
+\stackunder{\didobf{Μαθητής}}{\scriptsize{Scolaro}}
 
 \begin{itemize}
-\item[Θ.] \stackunder{Ἀλλὰ}{\scriptsize{Ma}} 
+\item[\dido{Θ.}] \stackunder{Ἀλλὰ}{\scriptsize{Ma}} 
          \stackunder{νῦν}{\scriptsize{ora,}}, 
 		 \stackunder{ὦ}{\scriptsize{o}} ἄδελφε, τί 
          \stackunder{τήμερον}{\scriptsize{oggi}} 
 		 \stackunder{ἔμαθες}{\scriptsize{hai imparato}} ἐν τῷ 
 		 \stackunder{διδασκαλείῷ;}{\scriptsize{scuola?}}
-\item[Μ.] \stackunder{Πολλὰ δὴ ἔμαθον,}{\scriptsize{Molte cose,}}
+\item[\dido{Μ.}] \stackunder{Πολλὰ δὴ ἔμαθον,}{\scriptsize{Molte cose,}}
 		 \stackunder{Θωμασίδιον,}{\scriptsize{Tommasino,}}
 		 \stackunder{μάλιστα}{\scriptsize{specialmente}} δὲ τὰ
 		 \stackunder{Ἑλληνικὰ}{\scriptsize{greci}}
 		 \stackunder{ὀνόματα.}{\scriptsize{nomi.}}
-\item[Θ.] Τὰ δὲ Ἑλληνικὰ \stackunder{χαλεπά}{\scriptsize{difficile}}
+\item[\dido{Θ.}] Τὰ δὲ Ἑλληνικὰ \stackunder{χαλεπά}{\scriptsize{difficile}}
 		 \stackunder{ἐστιν;}{\scriptsize{è?}}
-\item[Μ.]\stackunder{Οὐ δῆτα·}{\scriptsize{No, davvero:}}\quad
+\item[\dido{Μ.}]\stackunder{Οὐ δῆτα·}{\scriptsize{No, davvero:}}\quad
 		 \stackunder{ἐποί}{\scriptsize{a me}}\quad
 		 \stackunder{γε}{\scriptsize{almeno}}\quad
 		 \stackunder{δοκεῖ}{\scriptsize{sembra}}\quad
 		 \stackunder{ῥᾴονα}{\scriptsize{più facile}}
 		 \stackunder{ἢ}{\scriptsize{del}} ἡ Λατίνη.
-\item[Θ.] \stackunder{Καλὸν τοὺτο·}{\scriptsize{Benissimo!}} τὴν γὰρ Λατίνην  
+\item[\dido{Θ.}] \stackunder{Καλὸν τοὺτο·}{\scriptsize{Benissimo!}} τὴν γὰρ Λατίνην  
 		 \stackunder{μισῶ.}{\scriptsize{detesto}} νὺν δὲ 
 		 \stackunder{ἴωμεν}{\scriptsize{andiamo}}
 		 \stackunder{παιξόμενοι.}{\scriptsize{a giocare.}}
-\item[Μ.] Οὐ δῆτα· τὰ γὰρ 
+\item[\dido{Μ.}] Οὐ δῆτα· τὰ γὰρ 
 		 \stackunder{ἐπίθετα}{\scriptsize{aggettivi}} \quad
 		 \stackunder{οὔπω}{\scriptsize{non ancora}} \quad
 		 \stackunder{μεμάθηκα.}{\scriptsize{ho imparato}}
-\item[Θ.] \stackunder{Βαβαί.}{\scriptsize{Oh cielo!}}
+\item[\dido{Θ.}] \stackunder{Βαβαί.}{\scriptsize{Oh cielo!}}
 
 \end{itemize}
 

@@ -52,14 +52,14 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
-\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
+\newfontfamily\GFSDidotBf[Path=./fonts/GFS_Didot/]{GFSDidotBold.ttf}
+\newfontfamily\GFSDidot[Path=./fonts/GFS_Didot/]{GFSDidot.ttf}
 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
-% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
-% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+\newcommand{\didobf}[1]{{\GFSDidotBf #1}}
+\newcommand{\dido}[1]{{\GFSDidot #1}}
 
 \usepackage{lipsum}
 \usepackage{url}
@@ -152,8 +152,7 @@
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione XI - Ripasso dell'indicativo attivo.}
 
-\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
-}
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities}
 
 \date{7 Gennajo 2017} % without \date command, current date is supplied
 
@@ -184,46 +183,48 @@ Lezione XI: Ripasso dell'indicativo attivo, tema e temi temporali del verbo, per
 
 %\printclassoptions
 
-\newthought{133. Presente e Imperfetto.} Il \textit{tema (temporale) del presente} e dell'imperfetto sono uguali e si desumono dalla prima persona singolare del presente indicativo attivo. La sua vocale finale è \textbf{ο} prima di \textbf{μ} o \textbf{ν,} altrimenti è \textbf{ε.} 
+\newthought{133. Presente e Imperfetto.} Il \textit{tema (temporale) del presente} e dell'imperfetto sono uguali e si desumono dalla prima persona singolare del presente indicativo attivo. La sua vocale finale è \didobf{ο} prima di \didobf{μ} o \didobf{ν}, altrimenti è \didobf{ε}. 
 
-\newthought{134. Futuro.} Il \textit{tema del futuro attivo e medio} si forma aggiungendo \textbf{-σο (-σε)} al tema \textit{(tema verbale, appunto)} del verbo\sidenote{I verbi in liquida hanno futuro e aoristo senza \textbf{σ.} Vedi (487.)}. 
+\newthought{134. Futuro.} Il \textit{tema del futuro attivo e medio} si forma aggiungendo \didobf{-σο (-σε)} al tema \textit{(tema verbale, appunto)} del verbo\sidenote{I verbi in liquida hanno futuro e aoristo senza \didobf{σ}. Vedi (487.)}. 
 
-\newthought{135. Aoristo Primo.} Il \textit{tema dell'aoristo primo attivo e medio} si forma aggiungendo \textbf{-σα} al tema del verbo.
+\newthought{135. Aoristo Primo.} Il \textit{tema dell'aoristo primo attivo e medio} si forma aggiungendo \didobf{-σα} al tema del verbo.
 
 \newthought{Osservazione}
 \begin{itemize}
-\item[\textsc{a.}] I temi verbali in linguale (\textbf{τ, δ, θ}) prima della \textbf{σ} la perdono, come in \textbf{πείθω,} \textit{persuadere,} fut. \textbf{πείσω;} \textbf{ἀθροίζω} (tema verbale \textbf{ἀθροιδ-}), \textit{raccogliere,} fut. \textbf{ἀθροισω.} 
+\item[\textsc{a.}] I temi verbali in linguale (\didobf{τ, δ, θ}) prima della \didobf{σ} la perdono, 
+come in \didobf{πείθω}, \textit{persuadere,} fut. \didobf{πείσω}; \didobf{ἀθροίζω} (tema verbale \didobf{ἀθροιδ-}), \textit{raccogliere,} fut. \didobf{ἀθροισω}. 
 \end{itemize}
 
-\newthought{136. Aoristo Secondo.} Il \textit{tema dell'aoristo secondo} si forma aggiungendo \textbf{ο} o \textbf{ε (-ο/-ε)} al tema del verbo. All'indicativo, si coniuga come l'imperfetto, negli altri modi si coniuga come il presente. 
+\newthought{136. Aoristo Secondo.} Il \textit{tema dell'aoristo secondo} si forma aggiungendo \didobf{ο} o \didobf{ε (-ο/-ε)} al tema del verbo. All'indicativo, si coniuga come l'imperfetto, negli altri modi si coniuga come il presente. 
 
-\newthought{137. Perfetto Primo.} Nei temi verbali in vocale, in molti temi in liquida e in alcuni temi in linguale il \textit{tema del perfetto (primo)} si forma aggiungendo \textbf{-κα} al tema verbale raddoppiato.
+\newthought{137. Perfetto Primo.} Nei temi verbali in vocale, in molti temi in liquida e in alcuni temi in linguale il \textit{tema del perfetto (primo)} si forma aggiungendo \didobf{-κα} al tema verbale raddoppiato.
 
 \hyphenation{θαυ-μά-ζω}
 
 \newthought{Osservazione}
 \begin{itemize}
-\item[\textsc{1.}] Anche qui i temi verbali in linguale (\textbf{τ, δ, θ,} specialmente quelli con il presente in \textbf{-ζω}) prima della \textbf{κα} la perdono, come in \textbf{θαυμάζω} (tema verbale \textbf{θαυμαδ-}), \textit{ammirare,} perfetto \textbf{τεθαύμακα.}
+\item[\textsc{1.}] Anche qui i temi verbali in linguale (\didobf{τ, δ, θ}, specialmente quelli con il presente in \didobf{-ζω}) prima della \didobf{κα} la perdono, come in \didobf{θαυμάζω} (tema verbale \didobf{θαυμαδ-}), \textit{ammirare,} perfetto \didobf{τεθαύμακα}.
 \end{itemize}
 
-\newthought{138. Perfetto Secondo.} Per formare il perfetto molti verbi aggiungono \textbf{α} al tema verbale raddoppiato. La maggior parte dei temi in \textbf{π, β, κ, γ,} se preceduta da vocale breve, la cambiano nella muta cognata aspra; i temi in \textbf{φ, χ} rimangono invariati. Per convenienza, questo perfetto viene chiamato \textit{perfetto secondo}, a distinguerlo da quello in \textbf{-κα}. La coniugazione è la medesima.
+\newthought{138. Perfetto Secondo.} Per formare il perfetto molti verbi aggiungono \didobf{α} al tema verbale raddoppiato. La maggior parte dei temi in \didobf{π, β, κ, γ}, se preceduta da vocale breve, la cambiano nella muta cognata aspra; i temi in \didobf{φ, χ} rimangono invariati. Per convenienza, questo perfetto viene chiamato \textit{perfetto secondo}, a distinguerlo da quello in \didobf{-κα}. La coniugazione è la medesima.
 \newthought{Osservazione}
 \begin{itemize}
 \item[\textsc{a.}] I seguenti verbi, già incontrati in vocabolari precedenti, hanno perfetto secondo:
 \begin{multicols}{2}
-    \noindent \hangindent=1em \textbf{ἄγω,} pf. \textbf{ἦχα,}  \\
-	\noindent \hangindent=1em \textbf{γράφω,} pf. \textbf{γέγραφα,}  \\
-	\noindent \hangindent=1em \textbf{διώκω,} pf. \textbf{δεδίωχα,}  \\
+    \noindent \hangindent=1em \didobf{ἄγω}, pf. \didobf{ἦχα},  \\
+	\noindent \hangindent=1em \didobf{γράφω}, pf. \didobf{γέγραφα},  \\
+	\noindent \hangindent=1em \didobf{διώκω}, pf. \didobf{δεδίωχα},  \\
 	
-	\noindent \hangindent=1em \textbf{πέμπω} pf. \textbf{πέπομφα,}  \\
-	\noindent \hangindent=1em \textbf{λείπω} pf. \textbf{λέλοιπα,}  \\
-	\noindent \hangindent=1em \textbf{φεύγω} pf. \textbf{πέφευγα.} 
+	\noindent \hangindent=1em \didobf{πέμπω}, pf. \didobf{πέπομφα},  \\
+	\noindent \hangindent=1em \didobf{λείπω}, pf. \didobf{λέλοιπα},  \\
+	\noindent \hangindent=1em \didobf{φεύγω}, pf. \didobf{πέφευγα}. 
 \end{multicols}
 \end{itemize}
 
-\newthought{139. Piuccheperfetto Primo.} Il piuccheperfetto cambia la \textbf{-κα} del perfetto in \textbf{-κε,} che al singolare diviene \textbf{-κη, -κης, -κει(ν).}\sidenote{forma contratta dallo ionico \textbf{-κεα}, usata al posto del dialetto attico \textbf{-κειν}}
+\newthought{139. Piuccheperfetto Primo.} Il piuccheperfetto cambia la \didobf{-κα} del perfetto in \didobf{-κε}, che al singolare diviene \didobf{-κη, -κης, -κει(ν)}.
+\sidenote{forma contratta dallo ionico \didobf{-κεα}, usata al posto del dialetto attico \didobf{-κειν}}
 
-\newthought{140. Piuccheperfetto Secondo.} La vocale \textbf{α} del perfetto secondo diventa \textbf{ε} nel piuccheperfetto secondo; la coniugazione è la stessa del piuccheperfetto primo.
+\newthought{140. Piuccheperfetto Secondo.} La vocale \didobf{α} del perfetto secondo diventa \didobf{ε} nel piuccheperfetto secondo; la coniugazione è la stessa del piuccheperfetto primo.
 
 \newthought{Esercizio}
 \begin{itemize}
@@ -233,61 +234,47 @@ Lezione XI: Ripasso dell'indicativo attivo, tema e temi temporali del verbo, per
 \newthought{141. Vocabolario}
 
 \begin{multicols}{2}
-    \noindent \hangindent=1em \textbf{κεφαλέ, ἡ} \textit{testa}.  \\
-    \noindent \hangindent=1em \textbf{στρατηγός, ὁ} \textit{comandante, generale}.  \\
-    \noindent \hangindent=1em \textbf{πολέμιος, α, ον} agg. \textit{ostile}.  \\
-    \noindent \hangindent=1em \textbf{οἱ πολέμιοι} \textit{il nemico}.  \\
-    \noindent \hangindent=1em \textbf{πολλοί, πολλαί, πολλά} agg. \textit{molti}.  \\
+    \noindent \hangindent=1em \didobf{κεφαλέ, ἡ} \textit{testa}.  \\
+    \noindent \hangindent=1em \didobf{στρατηγός, ὁ} \textit{comandante, generale}.  \\
+    \noindent \hangindent=1em \didobf{πολέμιος, α, ον} agg. \textit{ostile}.  \\
+    \noindent \hangindent=1em \didobf{οἱ πολέμιοι} \textit{il nemico}.  \\
+    \noindent \hangindent=1em \didobf{πολλοί, πολλαί, πολλά} agg. \textit{molti}.  \\
 
-    \noindent \hangindent=1em \textbf{αφροίζω,} fut. \textbf{αφροίσω,} aor. \textbf{ἔφροισα,} 
-	pf. \textbf{ἔφροικα,} 
-	\textit{raccogliere.} \\ 
+    \noindent \hangindent=1em \didobf{αφροίζω}, fut. \didobf{αφροίσω}, aor. \didobf{ἔφροισα}, pf. \didobf{ἔφροικα},	\textit{raccogliere.} \\ 
+	\noindent \hangindent=1em \didobf{διδάσκω}, fut. \didobf{διδάξω}, aor. \didobf{ἐδίδαξα}, pf. \didobf{δεδίδακα},	\textit{insegnare.} \\ 
+	\noindent \hangindent=1em \didobf{κλέπτω}, fut. \didobf{κλέψω}, aor. \didobf{ἔκλεψα}, pf. \didobf{κέκλοφα},	\textit{rubare.} \\ 
+	\noindent \hangindent=1em \didobf{πείφω}, fut. \didobf{πείσω}, aor. \didobf{ἔπεισα}, pf. \didobf{πέπεικα}, \textit{persuadere.} \\ 
+	\noindent \hangindent=1em \didobf{ρίπτω}, fut. \didobf{ρίφω}, aor. \didobf{ἔρριψα}, pf. \didobf{ἔρριφα}, \textit{lanciare.} \\ 
 	
-	\noindent \hangindent=1em \textbf{διδάσκω,} fut. \textbf{διδάξω,} aor. \textbf{ἐδίδαξα,} 
-	pf. \textbf{δεδίδακα,} 
-	\textit{insegnare.} \\ 
-	
-	\noindent \hangindent=1em \textbf{κλέπτω,} fut. \textbf{κλέψω,} aor. \textbf{ἔκλεψα,} 
-	pf. \textbf{κέκλοφα,} 
-	\textit{rubare.} \\ 
-	
-	\noindent \hangindent=1em \textbf{πείφω,} fut. \textbf{πείσω,} aor. \textbf{ἔπεισα,} 
-	pf. \textbf{πέπεικα,} 
-	\textit{persuadere.} \\ 
-	
-	\noindent \hangindent=1em \textbf{ρίπτω,} fut. \textbf{ρίφω,} aor. \textbf{ἔρριψα,} 
-	pf. \textbf{ἔρριφα,} 
-	\textit{lanciare.} \\ 
-	
-	\noindent \hangindent=1em \textbf{μετά,} prep. 
+	\noindent \hangindent=1em \didobf{μετά}, prep. 
 	con \gen \textit{con}; 
 	con \acc \textit{dopo}. \\
 	
-	\noindent \hangindent=1em \textbf{ἀλλά,} cong. \textit{ma, ancora.} \\ 
+	\noindent \hangindent=1em \didobf{ἀλλά}, cong. \textit{ma, ancora.} \\ 
 	
 \end{multicols}
 
 \newthought{142. Traduci:}
-\textsc{1.}~πείθουσιν, ἔπειθον, πείσουσιν. \quad
-\textsc{2.}~ἔπεισαν, πεπείκασιν, ἐπεπείκεσαν. \quad
-\textsc{3.}~ἠθροίσαμεν, διδάξει, ἦγε, κλέψετε. \quad
-\textsc{2.}~ἔρριφας, ἔλαβε, λέλοιπα, ἐδεδιδάχης. \quad
-\textsc{2.}~μένομεν, ἐβάλετε, ἦχεν, ἤχει. \\
+\textsc{1.}~\dido{πείθουσιν, ἔπειθον, πείσουσιν.} \quad
+\textsc{2.}~\dido{ἔπεισαν, πεπείκασιν, ἐπεπείκεσαν.} \quad
+\textsc{3.}~\dido{ἠθροίσαμεν, διδάξει, ἦγε, κλέψετε.} \quad
+\textsc{2.}~\dido{ἔρριφας, ἔλαβε, λέλοιπα, ἐδεδιδάχης.} \quad
+\textsc{2.}~\dido{μένομεν, ἐβάλετε, ἦχεν, ἤχει.} \\
 
 \hyphenation{ἐ-στρά-τευ-σεν}
 \hyphenation{κλέ-ψου-σι}
 
 \newthought{143.}
-\textsc{1.}~ἐδίδαξαν τὰ τέκνα γράφειν λόγους σοφούς. \quad
-\textsc{2.}~ἐν δὲ τῇ στενῇ ὁδῷ ἠθροίκασι πολλοὺς δούλους. \quad
-\textsc{3.}~ἀλλὰ ταῖς λόγχαις ἔπαιον τὰς κεφαλὰς τῶν ἀγγέλων. \quad
-\textsc{4.}~ηὗρε δὲ τὸν ἀδελφὸν ἐν τῷ καπηλείῷ· οἶνον δὲ οὐκ ἔπινεν. \quad
-\textsc{5.}~ἐπὶ δὲ ταῖς τοῦ ποταμοῦ πηγαῖς ἔλιπε τὸ ἱμάτιον. \quad
-\textsc{6.}~ἐκεκελεύκει γὰρ τὰ παιδία ῤίπτειν τοὺς λίθους εἰς τὴν θάλατταν. \quad
-\textsc{7.}~ὁ δὲ στρατηγὸς εὐθὺς ἐστράτευσεν ἐπὶ τοὺς πολεμίους. \quad
-\textsc{8.}~άλλ´ἐπεὶ ἥρπασαν\sidenote{traduci come fosse piuccheperfetto.} τὰς κώμας ἔφυγον πολλὰ πλέθρα διὰ τοῦ πεδίου. \quad
-\textsc{9.}~μένουσιν ἐν τῷ ἱερῷ καὶ κλέψουσι τὰ τῶν Μουσῶν δῶρα. \quad
-\textsc{10.}~μακρὰ ἦν ἡ μάχη, ἀλλὰ καλὴ ἡ νίκη. 
+\textsc{1.}~\dido{ἐδίδαξαν τὰ τέκνα γράφειν λόγους σοφούς.} \quad
+\textsc{2.}~\dido{ἐν δὲ τῇ στενῇ ὁδῷ ἠθροίκασι πολλοὺς δούλους.} \quad
+\textsc{3.}~\dido{ἀλλὰ ταῖς λόγχαις ἔπαιον τὰς κεφαλὰς τῶν ἀγγέλων.} \quad
+\textsc{4.}~\dido{ηὗρε δὲ τὸν ἀδελφὸν ἐν τῷ καπηλείῷ· οἶνον δὲ οὐκ ἔπινεν.} \quad
+\textsc{5.}~\dido{ἐπὶ δὲ ταῖς τοῦ ποταμοῦ πηγαῖς ἔλιπε τὸ ἱμάτιον.} \quad
+\textsc{6.}~\dido{ἐκεκελεύκει γὰρ τὰ παιδία ῤίπτειν τοὺς λίθους εἰς τὴν θάλατταν.} \quad
+\textsc{7.}~\dido{ὁ δὲ στρατηγὸς εὐθὺς ἐστράτευσεν ἐπὶ τοὺς πολεμίους.} \quad
+\textsc{8.}~\dido{άλλ´ἐπεὶ ἥρπασαν\sidenote{traduci come fosse piuccheperfetto.} τὰς κώμας ἔφυγον πολλὰ πλέθρα διὰ τοῦ πεδίου.} \quad
+\textsc{9.}~\dido{μένουσιν ἐν τῷ ἱερῷ καὶ κλέψουσι τὰ τῶν Μουσῶν δῶρα.} \quad
+\textsc{10.}~\dido{μακρὰ ἦν ἡ μάχη, ἀλλὰ καλὴ ἡ νίκη.} 
 
 \newthought{144. Scrivi in Greco:}
 \textsc{1.}~Ma ha mandatoil nemico alla cittadella.\quad

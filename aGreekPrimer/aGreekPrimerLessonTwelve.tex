@@ -54,14 +54,14 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
-\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
+\newfontfamily\GFSDidotBf[Path=./fonts/GFS_Didot/]{GFSDidotBold.ttf}
+\newfontfamily\GFSDidot[Path=./fonts/GFS_Didot/]{GFSDidot.ttf}
 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
-% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
-% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+\newcommand{\didobf}[1]{{\GFSDidotBf #1}}
+\newcommand{\dido}[1]{{\GFSDidot #1}}
 
 \usepackage{lipsum}
 \usepackage{url}
@@ -168,8 +168,7 @@
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione XII - Declinazione in A. Nomi maschili).}
 
-\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
-}
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities}
 
 \date{8 Gennajo 2017} % without \date command, current date is supplied
 
@@ -208,24 +207,24 @@ Lezione XII: la declinazione in A), nomi maschili, accusativo di relazione (in o
   \begin{tabular}{l l l l l}
     %\toprule
 	\multicolumn{5}{c}{\textsc{parole guida}} \\
-	& \textbf{νεᾱνίᾱς,} & \textbf{πολίτης,} & \textbf{μαθητής,} & \textbf{σατράπης,} \\
+	& \didobf{νεᾱνίᾱς,} & \didobf{πολίτης,} & \didobf{μαθητής,} & \didobf{σατράπης,} \\
 	& \multicolumn{1}{c}{\textit{giovane uomo}}
 	& \multicolumn{1}{c}{\textit{cittadino}}
 	& \multicolumn{1}{c}{\textit{scolaro}}
 	& \multicolumn{1}{c}{\textit{satrapo}} \\
    
 	\multicolumn{5}{c}{\textsc{singolare}} \\
-    \textsc{n.} & \textbf{νεᾱνίᾱς} & \textbf{πολίτης} & \textbf{μαθητής} & \textbf{σατράπης} \\
-    \textsc{g.} & \textbf{νεᾱνίου} & \textbf{πολίτου} & \textbf{μαθητοῦ} & \textbf{σατράπου} \\
-    \textsc{d.} & \textbf{νεᾱνίᾳ}  & \textbf{πολίτῃ}  & \textbf{μαθητῇ}  & \textbf{σατράπῃ} \\
-	\textsc{a.} & \textbf{νεᾱνίᾱν} & \textbf{πολίτην} & \textbf{μαθητήν} & \textbf{σατράπην} \\
-	\textsc{v.} & \textbf{νεᾱνίᾱ}  & \textbf{πολῖτα}  & \textbf{μαθητά}  & \textbf{σατράπη} \\
+    \textsc{n.} & \didobf{νεᾱνίᾱς} & \didobf{πολίτης} & \didobf{μαθητής} & \didobf{σατράπης} \\
+    \textsc{g.} & \didobf{νεᾱνίου} & \didobf{πολίτου} & \didobf{μαθητοῦ} & \didobf{σατράπου} \\
+    \textsc{d.} & \didobf{νεᾱνίᾳ}  & \didobf{πολίτῃ}  & \didobf{μαθητῇ}  & \didobf{σατράπῃ} \\
+	\textsc{a.} & \didobf{νεᾱνίᾱν} & \didobf{πολίτην} & \didobf{μαθητήν} & \didobf{σατράπην} \\
+	\textsc{v.} & \didobf{νεᾱνίᾱ}  & \didobf{πολῖτα}  & \didobf{μαθητά}  & \didobf{σατράπη} \\
 	
 	\multicolumn{5}{c}{\textsc{plurale}} \\
-	\textsc{n.v.} & \textbf{νεᾱνίαί}  & \textbf{πολῖται}  & \textbf{μαθηταί}  & \textbf{σατράπαι} \\
-    \textsc{g.}   & \textbf{νεᾱνιῶν}  & \textbf{πολῑτῶν}  & \textbf{μαθητῶν}  & \textbf{σατραπῶυ} \\
-    \textsc{d.}   & \textbf{νεᾱνίαις} & \textbf{πολίταις} & \textbf{μαθηταῖς} & \textbf{σατράπαις} \\
-	\textsc{a.}   & \textbf{νεᾱνίᾱς}  & \textbf{πολίτᾱς}  & \textbf{μαθητάς}  & \textbf{σατράπᾱς} \\
+	\textsc{n.v.} & \didobf{νεᾱνίαί}  & \didobf{πολῖται}  & \didobf{μαθηταί}  & \didobf{σατράπαι} \\
+    \textsc{g.}   & \didobf{νεᾱνιῶν}  & \didobf{πολῑτῶν}  & \didobf{μαθητῶν}  & \didobf{σατραπῶυ} \\
+    \textsc{d.}   & \didobf{νεᾱνίαις} & \didobf{πολίταις} & \didobf{μαθηταῖς} & \didobf{σατράπαις} \\
+	\textsc{a.}   & \didobf{νεᾱνίᾱς}  & \didobf{πολίτᾱς}  & \didobf{μαθητάς}  & \didobf{σατράπᾱς} \\
     %\bottomrule
   \end{tabular}
   \label{tab:normaltab}
@@ -235,18 +234,19 @@ Lezione XII: la declinazione in A), nomi maschili, accusativo di relazione (in o
 
 \newthought{Esercizi}
 \begin{itemize}
-\item[\textsc{1.}] In quali casi questi nomi differiscono dai nomi femminili in \textbf{α} ed \textbf{η}? 
-\item[\textsc{2.}] Declina \textbf{στρατιώτης ἀγαθός, ὁ Πέρσης.}
+\item[\textsc{1.}] In quali casi questi nomi differiscono dai nomi femminili in \didobf{α} ed \didobf{η}? 
+\item[\textsc{2.}] Declina \didobf{στρατιώτης ἀγαθός, ὁ Πέρσης}.
 \end{itemize}
 
-\newthought{146.} I nomi che si riferiscono a stati/nazioni in \textbf{-ης} e i nomi in \textbf{-της} escono in \textbf{α} al \voc \si, come in \textbf{Πέρσης,} \textit{Persiano,} voc. \textbf{Πέρσα;} \textbf{πολίτης,} voc. \textbf{πολῖτα.} La maggior parte degli altri nomi in \textbf{-ης} escono in \textbf{η} al vocativo.
+\newthought{146.} I nomi che si riferiscono a stati/nazioni in \didobf{-ης} e i nomi in \didobf{-της} escono in \didobf{α} al \voc \si, come in \didobf{Πέρσης}, 
+\textit{Persiano,} voc. \didobf{Πέρσα}; \didobf{πολίτης}, voc. \didobf{πολῖτα}. La maggior parte degli altri nomi in \didobf{-ης} escono in \didobf{η} al vocativo.
 
 \newthought{147. Frasi Modello} da imparare a memoria.
 \begin{itemize}
-\item[\textsc{1.}] \textbf{ὁι πολέμιοι φοβεροὶ ἦσαν μάχην,} \textit{il nemico era terribile in battaglia.} 
-\item[\textsc{2.}] \textbf{κάμνω τὴν κεφαλήν,} \textit{Ho un dolore nella (mia) testa.} 
+\item[\textsc{1.}] \didobf{ὁι πολέμιοι φοβεροὶ ἦσαν μάχην}, \textit{il nemico era terribile in battaglia.} 
+\item[\textsc{2.}] \didobf{κάμνω τὴν κεφαλήν}, \textit{Ho un dolore nella (mia) testa.} 
 \end{itemize}
-Osserva, in textsc{1.}, che la parola \textbf{μάχην} indica in quale circostanza il nemico sia terribile; in textsc{2.} \textbf{τὴν κεφαλήν} indica la parte del corpo affetta da \textbf{κάμνω.} Questo costrutto è detto \textbf{Accusativo di Relazione (o Accusativo alla Greca).}\sidenote{\textit{Accusativo di Specificazione}, nel testo inglese.} Il costrutto si trova anche in latino (ad es. in Virgilio, \textit{nuda genu, Cressa genus}).   
+Osserva, in textsc{1.}, che la parola \didobf{μάχην} indica in quale circostanza il nemico sia terribile; in textsc{2.} \didobf{τὴν κεφαλήν} indica la parte del corpo affetta da \didobf{κάμνω}. Questo costrutto è detto \didobf{Accusativo di Relazione (o Accusativo alla Greca).}\sidenote{\textit{Accusativo di Specificazione}, nel testo inglese.} Il costrutto si trova anche in latino (ad es. in Virgilio, \textit{nuda genu, Cressa genus}).   
 
 \newthought{148. Regola di Sintassi.} Dopo una certa espressione (sia essa verbo, aggettivo, nome o frase) un Accusativo \textit{di Relazione} - un nome in accusativo - indica la parte o qualità alla quale l'espressione stessa \textit{si riferisce.}
 
@@ -255,37 +255,37 @@ Osserva, in textsc{1.}, che la parola \textbf{μάχην} indica in quale circos
 \newthought{149. Vocabolario}
 
 \begin{multicols}{2}
-    \noindent \hangindent=1em \textbf{δείπνον, τό} \textit{cena, zuppa}.  \\
-    \noindent \hangindent=1em \textbf{διδασκαλεῖον, τό} \textit{scuola}.  \\
-    \noindent \hangindent=1em \textbf{διδάσκαλος, ὁ} \textit{maestro, insegnante}.  \\
-    \noindent \hangindent=1em \textbf{κρόμμυον, τό} \textit{cipolla}.  \\
-    \noindent \hangindent=1em \textbf{μαθητής, ὁ} \textit{scolaro}.  \\
-    \noindent \hangindent=1em \textbf{νεᾱνίᾱς, ὁ} \textit{giovane uomo}.  \\
-    \noindent \hangindent=1em \textbf{Ξέρξης, ὁ} \textit{Serse}.  \\
-    \noindent \hangindent=1em \textbf{ὄσπριον, τό} \textit{legume,} pl. \textit{fagioli}.  \\
-    \noindent \hangindent=1em \textbf{Πέρσης, ὁ} \textit{un Persiano}.  \\
-    \noindent \hangindent=1em \textbf{πολίτης, ὁ} \textit{cittadino}.  \\
-    \noindent \hangindent=1em \textbf{σατράπης, ὁ} \textit{satrapo,} un governatore persiano.  \\
-    \noindent \hangindent=1em \textbf{στρατιώτης, ὁ} \textit{soldato}.  \\
+    \noindent \hangindent=1em \didobf{δείπνον, τό} \textit{cena, zuppa}.  \\
+    \noindent \hangindent=1em \didobf{διδασκαλεῖον, τό} \textit{scuola}.  \\
+    \noindent \hangindent=1em \didobf{διδάσκαλος, ὁ} \textit{maestro, insegnante}.  \\
+    \noindent \hangindent=1em \didobf{κρόμμυον, τό} \textit{cipolla}.  \\
+    \noindent \hangindent=1em \didobf{μαθητής, ὁ} \textit{scolaro}.  \\
+    \noindent \hangindent=1em \didobf{νεᾱνίᾱς, ὁ} \textit{giovane uomo}.  \\
+    \noindent \hangindent=1em \didobf{Ξέρξης, ὁ} \textit{Serse}.  \\
+    \noindent \hangindent=1em \didobf{ὄσπριον, τό} \textit{legume,} pl. \textit{fagioli}.  \\
+    \noindent \hangindent=1em \didobf{Πέρσης, ὁ} \textit{un Persiano}.  \\
+    \noindent \hangindent=1em \didobf{πολίτης, ὁ} \textit{cittadino}.  \\
+    \noindent \hangindent=1em \didobf{σατράπης, ὁ} \textit{satrapo,} un governatore persiano.  \\
+    \noindent \hangindent=1em \didobf{στρατιώτης, ὁ} \textit{soldato}.  \\
 	
-	\noindent \hangindent=1em \textbf{θαυμάζω,} aor. \textbf{εθαύμασα,} \textbf{τεθαύμακα,} \textit{meravigliarsi, ammirare}. \\ 
-	\noindent \hangindent=1em \textbf{μανθάνω,} aor. \textbf{ἔμαθον,} \textbf{μεμάθηκα,} \textit{imparare}. \\ 
+	\noindent \hangindent=1em \didobf{θαυμάζω}, aor. \didobf{εθαύμασα}, \didobf{τεθαύμακα}, \textit{meravigliarsi, ammirare}. \\ 
+	\noindent \hangindent=1em \didobf{μανθάνω}, aor. \didobf{ἔμαθον}, \didobf{μεμάθηκα}, \textit{imparare}. \\ 
 	
 \end{multicols}
 
 \hyphenation{δι-δα-σκά-λου}
 
 \newthought{150. Traduci:}
-\textsc{1.}~οἱ δὲ πολῖται τῆς νήσου ἀγαθοὶ ἦσαν μάχην. \quad
-\textsc{2.}~τὸ τῶν στρατιωτῶν δεῖνον ἦν ὄσπρια καὶ κπόμμυα. \quad
-\textsc{3.}~τίς ἐδίδαξε τοὺς νεανίας ἐν τῷ διδασκαλείῳ; \quad
-\textsc{4.}~ἐν γὰρ τῇ τοῦ διδασκάλου οἰκίᾳ οἱ μαθηταὶ ἔμαθον γράφειν. \quad
-\textsc{5.}~Ξέρξης δὲ πέπομφε δῶρα καλὰ τῷ ἀγαθῷ σατράπῃ. \quad
-\textsc{6.}~οὐ γὰρ κακὸς ἦν μάχην, ἀλλὰ ἐστράτευτε μετὰ τῶν στρατιωτῶν. \quad
-\textsc{7.}~αἱ δὲ κόραι ἐθαύμασαν τὰς κόγχας παρὰ τῇ θύρα. \quad
-\textsc{8.}~ἐπὶ δὲ ταῖς πέτραις ηὑρήκασιν οἱ μαθηταὶ στολὰς καλάς. \quad
-\textsc{9.}~οὐ πείσεις τοὺς Πέρσας κλέπτειν τοὺς ἵππους. \quad
-\textsc{10.}~οὐκ ὥρα ἦν ἀθροίζειν τούς πολίτας.
+\textsc{1.}~\dido{οἱ δὲ πολῖται τῆς νήσου ἀγαθοὶ ἦσαν μάχην.} \quad
+\textsc{2.}~\dido{τὸ τῶν στρατιωτῶν δεῖνον ἦν ὄσπρια καὶ κπόμμυα.} \quad
+\textsc{3.}~\dido{τίς ἐδίδαξε τοὺς νεανίας ἐν τῷ διδασκαλείῳ;} \quad
+\textsc{4.}~\dido{ἐν γὰρ τῇ τοῦ διδασκάλου οἰκίᾳ οἱ μαθηταὶ ἔμαθον γράφειν.} \quad
+\textsc{5.}~\dido{Ξέρξης δὲ πέπομφε δῶρα καλὰ τῷ ἀγαθῷ σατράπῃ.} \quad
+\textsc{6.}~\dido{οὐ γὰρ κακὸς ἦν μάχην, ἀλλὰ ἐστράτευτε μετὰ τῶν στρατιωτῶν.} \quad
+\textsc{7.}~\dido{αἱ δὲ κόραι ἐθαύμασαν τὰς κόγχας παρὰ τῇ θύρα.} \quad
+\textsc{8.}~\dido{ἐπὶ δὲ ταῖς πέτραις ηὑρήκασιν οἱ μαθηταὶ στολὰς καλάς.} \quad
+\textsc{9.}~\dido{οὐ πείσεις τοὺς Πέρσας κλέπτειν τοὺς ἵππους.} \quad
+\textsc{10.}~\dido{οὐκ ὥρα ἦν ἀθροίζειν τούς πολίτας.}
 
 \newthought{151. Scrivi in Greco:}
 \textsc{1.}~Chi ostacolò la vittoria dei persiani? \quad
@@ -293,22 +293,23 @@ Osserva, in textsc{1.}, che la parola \textbf{μάχην} indica in quale circos
 \textsc{3.}~Prese gli schiavi dalla fonte. \quad
 
 \newthought{152. Armodio e Aristogitone.} (i patrioti ateniesi)\\
-Ἐπεὶ δὴ ποτε \textit{(una volta)} Ἀθήωησι\sidenote{\textit{ad Atene.}} πόλεμος ἦν τοῖς ἐν τῷ
+\dido{Ἐπεὶ δὴ ποτε \textit{(una volta)} Ἀθήωησι\sidenote{\textit{ad Atene.}} πόλεμος ἦν τοῖς ἐν τῷ
 πεδίῳ πολίταις καὶ τοῖς παρὰ τῇ θαλάττῃ, Πεισίστρατός τις 
-στρατιώτας ἤθροισε καὶ κατέλαβε\sidenote{\textbf{ἤρπασε}} τὴν ἄκραν τῶν Ἀθηνῶν \textit{(Atene)}.
+στρατιώτας ἤθροισε καὶ κατέλαβε\sidenote{\didobf{ἤρπασε}} τὴν ἄκραν τῶν Ἀθηνῶν \textit{(Atene)}.
 ἀγαθὸς δὲ ἄνθρωπος ἦω καὶ σοφός, καὶ πολλοὺς ἐνιαυτοὺς \textit{(anni))}
 ἔμενεν ἐν τῇ ἀρχῇ.\sidenote{legge, governo.} μετὰ δὲ τὸν θάνατον\sidenote{\textit{morte.}} 
-αὐτοῦ \textit{(il suo)} οἱ υἱοὶ παρέλαβον \textit{(succeduto a)} τὴν ἀρχὴν. πρῶτον μὲν\sidenote{\textbf{πρῶτον μὲν,} \textit{all'inizio.}} καὶ οὗτοι
-\sidenote{\textbf{καὶ οὗτοι,} \textit{anche loro.}} 
+αὐτοῦ \textit{(il suo)} οἱ υἱοὶ παρέλαβον \textit{(succeduto a)} τὴν ἀρχὴν. πρῶτον μὲν\sidenote{\didobf{πρῶτον μὲν}, \textit{all'inizio.}} καὶ οὗτοι
+\sidenote{\didobf{καὶ οὗτοι,} \textit{anche loro.}} 
 ἀγαθοὶ ἦσαν· ὕστερον \textit{(più tardi)} δὲ ὀλίγῳ διὰ κακόν τι δύο ωεανίαι ἐπιβουλὴν \textit{(complotto)} ἐποίησαν\sidenote{\textit{fatto, formato.}}
 ἐπὶ τοὺς τυράννους \textit{(tiranni)}. τὸν μὲν Ἵππαρχον ἀπέκτειναν \textit{(messo a morte)},
 Ἱππίας δέ, ὁ ἀδελγός, εὐθὺς λαβὼν\sidenote{aoristo participio attivo.} 
-κατέκοψε\sidenote{\aor di \textbf{κατακόπτω,} \textit{uccidere.}} τοὺς νεανίας. ἐνταῦθα δ'ἐν ὀργῇ πολλὰ
+κατέκοψε\sidenote{\aor di \didobf{κατακόπτω}, \textit{uccidere.}} τοὺς νεανίας. ἐνταῦθα δ'ἐν ὀργῇ πολλὰ
 κακὰ ἐποίησεν ὁ τύραννος. μετὰ δὲ ὀλίγους ἐνιαυτοὺς ὁι
 πολῖται ἐξέβαλον αὐτὸν ἐκ τῆς χώρας. οἱ δὲ
-Ἀθηναῖοι\sidenote{\textbf{οἱ τῶν Ἀθηνῶν πολῖται.}} ἔτι καὶ νῦν\sidenote{anche oggi.} λέγουσι τοῖς τέκνοις τὰ περὶ\sidenote{la storia di.}
+Ἀθηναῖοι\sidenote{\didobf{οἱ τῶν Ἀθηνῶν πολῖται.}} ἔτι καὶ νῦν\sidenote{anche oggi.} λέγουσι τοῖς τέκνοις τὰ περὶ\sidenote{la storia di.}
 Ἁρμοδίου καὶ Ἀριστογείτοωος, οἵ 
 \center{τὸν τύραννον κτανέτην ἰσονόμους τ'Ἀθήνας ἐποιησάτην.\sidenote{che uccisero il tiranno e liberarono Atene.}}
+}
 
 
 

@@ -46,14 +46,14 @@
 
 \usepackage{fontspec}
 \usepackage{ifxetex}
-%\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
-\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+%\setmainfont[Path=./fonts/GFS_Didot/, ItalicFont=GFSDidotItalic.ttf, BoldFont=GFSDidotBold.ttf]{GFSDidot.ttf}
 
+\newfontfamily\GFSDidotBf[Path=./fonts/GFS_Didot/]{GFSDidotBold.ttf}
+\newfontfamily\GFSDidot[Path=./fonts/GFS_Didot/]{GFSDidot.ttf}
 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
-% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
-% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+\newcommand{\didobf}[1]{{\GFSDidotBf #1}}
+\newcommand{\dido}[1]{{\GFSDidot #1}}
 
 \usepackage{lipsum}
 \usepackage{url}
@@ -146,8 +146,7 @@
 
 \title{A Greek Primer. Introduzione al Greco Antico \newline Lezione IV - Nomi: neutri della declinazione in O.}
 
-\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities\marginnote{\url{http://www.milagathos.com}}
-}
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities}
 
 \date{29 Dicembre 2016} % without \date command, current date is supplied
 
@@ -190,22 +189,22 @@ considerazioni sugli accenti dei nomi, vocabolario, esercizi.
   \begin{tabular}{l l c l l l l}
     %\toprule
 	\multicolumn{7}{c}{\textsc{parole guida}} \\
-	\multicolumn{2}{c}{\textbf{δῶρον,}}              & \textsc{nome latino}    & \textbf{πεδίον},               & \multicolumn{3}{c}{\textbf{τὸ καλὸν ἱμάτιον},} \\
+	\multicolumn{2}{c}{\didobf{δῶρον},}              & \textsc{nome latino}    & \didobf{πεδίον},               & \multicolumn{3}{c}{\didobf{τὸ καλὸν ἱμάτιον},} \\
 	\multicolumn{2}{c}{\textit{dono,} \textsc{n.}} & \textsc{corrispondente} & \textit{pianura,} \textsc{n.}  & \multicolumn{3}{c}{\textit{il bel mantello}} \\
    
 	\multicolumn{7}{c}{\textsc{singolare}} \\
-    \textsc{n.} & \textbf{δῶρον} & \textit{donum} & \textbf{πεδίον} & \textbf{τὸ}   & \textbf{καλὸν} & \textbf{ἱμάτιον}  \\
-    \textsc{g.} & \textbf{δώρου} & \textit{doni}  & \textbf{πεδίου} & \textbf{τοῦ} & \textbf{καλοῦ} & \textbf{ἱματίου}  \\
-    \textsc{d.} & \textbf{δώρῳ}  & \textit{dono}  & \textbf{πεδίῳ}  & \textbf{τῷ}  & \textbf{καλῷ}  & \textbf{ἱματίῳ}  \\
-	\textsc{a.} & \textbf{δῶρον} & \textit{donum} & \textbf{πεδίον} & \textbf{τὸ} & \textbf{καλὸν} & \textbf{ἱμάτιον}  \\
-	\textsc{v.} & \textbf{δῶρον}  & \textit{donum}  & \textbf{πεδίον}  & \textemdash  & \textbf{καλὸν}  & \textbf{ἱμάτιον}  \\
+    \textsc{n.} & \didobf{δῶρον} & \textit{donum} & \didobf{πεδίον} & \didobf{τὸ}   & \didobf{καλὸν} & \didobf{ἱμάτιον}  \\
+    \textsc{g.} & \didobf{δώρου} & \textit{doni}  & \didobf{πεδίου} & \didobf{τοῦ} & \didobf{καλοῦ} & \didobf{ἱματίου}  \\
+    \textsc{d.} & \didobf{δώρῳ}  & \textit{dono}  & \didobf{πεδίῳ}  & \didobf{τῷ}  & \didobf{καλῷ}  & \didobf{ἱματίῳ}  \\
+	\textsc{a.} & \didobf{δῶρον} & \textit{donum} & \didobf{πεδίον} & \didobf{τὸ} & \didobf{καλὸν} & \didobf{ἱμάτιον}  \\
+	\textsc{v.} & \didobf{δῶρον}  & \textit{donum}  & \didobf{πεδίον}  & \textemdash  & \didobf{καλὸν}  & \didobf{ἱμάτιον}  \\
 	
 	\multicolumn{7}{c}{\textsc{plurale}} \\
-	\textsc{n.} & \textbf{δῶρα}  & \textit{dona}    & \textbf{πεδία}  & \textbf{τὰ}   & \textbf{καλὰ}  & \textbf{ἱμάτα}  \\
-    \textsc{g.} & \textbf{δῶρων}  & \textit{donorum} & \textbf{πεδίων}  & \textbf{τῶν}  & \textbf{καλῶν}  & \textbf{ἱματίων}  \\
-    \textsc{d.} & \textbf{δώροις} & \textit{donis}   & \textbf{πεδίοις} & \textbf{τοὶς} & \textbf{καλοῖς} & \textbf{ἱματίοις}  \\
-	\textsc{a.} & \textbf{δῶρα} & \textit{dona}   & \textbf{πεδία} & \textbf{τὰ} & \textbf{καλὰ} & \textbf{ἱμάτια}  \\
-	\textsc{v.} & \textbf{δῶρα}  & \textit{dona}   & \textbf{πεδία}  & \textemdash   & \textbf{καλὰ}  & \textbf{ἱμάτια}  \\
+	\textsc{n.} & \didobf{δῶρα}  & \textit{dona}    & \didobf{πεδία}  & \didobf{τὰ}   & \didobf{καλὰ}  & \didobf{ἱμάτα}  \\
+    \textsc{g.} & \didobf{δῶρων}  & \textit{donorum} & \didobf{πεδίων}  & \didobf{τῶν}  & \didobf{καλῶν}  & \didobf{ἱματίων}  \\
+    \textsc{d.} & \didobf{δώροις} & \textit{donis}   & \didobf{πεδίοις} & \didobf{τοὶς} & \didobf{καλοῖς} & \didobf{ἱματίοις}  \\
+	\textsc{a.} & \didobf{δῶρα} & \textit{dona}   & \didobf{πεδία} & \didobf{τὰ} & \didobf{καλὰ} & \didobf{ἱμάτια}  \\
+	\textsc{v.} & \didobf{δῶρα}  & \textit{dona}   & \didobf{πεδία}  & \textemdash   & \didobf{καλὰ}  & \didobf{ἱμάτια}  \\
     %\bottomrule
   \end{tabular}
   \label{tab:normaltab}
@@ -215,43 +214,43 @@ considerazioni sugli accenti dei nomi, vocabolario, esercizi.
 
 \newthought{Osservazioni}
 \begin{itemize}
-\item[\textsc{1.}] In \textbf{πεδίον} e \textbf{δῶρον}, come in tutti i nomi neutri, i casi diretti (nominativo, accusativo e vocativo) sono uguali, e al plurale terminano in \textbf{α.} Confronta con il latino \textbf{donum}.  
-\item[\textsc{2. Esercizio}] Declina in questo modo anche \textbf{χωρίον,} \textit{luogo, posto} e \textbf{ἱερόν,} \textit{tempio}.
+\item[\textsc{1.}] In \didobf{πεδίον} e \didobf{δῶρον}, come in tutti i nomi neutri, i casi diretti (nominativo, accusativo e vocativo) sono uguali, e al plurale terminano in \didobf{α}. Confronta con il latino \textbf{donum}.  
+\item[\textsc{2. Esercizio}] Declina in questo modo anche \didobf{χωρίον}, \textit{luogo, posto} e \didobf{ἱερόν}, \textit{tempio}.
 \end{itemize}
 
 \newthought{67. Accento dei nomi.} L'accento del nominativo singolare, per ogni parola nuova, deve essere imparato per osservazione diretta.
 
-\newthought{68.} gli altri casi mantengono l'accento del nominativo se l'ultima sillaba lo permette (32), come in \textbf{λόγος, λόγου}; ma \textbf{δῶρον, δώρου}.
+\newthought{68.} gli altri casi mantengono l'accento del nominativo se l'ultima sillaba lo permette (32), come in \didobf{λόγος, λόγου}; ma \didobf{δῶρον, δώρου}.
 
 \newthought{69.} Le parole ossitone\sidenote{Una parola si dice \textit{ossìtona} se l'accento, acuto, cade sulla sua ultima sillaba.} (al nominativo singolare) presentano accento circonflesso 
-su genitivo e dativo per tutti i numeri, come in \textbf{θεός,} \textit{il dio}, \textbf{θεοῦ,} \textit{del dio}.
+su genitivo e dativo per tutti i numeri, come in \didobf{θεός}, \textit{il dio}, \didobf{θεοῦ}, \textit{del dio}.
 
 \newthought{70. Vocabolario}
 
 \begin{multicols}{2}
-    \noindent \hangindent=1em \textbf{δῶρον,} \textit{dono}.  \\
-    \noindent \hangindent=1em \textbf{ἱερόν,} \textit{tempio}.  \\
-    \noindent \hangindent=1em \textbf{ἱμάτιον,} \textit{mantello}.  \\
-    \noindent \hangindent=1em \textbf{πεδίον,} \textit{piana}.  \\
-    \noindent \hangindent=1em \textbf{τέκνον,} \textit{bambino}.  \\
-    \noindent \hangindent=1em \textbf{χωρίον,} \textit{posto, luogo}.  \\
-    \noindent \hangindent=1em \textbf{κακός, κακόν,} \textit{cattivo, codardo}.  \\
-    \noindent \hangindent=1em \textbf{εὑρίσκω,} fut. \textbf{εὑρήσω,} \textit{trovare, scoprire}.  \\
-    \noindent \hangindent=1em \textbf{γάρ,} cong. postpositiva, \textit{infatti}. In latino \textit{enim}.   \\
-    \noindent \hangindent=1em \textbf{ἐν,} \textit{in}, prep. con dat.  \\
-    \noindent \hangindent=1em \textbf{ἐξ,} \textit{da, fuori da}, prep. con gen. (\textbf{ἐκ} prima di una consonante). \\ 
+    \noindent \hangindent=1em \didobf{δῶρον}, \textit{dono}.  \\
+    \noindent \hangindent=1em \didobf{ἱερόν}, \textit{tempio}.  \\
+    \noindent \hangindent=1em \didobf{ἱμάτιον}, \textit{mantello}.  \\
+    \noindent \hangindent=1em \didobf{πεδίον}, \textit{piana}.  \\
+    \noindent \hangindent=1em \didobf{τέκνον}, \textit{bambino}.  \\
+    \noindent \hangindent=1em \didobf{χωρίον}, \textit{posto, luogo}.  \\
+    \noindent \hangindent=1em \didobf{κακός, κακόν}, \textit{cattivo, codardo}.  \\
+    \noindent \hangindent=1em \didobf{εὑρίσκω}, fut. \didobf{εὑρήσω}, \textit{trovare, scoprire}.  \\
+    \noindent \hangindent=1em \didobf{γάρ}, cong. postpositiva, \textit{infatti}. In latino \textit{enim}.   \\
+    \noindent \hangindent=1em \didobf{ἐν}, \textit{in}, prep. con dat.  \\
+    \noindent \hangindent=1em \didobf{ἐξ}, \textit{da, fuori da}, prep. con gen. (\didobf{ἐκ} prima di una consonante). \\ 
 \end{multicols}
 
 \newthought{71. Traduci:}
-\textsc{1.}~ἱερον καλὸν ἦν ἐν τῷ πεδίῷ. \quad
-\textsc{2.}~οὐκ ἄξουσι δὲ τὰ τέκνα εἰς τὸ ἱερόν. \quad
-\textsc{3.}~ἐκ τοῦ χωρίον φεύγουσιν \quad
+\textsc{1.}~\dido{ἱερον καλὸν ἦν ἐν τῷ πεδίῷ.} \quad
+\textsc{2.}~\dido{οὐκ ἄξουσι δὲ τὰ τέκνα εἰς τὸ ἱερόν.} \quad
+\textsc{3.}~\dido{ἐκ τοῦ χωρίον φεύγουσιν \quad
 \sidenote{Una \textbf{ν}, detta \textbf{ν} mobile (\textbf{ν} \textit{efelcistico}), è aggiunta alla terza persona singolare che termina in \textbf{ε} 
-e a tutte le parole che teminano in \textbf{σι}, se la parola successiva inizia con una vocale o se siamo alla fine di una frase.} οἱ ἵπποι. \quad
-\textsc{4.}~οἱ δὲ τοῦ δούλου υἱοὶ ἔχουσι κακὰ ἱμάτια. \quad
-\textsc{5.}~πέμψει γὰρ δῶρα τῷ ἀγαθῷ ἀνθρώπῳ. \quad
-\textsc{6.}~καὶ ἐν τῷ ποταμῷ εὑρίσκουσι λίθους \quad
-\textsc{7.}~μένετε, λείψουσι, κελεύομεν, ἁρπάσω, βάλλεις.
+e a tutte le parole che teminano in \textbf{σι}, se la parola successiva inizia con una vocale o se siamo alla fine di una frase.} οἱ ἵπποι.} \quad
+\textsc{4.}~\dido{οἱ δὲ τοῦ δούλου υἱοὶ ἔχουσι κακὰ ἱμάτια.} \quad
+\textsc{5.}~\dido{πέμψει γὰρ δῶρα τῷ ἀγαθῷ ἀνθρώπῳ.} \quad
+\textsc{6.}~\dido{καὶ ἐν τῷ ποταμῷ εὑρίσκουσι λίθους} \quad
+\textsc{7.}~\dido{μένετε, λείψουσι, κελεύομεν, ἁρπάσω, βάλλεις.}
 
 
 \newthought{72. Scrivi in greco:} 
