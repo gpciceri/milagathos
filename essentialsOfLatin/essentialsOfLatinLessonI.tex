@@ -1,0 +1,281 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                            %%
+%%   essentialsOfLatin, Italian translation 2017              %%
+%%                                                            %%
+%% From:  Henry C. Pearson, Essentials Of Latin For Beginners %%
+%%        (1915, New York, American Book Company)             %%
+%%                                                            %%
+%%    https://archive.org/details/essentialslatin04peargoog   %%
+%%                                                            %%
+%% Translated by g.p.ciceri <gp.ciceri@gmail.com>             %%
+%% ---------------------------------------------------------- %%
+%% This translation is Licensed under                         %%
+%% Creative Commons Attribution-ShareAlike 4.0 International  %%
+%% https://creativecommons.org/licenses/by-sa/4.0/            %%
+%%                                                            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% āēīōū
+% ăĕĭŏŭ
+
+
+
+
+\documentclass[nols]{tufte-handout}
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\usepackage{fontspec}
+\usepackage{ifxetex}
+\setmainfont[Path=./fonts/palatino-linotype/, ItalicFont=palai.ttf, BoldFont=palab.ttf]{pala.ttf}
+
+
+% \defaultfontfeatures{Mapping=tex-text}
+% \setromanfont[Path=./fonts/TeX-Gyre-Schola/,Mapping=tex-text]{TeX Gyre Schola}
+% \setsansfont[Path=./fonts/TeX-Gyre-Heros/,Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
+% \setmonofont[Path=./fonts/TeX-Gyre-Cursor/,Scale=MatchLowercase]{TeX Gyre Cursor}
+
+\usepackage{lipsum}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{stackengine}
+
+\usepackage{graphicx} % allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{graphics/}} % set of paths to search for images
+\usepackage{amsmath}  % extended mathematics
+\usepackage{booktabs} % book-quality tables
+\usepackage{units}    % non-stacked fractions and better unit spacing
+\usepackage{multicol} % multiple column layout facilities
+\usepackage{lipsum}   % filler text
+\usepackage{fancyvrb} % extended verbatim environments
+  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Standardize command font styles and environments
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+
+% concetti morfosintattici
+\usepackage{xspace} 
+\newcommand{\noun}{\textsc{sostantivo}\xspace}
+\newcommand{\nouns}{\textsc{sostantivi}\xspace}
+\newcommand{\adject}{\textsc{aggettivo}\xspace}
+\newcommand{\adjects}{\textsc{aggettivi}\xspace}
+\newcommand{\gnumber}{\textsc{numero}\xspace}
+\newcommand{\gnumbers}{\textsc{numeri}\xspace}
+\newcommand{\gender}{\textsc{genere}\xspace}
+\newcommand{\genders}{\textsc{generi}\xspace}
+\newcommand{\gcase}{\textsc{caso}\xspace}
+\newcommand{\gcases}{\textsc{casi}\xspace}
+\newcommand{\tense}{\textsc{tempo}\xspace}
+\newcommand{\mood}{\textsc{modo}\xspace}
+\newcommand{\gverb}{\textsc{verbo}\xspace}
+\newcommand{\gverbs}{\textsc{verbi}\xspace}
+\newcommand{\adjective}{\textsc{aggettivo}\xspace}
+\newcommand{\nom}{\textsc{nom}\xspace}
+\newcommand{\gen}{\textsc{gen}\xspace}
+\newcommand{\dat}{\textsc{dat}\xspace}
+\newcommand{\acc}{\textsc{acc}\xspace}
+\newcommand{\voc}{\textsc{voc}\xspace}
+\newcommand{\abl}{\textsc{abl}\xspace}
+\newcommand{\gexit}{\textsc{uscita}\xspace}
+\newcommand{\gexits}{\textsc{uscite}\xspace}
+\newcommand{\declinazione}{\textsc{declinazione}\xspace}
+\newcommand{\masc}{\textsc{maschile}\xspace}
+\newcommand{\femm}{\textsc{femminile}\xspace}
+\newcommand{\neut}{\textsc{neutro}\xspace}
+
+\newcommand{\indic}{\textsc{indicativo}\xspace}
+\newcommand{\imper}{\textsc{imperativo}\xspace}
+\newcommand{\gcong}{\textsc{congiuntivo}\xspace}
+\newcommand{\ott}{\textsc{ottativo}\xspace}
+\newcommand{\partic}{\textsc{participio}\xspace}
+\newcommand{\infin}{\textsc{infinito}\xspace}
+
+\newcommand{\pres}{\textsc{presente}\xspace}
+\newcommand{\imperf}{\textsc{imperfetto}\xspace}
+\newcommand{\aor}{\textsc{aoristo}\xspace}
+\newcommand{\fut}{\textsc{futuro}\xspace}
+\newcommand{\perf}{\textsc{perfetto}\xspace}
+\newcommand{\pperf}{\textsc{piuccheperfetto}\xspace}
+
+\newcommand{\sing}{\textsc{singolare}\xspace}
+\newcommand{\plur}{\textsc{plurale}\xspace}
+\newcommand{\dual}{\textsc{duale}\xspace}
+
+\newcommand{\si}{\textsc{sing}\xspace}
+\newcommand{\pl}{\textsc{plur}\xspace}
+\newcommand{\du}{\textsc{dual}\xspace}
+
+\newcommand{\att}{\textsc{attivo}\xspace}
+\newcommand{\med}{\textsc{medio}\xspace}
+\newcommand{\pass}{\textsc{passivo}\xspace}
+\newcommand{\medpass}{\textsc{medio-passivo}\xspace}
+
+
+% italianitudini
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabella}
+\renewcommand{\contentsname}{Indice}
+
+% fix per un qualche problema
+\ifxetex
+  \newcommand{\textls}[2][5]{%
+    \begingroup\addfontfeatures{LetterSpace=#1}#2\endgroup
+  }
+  \renewcommand{\allcapsspacing}[1]{\textls[15]{#1}}
+  \renewcommand{\smallcapsspacing}[1]{\textls[10]{#1}}
+  \renewcommand{\allcaps}[1]{\textls[15]{\MakeTextUppercase{#1}}}
+  \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
+  \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
+\fi
+
+% too many float...
+\extrafloats{100}
+% āēīōū
+% ăĕĭŏŭ
+
+\title{Essentials Of Latin. Latino alle Medie. \newline Lezione I - Prima Declinazione, ovvero temi in -ā-.}
+
+\author[gpciceri]{a cura di Milagathòs: Milo's help to enjoy humanities.}
+
+\date{20 Gennajo 2017} % without \date command, current date is supplied
+
+
+\begin{document}
+
+\hyphenation{co-niu-ga-zio-ne}
+
+\maketitle% this prints the handout title, author, and date
+
+\begin{marginfigure}[-2.5cm]
+\includegraphics{smallthumb-lesson_I.jpeg}
+\setfloatalignment{b}
+\end{marginfigure}
+
+
+\begin{abstract}
+\noindent
+Queste lezioni riprendono il testo introduttivo al Latino di Pearson\cite{pearson1915}, del quale seguono la numerazione; la struttura di ogni lezione è piuttosto regolare: inizia con \textsc{cenni di morfologia e di sintassi latina}, seguita da un \textsc{piccolo vocabolario} per il lessico; ci sono infine vari \textsc{esercizi} di traduzione e di composizione latina.
+
+\bigskip
+\noindent
+Lezione I - Prima Declinazione, ovvero temi in -ā-. Nomi femminili e maschili.
+\end{abstract}
+
+%\printclassoptions
+
+\newthought{29.} I nomi della Prima Declinazione sono in genere \textit{femminili}, a meno non si applichino a soggetti maschili, e sono declinati come l'esempio seguente: \textit{stella, -ae}, f. (radice\sidenote{il \textit{radice} è la forma che dà il significato della parola.} \textbf{stellā}, tema\sidenote{il \textit{tema} è la parte del nome che rimane invariata nella declinazione, a cui si agganciano le \textit{uscite} dei vari casi.} \textbf{stell-}).  
+
+\newthought{Prima Declinazione. \textbf{stella, -ae}, f.}
+\begin{fullwidth}
+\begin{table}[!htbp]
+  \centering
+  \begin{tabular}{l l l l}
+    %\toprule
+	\multicolumn{3}{c}{\textsc{Singolare}} & \textsc{Uscite} \\
+
+    \nom & stell\textbf{a}, \textit{la stella} (soggetto)    & \hspace{20mm} & \textbf{-a} \\
+    \gen & stell\textbf{ae}, \textit{della stella}   & \hspace{20mm} & \textbf{-ae} \\
+    \dat & stell\textbf{ae}, \textit{alla stella} & \hspace{20mm} & \textbf{-ae} \\
+    \acc & stell\textbf{am}, \textit{la stella} (compl.oggetto)    & \hspace{20mm} & \textbf{-am} \\
+    \voc & stell\textbf{a}, \textit{o stella}   & \hspace{20mm} & \textbf{-a} \\
+    \abl & stell\textbf{ā}, \textit{per mezzo della stella} & \hspace{20mm} & \textbf{-ā} \\
+	
+	\multicolumn{4}{c}{\textemdash} \\
+	\multicolumn{3}{c}{\textsc{Plurale}} & \textsc{Uscite} \\
+
+	\nom & stell\textbf{ae}, \textit{le stelle} (soggetto)    & \hspace{20mm} & \textbf{-ae} \\
+    \gen & stell\textbf{ārum}, \textit{delle stelle}   & \hspace{20mm} & \textbf{-ārum} \\
+    \dat & stell\textbf{īs}, \textit{alle stelle} & \hspace{20mm} & \textbf{-īs} \\
+    \acc & stell\textbf{ās}, \textit{le stelle} (compl.oggetto)    & \hspace{20mm} & \textbf{-ās} \\
+    \voc & stell\textbf{ae}, \textit{o stelle}   & \hspace{20mm} & \textbf{-ae} \\
+    \abl & stell\textbf{īs}, \textit{per mezzo delle stelle} & \hspace{20mm} & \textbf{-īs} \\
+
+    %\bottomrule
+  \end{tabular}
+  %\caption[bottom]{Prima Declinazione. \textbf{stella, -ae}, f.}
+  \label{tab:normaltab}
+  %\zsavepos{pos:normaltab}
+\end{table}
+\end{fullwidth}
+
+
+
+\newthought{Osservazioni}
+\begin{itemize}
+\item[\textsc{1.}] Le forme del genitivo e del dativo singolare, del nominativo e vocativo singolare (e al plurale, tra loro), sono uguali.  
+\item[\textsc{2.}] Le forme del dativo e dell'ablativo plurale sono uguali.  
+\item[\textsc{3.}] L'uscita (in \textbf{a}) dell'ablativo singolare è lunga: \textbf{ā}.  
+\end{itemize}
+
+\newpage
+
+\newthought{30. Vocabolario.} Impara a memoria il significato delle parole seguenti e declinale come \textit{stella, -ae}:
+
+\begin{multicols}{2}
+    \noindent \hangindent=1em \textbf{puella, -ae}, m., \textit{ragazza}.  \\
+    \noindent \hangindent=1em \textbf{regina, -ae}, f., \textit{regina}.  \\
+	\noindent \hangindent=1em \textbf{stella, -ae}, f., \textit{stella}.  \\
+	\noindent \hangindent=1em \textbf{porta, -ae}, f., \textit{porta, cancello}.  \\
+	\noindent \hangindent=1em \textbf{rosa, -ae}, f., \textit{rosa}.  \\
+	\noindent \hangindent=1em \textbf{via, -ae}, f., \textit{strada, via}.  \\
+	\noindent \hangindent=1em \textbf{silva, -ae}, f., \textit{foresta}.  \\
+	\noindent \hangindent=1em \textbf{luna, -ae}, f., \textit{luna}.  \\
+	
+	
+\end{multicols}
+% āēīōū
+% ăĕĭŏŭ
+
+\newthought{145. Esercizi.} Pronuncia, individua caso (tutti quelli corrispondenti all'uscita) e numero, traduci (in tutti i possibili significati).
+\\
+\textsc{I.} \quad
+\textsc{1.}~Puellarum. \quad
+\textsc{2.}~Portis. \quad
+\textsc{3.}~Viā. \quad
+\textsc{4.}~Rosis. \quad
+\textsc{5.}~Silvam. \quad
+\textsc{6.}~Stellis. \quad
+\textsc{7.}~Reginae. \quad
+\textsc{8.}~Viis. \quad
+\textsc{9.}~Portae. \quad
+\textsc{10.}~Stellas. \quad
+\textsc{11.}~Viarum. \quad
+\textsc{12.}~Rosa reginae. \quad
+\textsc{13.}~Vias silvarum. 
+\\
+\textsc{II.} \quad
+\textsc{1.}~Alla regina. \quad
+\textsc{2.}~Per mezzo della rosa. \quad
+\textsc{3.}~Le foreste. \quad
+\textsc{4.}~La rosa della regina. \quad
+\textsc{5.}~Per mezzo delle strade. \quad
+\textsc{6.}~Delle stelle. \quad
+\textsc{7.}~Alle ragazze. \quad
+\textsc{8.}~Per mezzo dei cancelli. \quad
+\textsc{9.}~Delle ragazze.
+
+\begin{figure*}[!b]
+  %\includegraphics{thumb-lesson_I.jpeg}
+  \includegraphics[width=0.8\linewidth]{thumb-lesson_I.jpeg}
+  %\includegraphics{thumb-lesson_I.jpeg}
+  \caption{Pavia: Almo Collegio Borromeo}
+  \label{fig:textfig}
+  %\zsavepos{pos:textfig}
+  %\setfloatalignment{b}
+\end{figure*}
+
+ 
+
+\nobibliography{latinBiblio}
+\bibliographystyle{alpha}
+
+
+\end{document}
