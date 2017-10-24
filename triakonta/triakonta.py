@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import random
+import codecs
 
 TRIAKONTA_VERBI = [("ἄγω", "condurre, portare"),
 ("αἴρω", "sollevare"),
@@ -330,33 +331,154 @@ ITEMS = (TRIAKONTA_VERBI,
          TRIAKONTA_VERBI + TRIAKONTA_NOMI + TRIAKONTA_AGGETTIVI)
 
 MAXQUESTION = 33
+MAXSINTAGMI = 300
+EXTRA=400
 
 if __name__ == "__main__":
-    random.seed()
+  random.seed()
+  with codecs.open('TRIAKONTA_LATEST','w', encoding='utf8') as outf:
     
     for set in WORDS:
-        print(">>>>START WORDSET>>>>>")
+        print(">>>>START WORDSET>>>>>", file=outf)
         for item in set:
-            print("%s\t%s" % item)
-        print(">>>>>>>>END WORDSET>>>>>>>>\n\n")
+            print("%s\t%s" % item, file=outf)
+        print(">>>>>>>>END WORDSET>>>>>>>>\n\n", file=outf)
      
     exnum = 1     
     for set in ITEMS:
         # shuffle the list
         random.shuffle(set)
-        print(">>>>START EXERCISE %d >>>>>" % (exnum,))
+        print(">>>>START EXERCISE %d >>>>>" % (exnum,), file=outf)
         for item in set[:MAXQUESTION]:
-            print("%s" % (item[0],))
-        print(">>>>>>>>END RUN ONE>>>>>>>>\n")
+            print("%s" % (item[0],), file=outf)
+        print(">>>>>>>>END RUN ONE>>>>>>>>\n", file=outf)
         for item in set[MAXQUESTION:2*MAXQUESTION]:
-            print("%s" % (item[0],))
-        print(">>>>>>>>END RUN TWO>>>>>>>>\n\n")
+            print("%s" % (item[0],), file=outf)
+        print(">>>>>>>>END RUN TWO>>>>>>>>\n\n", file=outf)
         for item in set[2*MAXQUESTION:3*MAXQUESTION]:
-            print("%s" % (item[0],))
-        print(">>>>>>>>END RUN THREE>>>>>>>>\n\n")
+            print("%s" % (item[0],), file=outf)
+        print(">>>>>>>>END RUN THREE>>>>>>>>\n\n", file=outf)
         
         exnum += 1
         
+    # ora il generatore di sintagmi per i participi
+    TEMPI_PARTICIPIO = ['PRESENTE.PARTICIPIO.ATTIVO',
+        'FUTURO.PARTICIPIO.ATTIVO',
+        'AORISTO.PARTICIPIO.ATTIVO',
+        'PERFETTO.PARTICIPIO.ATTIVO',
+        'PRESENTE.PARTICIPIO.MEDIO',
+        'FUTURO.PARTICIPIO.MEDIO',
+        'AORISTO.PARTICIPIO.MEDIO',
+        'PERFETTO.PARTICIPIO.MEDIO',
+        'FUTUROPERFETTO.PARTICIPIO.PASSIVO',
+        'FUTURO.PARTICIPIO.PASSIVO',
+        'AORISTO.PARTICIPIO.PASSIVO',
+        ]
+    
+    GENERE = ['MASCHILE', 'FEMMINILE', 'NEUTRO']
+    NUMERO = ['SINGOLARE', 'PLURALE', 'DUALE']
+    CASO = ['NOMINATIVO', 'GENITIVO', 'DATIVO', 'ACCUSATIVO']
+    FUNZIONE = ['TEMPORALE', 
+                'CAUSALE', 
+                'MODALE O STRUMENTALE', 
+                'FINALE', 
+                'CONDIZIONALE (PROTASI)', 
+                'CONCESSIVA', ]
+
+    print(">>>>START EXERCISE PARTICIPLE >>>>>\n", file=outf)
+    exnum = 1
+    print("ESERCIZIO_NUMERO\tPARTICIPIO_GRECO\tTRADUZIONE_ITALIANA\tVERBO_DA_CONIUGARE\tVOCE_DI_CONIUGAZIONE_RICHIESTA\tIN_FUNZIONE", file=outf)
+       
+    for counter in range(MAXSINTAGMI):
+        verb = random.choice(TRIAKONTA_VERBI)
+        time = random.choice(TEMPI_PARTICIPIO)
+        gender = random.choice(GENERE)
+        number = random.choice(NUMERO)
+        case = random.choice(CASO)
+        func = random.choice(FUNZIONE)
+        
+        print("P%03d\t%s+++\tIN FUNZIONE: %s\t%s (%s)\t%s\t%s" % (exnum, verb[0], func, verb[0], verb[1], time + ' ' + case + '.' + gender + '.' + number, func), file=outf)
+        exnum += 1
+    print(">>>>>>>>END EXERCISE PARTICIPLE >>>>>>>>>\n\n", file=outf)   
+
+    # ora il generatore di sintagmi per i verbi
+    TEMPI = ['PRESENTE.INDICATIVO.ATTIVO',
+        'IMPERFETTO.INDICATIVO.ATTIVO',
+        'FUTURO.INDICATIVO.ATTIVO',
+        'AORISTO.INDICATIVO.ATTIVO',
+        'PERFETTO.INDICATIVO.ATTIVO',
+        'PIUCCHEPERFETTO.INDICATIVO.ATTIVO',
+        'PRESENTE.CONGIUNTIVO.ATTIVO',
+        'AORISTO.CONGIUNTIVO.ATTIVO',
+        'PERFETTO.CONGIUNTIVO.ATTIVO',
+        'PRESENTE.OTTATIVO.ATTIVO',
+        'FUTURO.OTTATIVO.ATTIVO',
+        'AORISTO.OTTATIVO.ATTIVO',
+        'PERFETTO.OTTATIVO.ATTIVO',
+        'PRESENTE.IMPERATIVO.ATTIVO',
+        'AORISTO.IMPERATIVO.ATTIVO',
+        'PRESENTE.INFINITO.ATTIVO',
+        'FUTURO.INFINITO.ATTIVO',
+        'AORISTO.INFINITO.ATTIVO',
+        'PERFETTO.INFINITO.ATTIVO',
+        'PRESENTE.INDICATIVO.MEDIO',
+        'IMPERFETTO.INDICATIVO.MEDIO',
+        'FUTURO.INDICATIVO.MEDIO',
+        'AORISTO.INDICATIVO.MEDIO',
+        'PERFETTO.INDICATIVO.MEDIO',
+        'PIUCCHEPERFETTO.INDICATIVO.MEDIO',
+        'PRESENTE.CONGIUNTIVO.MEDIO',
+        'AORISTO.CONGIUNTIVO.MEDIO',
+        'PERFETTO.CONGIUNTIVO.MEDIO',
+        'PRESENTE.OTTATIVO.MEDIO',
+        'FUTURO.OTTATIVO.MEDIO',
+        'AORISTO.OTTATIVO.MEDIO',
+        'PERFETTO.OTTATIVO.MEDIO',
+        'PRESENTE.IMPERATIVO.MEDIO',
+        'AORISTO.IMPERATIVO.MEDIO',
+        'PERFETTO.IMPERATIVO.MEDIO',
+        'PRESENTE.INFINITO.MEDIO',
+        'FUTURO.INFINITO.MEDIO',
+        'AORISTO.INFINITO.MEDIO',
+        'PERFETTO.INFINITO.MEDIO',
+        'FUTURO.INDICATIVO.PASSIVO',
+        'AORISTO.INDICATIVO.PASSIVO',
+        'FUTUROPERFETTO.INDICATIVO.PASSIVO',
+        'AORISTO.CONGIUNTIVO.PASSIVO',
+        'FUTURO.OTTATIVO.PASSIVO',
+        'AORISTO.OTTATIVO.PASSIVO',
+        'FUTUROPERFETTO.OTTATIVO.PASSIVO',
+        'AORISTO.IMPERATIVO.PASSIVO',
+        'FUTURO.INFINITO.PASSIVO',
+        'AORISTO.INFINITO.PASSIVO',
+        'FUTUROPERFETTO.INFINITO.PASSIVO',
+        ]
+    PERSONA = ['PRIMA', 'SECONDA', 'TERZA']
+    
+    print(">>>>START EXERCISE VERB >>>>>\n", file=outf)
+    exnum = 1
+    print("ESERCIZIO_NUMERO\tVERBO_GRECO\tTRADUZIONE_ITALIANA\tVERBO_DA_CONIUGARE\tVOCE_DI_CONIUGAZIONE_RICHIESTA", file=outf)
+       
+    for counter in range(MAXSINTAGMI+EXTRA):
+        if exnum > MAXSINTAGMI:
+            break
+        verb = random.choice(TRIAKONTA_VERBI)
+        time = random.choice(TEMPI+TEMPI_PARTICIPIO)
+        person = random.choice(PERSONA)
+        number = random.choice(NUMERO)
+
+        if (person == "PRIMA" and number == "DUALE"):
+            continue
+        elif ('IMPERATIVO' in time and person in ['PRIMA',]):
+            continue
+        elif ('INFINITO' in time and (person in ['SECONDA', 'TERZA'] or number in ['PLURALE', 'DUALE'])):
+            continue
+        elif ('PARTICIPIO' in time and (person in ['SECONDA', 'TERZA'] or number in ['PLURALE', 'DUALE'])):
+            continue    
+        else:
+            print("V%03d\t%s+++\t<TRADUZIONE>\t%s (%s)\t%s" % (exnum, verb[0], verb[0], verb[1], time + ' ' + person + '_PERSONA.' + number), file=outf)
+            exnum += 1
+    print(">>>>>>>>END EXERCISE VERB >>>>>>>>>\n\n", file=outf)   
         
         
              
