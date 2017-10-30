@@ -36,7 +36,7 @@
 δέχομαι, δέξομαι, ἐδεξάμην, δέδεγμαι, ἐδεδέχθην	ricevere, prendere; accogliere, preferire
 δέω, δεήσω, ἐδέησα, δεδέηκα, δεδέημαι, ἐδεήθην	mancare (+gen)
 δηλόω, δηλώσω, ἐδήλωσα, δεδήλωκα, ἐδηλώθην	mostrare, dichiarare, spiegare
-διαφέρω, διοίσω, 1 aor. διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι	trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat)
+διαφέρω, διοίσω, (aor I) διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι	trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat)
 διαφθείρω, διαφθερῶ, διέφθειρα, διέφθαρκα, διέφθαρμαι, διεφθάρην	distruggere; mandare in rovina
 διδάσκω, διδάξω, ἐδίδαξα, δεδίδαχα, δεδίδαγμαι, ἐδιδάχθην	insegnare
 δίδωμι, δώσω, ἔδωκα, δέδωκα, δέδομαι, ἐδόθην	dare
@@ -97,7 +97,7 @@
 νομίζω, νομιῶ, ἐνόμισα, νενόμικα, νενόμισμαι, ἐνομίσθην	pensare, ritenere (+acc e infinito); essere abituati a (+infinito)
 οἶδα, infinito εἰδέναι, imper. ἴσθι, [piucchepf usato come imperf] ᾔδειν	sapere [perfetto con forza di presente]; sapere come (+infinito)
 οἰκέω, οἰκήσω, ᾤκησα, ᾤκηκα, ᾠκήθην	abitare, insediarsi
-οἴομαι/οἶμαι, οἰήσομαι, (imperfetto) ᾤμην, aor. ᾠήθην	pensare (+acc e infinito)
+οἴομαι/οἶμαι, οἰήσομαι, (imperfetto) ᾤμην, (aoristo) ᾠήθην	pensare (+acc e infinito)
 ὁμολογέω, ὁμολογήσω, ὡμολόγησα, ὡμολόγηκα, ὡμολόγημαι, ὡμολογήθην	accordarsi, essere d'accordo (+dat)
 ὀνομάζω, ὀνομάσω, ὠνόμασα, ὠνόμακα, ὠνόμασμαι, ὠνομάσθην	chiamare per nome
 ὁράω, ὄψομαι, (aor II) εἶδον, ἑόρακα/ἑώρακα, ὤφθην, (imperfetto) ἑώρων	vedere; guardare
@@ -1054,7 +1054,7 @@
 ἀκούω
 τέθραμμαι
 (aor II) ἐγενόμην
-1 aor. διήνεγκα
+(aor I) διήνεγκα
 δέδειγμαι
 ὑπείληφα
 ἀξιόω
@@ -1514,7 +1514,7 @@ participio εἰκώς
 
 ESERCIZIO_NUMERO	PARTICIPIO_GRECO	TRADUZIONE_ITALIANA	VERBO_DA_CONIUGARE	VOCE_DI_CONIUGAZIONE_RICHIESTA	IN_FUNZIONE
 P001	γιγνώσκω+++	IN FUNZIONE: MODALE O STRUMENTALE	γιγνώσκω, γνώσομαι, ἔγνων, ἔγνωκα, ἔγνωσμαι, ἐγνώσθην (conoscere; pensare; decidere)	AORISTO.PARTICIPIO.MEDIO GENITIVO.NEUTRO.DUALE	MODALE O STRUMENTALE
-P002	οἴομαι/οἶμαι+++	IN FUNZIONE: TEMPORALE	οἴομαι/οἶμαι, οἰήσομαι, (imperfetto) ᾤμην, aor. ᾠήθην (pensare (+acc e infinito))	AORISTO.PARTICIPIO.MEDIO GENITIVO.MASCHILE.PLURALE	TEMPORALE
+P002	οἴομαι/οἶμαι+++	IN FUNZIONE: TEMPORALE	οἴομαι/οἶμαι, οἰήσομαι, (imperfetto) ᾤμην, (aoristo) ᾠήθην (pensare (+acc e infinito))	AORISTO.PARTICIPIO.MEDIO GENITIVO.MASCHILE.PLURALE	TEMPORALE
 P003	ὀνομάζω+++	IN FUNZIONE: CONCESSIVA	ὀνομάζω, ὀνομάσω, ὠνόμασα, ὠνόμακα, ὠνόμασμαι, ὠνομάσθην (chiamare per nome)	AORISTO.PARTICIPIO.PASSIVO DATIVO.FEMMINILE.PLURALE	CONCESSIVA
 P004	ἀδικέω+++	IN FUNZIONE: CONCESSIVA	ἀδικέω, ἀδικήσω, ἠδίκησα, ἠδίκηκα, ἠδίκημαι, ἠδικήθην (operare ingiustamente; maltrattare)	AORISTO.PARTICIPIO.ATTIVO NOMINATIVO.MASCHILE.PLURALE	CONCESSIVA
 P005	αἰσθάνομαι+++	IN FUNZIONE: TEMPORALE	αἰσθάνομαι, αἰσθήσομαι, (aor II) ᾐσθόμην, ᾔσθημαι (percepire, sentire; comprendere)	AORISTO.PARTICIPIO.PASSIVO NOMINATIVO.NEUTRO.PLURALE	TEMPORALE
@@ -1599,7 +1599,7 @@ P083	ἀφαιρέω+++	IN FUNZIONE: CAUSALE	ἀφαιρέω, ἀφαιρήσω,
 P084	δοκέω+++	IN FUNZIONE: CONCESSIVA	δοκέω, δόξω, ἔδοξα (pensare (+acc e infinito); sembrare; (impersonale) δοκεῖ μοι mi sembra)	FUTUROPERFETTO.PARTICIPIO.PASSIVO ACCUSATIVO.FEMMINILE.DUALE	CONCESSIVA
 P085	ἀναιρέω+++	IN FUNZIONE: CONCESSIVA	ἀναιρέω, ἀναιρήσω, ἀνεῖλον, ἀνῄρηκα, ἀνῄρημαι, ἀνῃρέθην (distruggere; sollevare; dare un responso)	AORISTO.PARTICIPIO.MEDIO GENITIVO.FEMMINILE.SINGOLARE	CONCESSIVA
 P086	βούλομαι+++	IN FUNZIONE: CONDIZIONALE (PROTASI)	βούλομαι, βουλήσομαι, βεβούλημαι, ἐβουλήθην ((+infinito) volere; ὁ βουλόμενος colui al quale piace)	PERFETTO.PARTICIPIO.ATTIVO NOMINATIVO.MASCHILE.SINGOLARE	CONDIZIONALE (PROTASI)
-P087	διαφέρω+++	IN FUNZIONE: FINALE	διαφέρω, διοίσω, 1 aor. διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	AORISTO.PARTICIPIO.MEDIO GENITIVO.NEUTRO.PLURALE	FINALE
+P087	διαφέρω+++	IN FUNZIONE: FINALE	διαφέρω, διοίσω, (aor I) διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	AORISTO.PARTICIPIO.MEDIO GENITIVO.NEUTRO.PLURALE	FINALE
 P088	διδάσκω+++	IN FUNZIONE: TEMPORALE	διδάσκω, διδάξω, ἐδίδαξα, δεδίδαχα, δεδίδαγμαι, ἐδιδάχθην (insegnare)	FUTUROPERFETTO.PARTICIPIO.PASSIVO ACCUSATIVO.MASCHILE.DUALE	TEMPORALE
 P089	ἀναιρέω+++	IN FUNZIONE: FINALE	ἀναιρέω, ἀναιρήσω, ἀνεῖλον, ἀνῄρηκα, ἀνῄρημαι, ἀνῃρέθην (distruggere; sollevare; dare un responso)	FUTURO.PARTICIPIO.PASSIVO ACCUSATIVO.NEUTRO.SINGOLARE	FINALE
 P090	ἔοικα+++	IN FUNZIONE: MODALE O STRUMENTALE	ἔοικα, participio εἰκώς (essere simile, sembrare (+dat); convenire)	FUTURO.PARTICIPIO.MEDIO ACCUSATIVO.MASCHILE.SINGOLARE	MODALE O STRUMENTALE
@@ -1670,7 +1670,7 @@ P154	συμβαίνω+++	IN FUNZIONE: TEMPORALE	συμβαίνω, συμβήσο
 P155	λανθάνω+++	IN FUNZIONE: TEMPORALE	λανθάνω, λήσω, ἔλαθον, λέληθα (nascondersi; sfuggire all'attenzione di (+acc e nominativo del participio), essere ignoto; (al medio e passivo) dimenticare, dimenticarsi)	PERFETTO.PARTICIPIO.MEDIO GENITIVO.NEUTRO.DUALE	TEMPORALE
 P156	εἰμί+++	IN FUNZIONE: CONCESSIVA	εἰμί, ἔσομαι, (imperfetto) ἦν, (infinito) εἶναι (essere, esistere)	AORISTO.PARTICIPIO.ATTIVO ACCUSATIVO.MASCHILE.SINGOLARE	CONCESSIVA
 P157	πέμπω+++	IN FUNZIONE: TEMPORALE	πέμπω, πέμψω, ἔπεμψα, πέπομφα, πέπεμμαι, ἐπέμφθην (mandare, inviare)	FUTURO.PARTICIPIO.PASSIVO DATIVO.NEUTRO.PLURALE	TEMPORALE
-P158	διαφέρω+++	IN FUNZIONE: FINALE	διαφέρω, διοίσω, 1 aor. διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	AORISTO.PARTICIPIO.MEDIO NOMINATIVO.NEUTRO.DUALE	FINALE
+P158	διαφέρω+++	IN FUNZIONE: FINALE	διαφέρω, διοίσω, (aor I)) διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	AORISTO.PARTICIPIO.MEDIO NOMINATIVO.NEUTRO.DUALE	FINALE
 P159	ἁλίσκομαι+++	IN FUNZIONE: CONDIZIONALE (PROTASI)	ἁλίσκομαι, ἁλώσομαι, (aor II) ἑάλων, ἑάλωκα (essere preso, conquistato (all'attivo si usa αἱρέω))	PRESENTE.PARTICIPIO.MEDIO DATIVO.NEUTRO.SINGOLARE	CONDIZIONALE (PROTASI)
 P160	αἱρέω+++	IN FUNZIONE: TEMPORALE	αἱρέω, αἱρήσω, (aor II) εἷλον, ᾕρηκα, ᾕρημαι, ᾑρέθην (prendere; espugnare; (al medio) scegliere)	AORISTO.PARTICIPIO.MEDIO GENITIVO.FEMMINILE.PLURALE	TEMPORALE
 P161	ἄρχω+++	IN FUNZIONE: CAUSALE	ἄρχω, ἄρξω, ἦρξα, ἦργμαι, ἤρχθην (comincio (+gen); conduco, governo (+gen))	PERFETTO.PARTICIPIO.ATTIVO ACCUSATIVO.MASCHILE.DUALE	CAUSALE
@@ -1684,7 +1684,7 @@ P168	ἔρομαι+++	IN FUNZIONE: TEMPORALE	ἔρομαι, ἐρήσομαι, (
 P169	ἐλαύνω+++	IN FUNZIONE: CONCESSIVA	ἐλαύνω, ἐλῶ, ἤλασα, ελήλακα, ἐλήλαμαι, ἠλάθην (mettere in moto; avanzare)	AORISTO.PARTICIPIO.PASSIVO DATIVO.MASCHILE.PLURALE	CONCESSIVA
 P170	φρονέω+++	IN FUNZIONE: MODALE O STRUMENTALE	φρονέω, φρονήσω, ἐφρόνησα (pensare (+infinito); essere propenso a (+avv e dat.))	FUTURO.PARTICIPIO.ATTIVO ACCUSATIVO.FEMMINILE.PLURALE	MODALE O STRUMENTALE
 P171	χρή+++	IN FUNZIONE: MODALE O STRUMENTALE	χρή, (imperfetto) χρῆν/ἐχρῆν, (infinito) χρῆναι (essere necessario (+infinito o +acc e infinito))	PRESENTE.PARTICIPIO.MEDIO DATIVO.FEMMINILE.DUALE	MODALE O STRUMENTALE
-P172	οἴομαι/οἶμαι+++	IN FUNZIONE: CAUSALE	οἴομαι/οἶμαι, οἰήσομαι, (imperfetto) ᾤμην, aor. ᾠήθην (pensare (+acc e infinito))	PRESENTE.PARTICIPIO.ATTIVO ACCUSATIVO.MASCHILE.DUALE	CAUSALE
+P172	οἴομαι/οἶμαι+++	IN FUNZIONE: CAUSALE	οἴομαι/οἶμαι, οἰήσομαι, (imperfetto) ᾤμην, (aoristo) ᾠήθην (pensare (+acc e infinito))	PRESENTE.PARTICIPIO.ATTIVO ACCUSATIVO.MASCHILE.DUALE	CAUSALE
 P173	δέω+++	IN FUNZIONE: MODALE O STRUMENTALE	δέω, δεήσω, ἐδέησα, δεδέηκα, δεδέημαι, ἐδεήθην (mancare (+gen))	AORISTO.PARTICIPIO.MEDIO DATIVO.NEUTRO.DUALE	MODALE O STRUMENTALE
 P174	γίγνομαι+++	IN FUNZIONE: MODALE O STRUMENTALE	γίγνομαι, γενήσομαι, (aor II) ἐγενόμην, γέγονα, γεγένημαι, ἐγενήθην (diventare; verificarsi; essere)	FUTURO.PARTICIPIO.PASSIVO ACCUSATIVO.FEMMINILE.PLURALE	MODALE O STRUMENTALE
 P175	ἐργάζομαι+++	IN FUNZIONE: FINALE	ἐργάζομαι, ἐργάσομαι, εἰργασάμην, εἴργασμαι (lavorare, operare)	AORISTO.PARTICIPIO.MEDIO ACCUSATIVO.FEMMINILE.DUALE	FINALE
@@ -1792,17 +1792,17 @@ P276	νομίζω+++	IN FUNZIONE: FINALE	νομίζω, νομιῶ, ἐνόμι�
 P277	ὁράω+++	IN FUNZIONE: TEMPORALE	ὁράω, ὄψομαι, (aor II) εἶδον, ἑόρακα/ἑώρακα, ὤφθην, (imperfetto) ἑώρων (vedere; guardare)	AORISTO.PARTICIPIO.PASSIVO ACCUSATIVO.FEMMINILE.DUALE	TEMPORALE
 P278	ἄγω+++	IN FUNZIONE: MODALE O STRUMENTALE	ἄγω, ἄξω, ἤγαγον, ἦχα, ἦγμαι, ἤχθην (condurre, portare)	PERFETTO.PARTICIPIO.ATTIVO NOMINATIVO.FEMMINILE.DUALE	MODALE O STRUMENTALE
 P279	πάσχω+++	IN FUNZIONE: CONCESSIVA	πάσχω, πείσομαι, ἔπαθον, πέπονθα (soffrire, provare; essere affetti in un certo modo (+avv))	FUTURO.PARTICIPIO.MEDIO ACCUSATIVO.NEUTRO.PLURALE	CONCESSIVA
-P280	οἴομαι/οἶμαι+++	IN FUNZIONE: CONDIZIONALE (PROTASI)	οἴομαι/οἶμαι, οἰήσομαι, (imperfetto) ᾤμην, aor. ᾠήθην (pensare (+acc e infinito))	AORISTO.PARTICIPIO.PASSIVO NOMINATIVO.NEUTRO.SINGOLARE	CONDIZIONALE (PROTASI)
+P280	οἴομαι/οἶμαι+++	IN FUNZIONE: CONDIZIONALE (PROTASI)	οἴομαι/οἶμαι, οἰήσομαι, (imperfetto) ᾤμην, (aoristo) ᾠήθην (pensare (+acc e infinito))	AORISTO.PARTICIPIO.PASSIVO NOMINATIVO.NEUTRO.SINGOLARE	CONDIZIONALE (PROTASI)
 P281	δηλόω+++	IN FUNZIONE: TEMPORALE	δηλόω, δηλώσω, ἐδήλωσα, δεδήλωκα, ἐδηλώθην (mostrare, dichiarare, spiegare)	AORISTO.PARTICIPIO.PASSIVO GENITIVO.MASCHILE.PLURALE	TEMPORALE
 P282	συμφέρω+++	IN FUNZIONE: FINALE	συμφέρω, συνοίσω, συνήνεγκα (beneficiare, essere utile o vantaggioso a (+dat); (impers.) συμφέρει conviene, è vantaggioso (+infinito); τὸ συμφέρον l'utile, il vantaggio, il profitto)	FUTURO.PARTICIPIO.ATTIVO NOMINATIVO.FEMMINILE.PLURALE	FINALE
 P283	βάλλω+++	IN FUNZIONE: FINALE	βάλλω, βαλῶ, (aor II) ἔβαλον, βέβληκα, βέβλημαι, ἐβλήθην (lanciare, scagliare, colpire (+acc) con (+dat))	PERFETTO.PARTICIPIO.MEDIO GENITIVO.NEUTRO.SINGOLARE	FINALE
 P284	ζητέω+++	IN FUNZIONE: CONDIZIONALE (PROTASI)	ζητέω, ζητήσω, ἐζήτησα, ἐζήτηκα (cercare)	PERFETTO.PARTICIPIO.ATTIVO DATIVO.MASCHILE.PLURALE	CONDIZIONALE (PROTASI)
 P285	κινέω+++	IN FUNZIONE: CONDIZIONALE (PROTASI)	κινέω, κινήσω, ἐκίνησα, κεκίνηκα, κεκίνημαι, ἐκινήθην (muovere, mettere in moto; agitare)	FUTURO.PARTICIPIO.MEDIO ACCUSATIVO.NEUTRO.DUALE	CONDIZIONALE (PROTASI)
-P286	διαφέρω+++	IN FUNZIONE: CONCESSIVA	διαφέρω, διοίσω, 1 aor. διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	AORISTO.PARTICIPIO.ATTIVO DATIVO.MASCHILE.SINGOLARE	CONCESSIVA
+P286	διαφέρω+++	IN FUNZIONE: CONCESSIVA	διαφέρω, διοίσω, (aor I) διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	AORISTO.PARTICIPIO.ATTIVO DATIVO.MASCHILE.SINGOLARE	CONCESSIVA
 P287	ἔρομαι+++	IN FUNZIONE: MODALE O STRUMENTALE	ἔρομαι, ἐρήσομαι, (aor II) ἠρόμην (ask, ask one about (+double acc))	PRESENTE.PARTICIPIO.MEDIO GENITIVO.MASCHILE.PLURALE	MODALE O STRUMENTALE
 P288	μανθάνω+++	IN FUNZIONE: FINALE	μανθάνω, μαθήσομαι, ἔμαθον, μεμάθηκα (imparare)	PERFETTO.PARTICIPIO.MEDIO DATIVO.NEUTRO.DUALE	FINALE
 P289	κρίνω+++	IN FUNZIONE: CAUSALE	κρίνω, κρινῶ, ἔκρινα, κέκρικα, κέκριμαι, ἐκρίθην (giudicare, decidere, determinare)	PRESENTE.PARTICIPIO.ATTIVO NOMINATIVO.NEUTRO.SINGOLARE	CAUSALE
-P290	διαφέρω+++	IN FUNZIONE: CONCESSIVA	διαφέρω, διοίσω, 1 aor. διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	FUTURO.PARTICIPIO.PASSIVO DATIVO.MASCHILE.SINGOLARE	CONCESSIVA
+P290	διαφέρω+++	IN FUNZIONE: CONCESSIVA	διαφέρω, διοίσω, (aor I) διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	FUTURO.PARTICIPIO.PASSIVO DATIVO.MASCHILE.SINGOLARE	CONCESSIVA
 P291	ἀπαλλάσσω+++	IN FUNZIONE: CONDIZIONALE (PROTASI)	ἀπαλλάσσω, ἀπαλλάξω, ἀπήλλαξα, ἀπήλλαχα, ἀπήλλαγμαι, ἀπηλλάχθην or ἀπηλλάγην (cambiare; (al medio) liberarsi di)	PRESENTE.PARTICIPIO.MEDIO GENITIVO.FEMMINILE.SINGOLARE	CONDIZIONALE (PROTASI)
 P292	δηλόω+++	IN FUNZIONE: CONDIZIONALE (PROTASI)	δηλόω, δηλώσω, ἐδήλωσα, δεδήλωκα, ἐδηλώθην (mostrare, dichiarare, spiegare)	FUTURO.PARTICIPIO.PASSIVO GENITIVO.FEMMINILE.PLURALE	CONDIZIONALE (PROTASI)
 P293	πυνθάνομαι+++	IN FUNZIONE: TEMPORALE	πυνθάνομαι, πεύσομαι, (aor II) ἐπυθόμην, πέπυσμαι (informarsi; venire a sapere; chiedere a proposito di (+gen))	PERFETTO.PARTICIPIO.MEDIO ACCUSATIVO.FEMMINILE.PLURALE	TEMPORALE
@@ -1856,7 +1856,7 @@ V034	ἀξιόω+++	<TRADUZIONE>	ἀξιόω, ἀξιώσω, ἠξίωσα, ἠ�
 V035	λείπω+++	<TRADUZIONE>	λείπω, λείψω, ἔλιπον, λέλοιπα, λέλειμμαι, ἐλείφθην (lasciare, abbandonare)	AORISTO.INDICATIVO.MEDIO TERZA_PERSONA.SINGOLARE
 V036	ἀγγέλλω+++	<TRADUZIONE>	ἀγγέλλω, ἀγγελῶ, ἤγγειλα, ἤγγελκα, ἤγγελμαι, ἠγγέλθην (annunciare)	PRESENTE.INDICATIVO.MEDIO PRIMA_PERSONA.PLURALE
 V037	ἐάω+++	<TRADUZIONE>	ἐάω, ἐάσω, εἴασα (permettere (+acc e infinito); lasciare, lasciar solo)	PERFETTO.INFINITO.MEDIO PRIMA_PERSONA.SINGOLARE
-V038	διαφέρω+++	<TRADUZIONE>	διαφέρω, διοίσω, 1 aor. διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	FUTUROPERFETTO.INDICATIVO.PASSIVO SECONDA_PERSONA.DUALE
+V038	διαφέρω+++	<TRADUZIONE>	διαφέρω, διοίσω, (aor I) διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	FUTUROPERFETTO.INDICATIVO.PASSIVO SECONDA_PERSONA.DUALE
 V039	ὑπάρχω+++	<TRADUZIONE>	ὑπάρχω, ὑπάρξω, ὑπῆρξα, ὑπῆργμαι, ὑπήρχθην (esserci, esistere; τὰ ὑπάρχοντα le circostanze attuali)	PRESENTE.CONGIUNTIVO.ATTIVO TERZA_PERSONA.PLURALE
 V040	μανθάνω+++	<TRADUZIONE>	μανθάνω, μαθήσομαι, ἔμαθον, μεμάθηκα (imparare)	AORISTO.CONGIUNTIVO.MEDIO TERZA_PERSONA.PLURALE
 V041	κρατέω+++	<TRADUZIONE>	κρατέω, κρατήσω, ἐκράτησα, κεκράτηκα, κεκράτημαι, ἐκρατήθην (vincere, conquistare, prevalere, eccellere (+gen))	FUTUROPERFETTO.INDICATIVO.PASSIVO TERZA_PERSONA.SINGOLARE
@@ -1925,7 +1925,7 @@ V103	ἀφαιρέω+++	<TRADUZIONE>	ἀφαιρέω, ἀφαιρήσω, ἀφε
 V104	ζάω+++	<TRADUZIONE>	ζάω, ζήσω, ἔζησα, ἔζηκα (vivere)	AORISTO.CONGIUNTIVO.MEDIO SECONDA_PERSONA.SINGOLARE
 V105	πίνω+++	<TRADUZIONE>	πίνω, πίομαι, (aor II) ἔπιον, πέπωκα, πέπομαι, επόθην (bere)	AORISTO.IMPERATIVO.ATTIVO TERZA_PERSONA.DUALE
 V106	θύω+++	<TRADUZIONE>	θύω, θύσω, ἔθυσα, τέθυκα, τέθυμαι, ἐτύθην (sacrificare)	PIUCCHEPERFETTO.INDICATIVO.ATTIVO PRIMA_PERSONA.SINGOLARE
-V107	οἴομαι/οἶμαι+++	<TRADUZIONE>	οἴομαι/οἶμαι, οἰήσομαι, (imperfetto) ᾤμην, aor. ᾠήθην (pensare (+acc e infinito))	PERFETTO.CONGIUNTIVO.MEDIO PRIMA_PERSONA.SINGOLARE
+V107	οἴομαι/οἶμαι+++	<TRADUZIONE>	οἴομαι/οἶμαι, οἰήσομαι, (imperfetto) ᾤμην, (aoristo) ᾠήθην (pensare (+acc e infinito))	PERFETTO.CONGIUNTIVO.MEDIO PRIMA_PERSONA.SINGOLARE
 V108	ἐλαύνω+++	<TRADUZIONE>	ἐλαύνω, ἐλῶ, ἤλασα, ελήλακα, ἐλήλαμαι, ἠλάθην (mettere in moto; avanzare)	PIUCCHEPERFETTO.INDICATIVO.ATTIVO PRIMA_PERSONA.SINGOLARE
 V109	τίκτω+++	<TRADUZIONE>	τίκτω, τέξω or τέξομαι, ἔτεκον, τέτοκα, τέτεγμαι, ἐτέχθην (generare, dare alla luce, produrre)	FUTURO.OTTATIVO.ATTIVO SECONDA_PERSONA.DUALE
 V110	νομίζω+++	<TRADUZIONE>	νομίζω, νομιῶ, ἐνόμισα, νενόμικα, νενόμισμαι, ἐνομίσθην (pensare, ritenere (+acc e infinito); essere abituati a (+infinito))	PRESENTE.OTTATIVO.MEDIO SECONDA_PERSONA.DUALE
@@ -1953,7 +1953,7 @@ V131	δηλόω+++	<TRADUZIONE>	δηλόω, δηλώσω, ἐδήλωσα, δε�
 V132	πυνθάνομαι+++	<TRADUZIONE>	πυνθάνομαι, πεύσομαι, (aor II) ἐπυθόμην, πέπυσμαι (informarsi; venire a sapere; chiedere a proposito di (+gen))	PERFETTO.OTTATIVO.MEDIO TERZA_PERSONA.SINGOLARE
 V133	παύω+++	<TRADUZIONE>	παύω, παύσω, ἔπαυσα, πέπαυκα, πέπαυμαι, ἐπαύθην (far cessare; (la medio) smettere)	IMPERFETTO.INDICATIVO.ATTIVO TERZA_PERSONA.SINGOLARE
 V134	γιγνώσκω+++	<TRADUZIONE>	γιγνώσκω, γνώσομαι, ἔγνων, ἔγνωκα, ἔγνωσμαι, ἐγνώσθην (conoscere; pensare; decidere)	FUTURO.INDICATIVO.MEDIO SECONDA_PERSONA.SINGOLARE
-V135	διαφέρω+++	<TRADUZIONE>	διαφέρω, διοίσω, 1 aor. διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	AORISTO.IMPERATIVO.MEDIO SECONDA_PERSONA.PLURALE
+V135	διαφέρω+++	<TRADUZIONE>	διαφέρω, διοίσω, (aor I) διήνεγκα, (aor II) διήνεγκον, διενήνοχα, διενήνεγμαι (trasportare; spargere; differire; (impers.) διαφέρει fa differenza a (+dat))	AORISTO.IMPERATIVO.MEDIO SECONDA_PERSONA.PLURALE
 V136	διαφθείρω+++	<TRADUZIONE>	διαφθείρω, διαφθερῶ, διέφθειρα, διέφθαρκα, διέφθαρμαι, διεφθάρην (distruggere; mandare in rovina)	PERFETTO.OTTATIVO.ATTIVO SECONDA_PERSONA.DUALE
 V137	διώκω+++	<TRADUZIONE>	διώκω, διώξομαι, ἐδίωξα, δεδίωχα, ἐδιώχθην (inseguire; perseguire penalmente)	PRESENTE.INDICATIVO.ATTIVO SECONDA_PERSONA.SINGOLARE
 V138	φράζω+++	<TRADUZIONE>	φράζω, φράσω, ἔφρασα, πέφρακα, πέφρασμαι, ἐφράσθην (rivelare, annunciare; (al medio e passivo) riflettere)	PERFETTO.CONGIUNTIVO.ATTIVO PRIMA_PERSONA.PLURALE
